@@ -1,0 +1,10 @@
+# Vercel deployment requirements for Meinn Restaurant AI Assistant
+flask==2.3.3
+flask-cors==4.0.0
+requests==2.31.0
+python-dotenv==1.0.0
+firebase-admin==6.2.0
+langid==1.1.6
+googletrans==4.0.0-rc1
+babel==2.12.1
+pycountry==23.12.11
