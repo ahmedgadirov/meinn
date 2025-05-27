@@ -1,0 +1,1181 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Inn - Menu AI Assistant</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #121313;
+            --primary-light: #2a2b2b;
+            --primary-dark: #050505;
+            --accent-color: #ff5a5f;
+            --text-color: #f5f5f5;
+            --text-dark: #121212;
+            --light-gray: #e0e0e0;
+            --message-bg: #f0f0f0;
+            --bot-message-bg: #f8f9fa;
+            --user-message-bg: #e9ecef;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f5f5f5;
+            color: var(--text-dark);
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        header {
+            background-color: var(--primary-color);
+            color: var(--text-color);
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .logo img {
+            height: 40px;
+            border-radius: 50%;
+        }
+        
+        .logo h1 {
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+        
+        nav a {
+            color: var(--text-color);
+            text-decoration: none;
+            font-weight: 500;
+            padding: 5px;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: var(--accent-color);
+        }
+        
+        .language-selector {
+            background-color: transparent;
+            color: var(--text-color);
+            border: 1px solid var(--text-color);
+            padding: 5px 10px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        main {
+            flex: 1;
+            display: flex;
+            overflow: hidden;
+        }
+        
+        .menu-section {
+            width: 300px;
+            background-color: #fff;
+            border-right: 1px solid var(--light-gray);
+            overflow-y: auto;
+            transition: transform 0.3s;
+        }
+        
+        .menu-header {
+            padding: 15px;
+            background-color: var(--primary-light);
+            color: var(--text-color);
+        }
+        
+        .menu-items {
+            padding: 10px;
+        }
+        
+        .category {
+            margin-bottom: 20px;
+        }
+        
+        .category-title {
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: var(--primary-dark);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+        }
+        
+        .menu-item {
+            display: flex;
+            padding: 10px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            background-color: #f9f9f9;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        .menu-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        .menu-item img {
+            width: 60px;
+            height: 60px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-right: 10px;
+        }
+        
+        .item-details h3 {
+            font-size: 0.9rem;
+            margin-bottom: 5px;
+        }
+        
+        .item-details p {
+            font-size: 0.8rem;
+            color: #666;
+            margin-bottom: 5px;
+        }
+        
+        .item-price {
+            font-weight: 600;
+            color: var(--accent-color);
+        }
+        
+        .chat-section {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            background-color: #fff;
+        }
+        
+        .chat-header {
+            padding: 15px;
+            background-color: var(--primary-color);
+            color: var(--text-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .toggle-menu-btn {
+            background: none;
+            border: none;
+            color: var(--text-color);
+            cursor: pointer;
+            font-size: 1.2rem;
+            display: none;
+        }
+        
+        #toggle-chat {
+            background: none;
+            border: none;
+            color: var(--text-color);
+            cursor: pointer;
+            font-size: 1.2rem;
+            transition: transform 0.3s;
+        }
+        
+        .chat-container.minimized #toggle-chat {
+            transform: rotate(180deg);
+        }
+        
+        .chat-messages {
+            flex: 1;
+            padding: 20px;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .message {
+            max-width: 80%;
+            padding: 12px 15px;
+            border-radius: 18px;
+            line-height: 1.4;
+            position: relative;
+        }
+        
+        .bot-message {
+            align-self: flex-start;
+            background-color: var(--bot-message-bg);
+            border-bottom-left-radius: 5px;
+            color: var(--text-dark);
+        }
+        
+        .user-message {
+            align-self: flex-end;
+            background-color: var(--primary-color);
+            border-bottom-right-radius: 5px;
+            color: var(--text-color);
+        }
+        
+        .typing-indicator {
+            display: flex;
+            padding: 8px 15px;
+            background-color: var(--bot-message-bg);
+            border-radius: 18px;
+            align-self: flex-start;
+            width: fit-content;
+        }
+        
+        .typing-dot {
+            width: 8px;
+            height: 8px;
+            background-color: #888;
+            border-radius: 50%;
+            margin: 0 2px;
+            animation: typing-dot 1.4s infinite ease-in-out;
+        }
+        
+        .typing-dot:nth-child(1) { animation-delay: 0s; }
+        .typing-dot:nth-child(2) { animation-delay: 0.2s; }
+        .typing-dot:nth-child(3) { animation-delay: 0.4s; }
+        
+        @keyframes typing-dot {
+            0%, 60%, 100% { transform: translateY(0); }
+            30% { transform: translateY(-5px); }
+        }
+        
+        .chat-input {
+            padding: 15px;
+            background-color: #f8f9fa;
+            border-top: 1px solid var(--light-gray);
+            display: flex;
+            gap: 10px;
+        }
+        
+        .chat-input input {
+            flex: 1;
+            padding: 12px 15px;
+            border: 1px solid var(--light-gray);
+            border-radius: 25px;
+            font-size: 1rem;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+        
+        .chat-input input:focus {
+            border-color: var(--primary-color);
+        }
+        
+        .send-btn {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 45px;
+            height: 45px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        .send-btn:hover {
+            background-color: var(--primary-dark);
+        }
+        
+        .suggestion-chips {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 10px;
+        }
+        
+        .suggestion-chip {
+            background-color: var(--primary-light);
+            color: var(--text-color);
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: transform 0.2s, background-color 0.2s;
+            white-space: nowrap;
+        }
+        
+        .suggestion-chip:hover {
+            transform: translateY(-2px);
+            background-color: var(--primary-color);
+        }
+        
+        /* Menu item detail view */
+        .item-detail-view {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.7);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s, visibility 0.3s;
+        }
+        
+        .item-detail-view.active {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .item-detail-content {
+            background-color: white;
+            width: 90%;
+            max-width: 600px;
+            max-height: 90vh;
+            border-radius: 12px;
+            overflow-y: auto;
+            padding: 20px;
+            position: relative;
+        }
+        
+        .close-detail {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--text-dark);
+        }
+        
+        .item-detail-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        
+        .item-detail-title {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: var(--primary-dark);
+        }
+        
+        .item-detail-description {
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+        
+        .item-detail-price {
+            font-weight: 600;
+            font-size: 1.2rem;
+            color: var(--accent-color);
+            margin-bottom: 15px;
+        }
+        
+        .item-detail-section {
+            margin-bottom: 20px;
+        }
+        
+        .item-detail-section h3 {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            color: var(--primary-dark);
+        }
+        
+        .item-detail-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+        
+        .item-detail-tag {
+            background-color: #f0f0f0;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-size: 0.9rem;
+        }
+        
+        .nutrition-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        
+        .nutrition-item {
+            background-color: #f8f9fa;
+            padding: 8px 15px;
+            border-radius: 8px;
+            text-align: center;
+            min-width: 80px;
+        }
+        
+        .nutrition-value {
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+        
+        .nutrition-label {
+            font-size: 0.8rem;
+            color: #666;
+        }
+        
+        .add-to-order {
+            width: 100%;
+            padding: 12px;
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-top: 10px;
+        }
+        
+        .add-to-order:hover {
+            background-color: var(--primary-dark);
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--primary-color);
+            color: var(--text-color);
+            padding: 15px 20px;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+        
+        /* Show/Hide Chat */
+        .chat-container.minimized .chat-messages,
+        .chat-container.minimized .chat-input {
+            display: none;
+        }
+        
+        .chat-container.minimized {
+            height: auto;
+        }
+        
+        /* Ensure chat is properly displayed */
+        .chat-section {
+            height: 100%;
+            z-index: 5;
+        }
+        
+        .chat-container {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .chat-container:not(.minimized) {
+            height: 100%;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .menu-section {
+                position: absolute;
+                left: -300px;
+                height: calc(100% - 70px);
+                z-index: 10;
+            }
+            
+            .menu-section.active {
+                transform: translateX(300px);
+            }
+            
+            .menu-items {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            
+            .category {
+                width: 100%;
+            }
+            
+            .category-title {
+                justify-content: center;
+            }
+            
+            .menu-item {
+                justify-content: center;
+            }
+            
+            .toggle-menu-btn {
+                display: block;
+            }
+            
+            .message {
+                max-width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://lh3.googleusercontent.com/a-/ALV-UjXNCTaBe54mwTdnSBUIjjapSx5pMRBZg5j-8c3FeD_QHHBy6ZcI=s265-w265-h265" alt="Pizza Inn Logo">
+            <h1>Pizza Inn</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <select class="language-selector" id="language-selector">
+            <option value="az">Azərbaycan</option>
+            <option value="en">English</option>
+            <option value="ru">Русский</option>
+            <option value="tr">Türkçe</option>
+            <option value="ar">العربية</option>
+            <option value="hi">हिन्दी</option>
+            <option value="fr">Français</option>
+            <option value="it">Italiano</option>
+        </select>
+    </header>
+    
+    <main>
+        <div class="menu-section" id="menu-section">
+            <div class="menu-header">
+                <h2>Menu Categories</h2>
+            </div>
+            <div class="menu-items">
+                <div class="category">
+                    <div class="category-title">
+                        <span>Pizza</span>
+                        <span>+</span>
+                    </div>
+                    <div class="category-items">
+                        <div class="menu-item" data-id="pizza-001">
+                            <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Margherita Pizza">
+                            <div class="item-details">
+                                <h3>Margherita Pizza</h3>
+                                <p>Classic pizza with tomato sauce, mozzarella, and basil</p>
+                                <div class="item-price">$12.99</div>
+                            </div>
+                        </div>
+                        <div class="menu-item" data-id="pizza-002">
+                            <img src="https://images.unsplash.com/photo-1534308983496-4fabb1a015ee?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Pepperoni Pizza">
+                            <div class="item-details">
+                                <h3>Pepperoni Pizza</h3>
+                                <p>Tomato sauce, mozzarella, and pepperoni slices</p>
+                                <div class="item-price">$14.99</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="category">
+                    <div class="category-title">
+                        <span>Pasta</span>
+                        <span>+</span>
+                    </div>
+                    <div class="category-items">
+                        <div class="menu-item" data-id="pasta-001">
+                            <img src="https://images.unsplash.com/photo-1546549032-9571cd6b27df?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Spaghetti Carbonara">
+                            <div class="item-details">
+                                <h3>Spaghetti Carbonara</h3>
+                                <p>Spaghetti with creamy egg sauce, pancetta, and parmesan</p>
+                                <div class="item-price">$13.99</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="category">
+                    <div class="category-title">
+                        <span>Desserts</span>
+                        <span>+</span>
+                    </div>
+                    <div class="category-items">
+                        <div class="menu-item" data-id="dessert-001">
+                            <img src="https://images.unsplash.com/photo-1571877227200-a0d98ea2756c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Tiramisu">
+                            <div class="item-details">
+                                <h3>Tiramisu</h3>
+                                <p>Classic Italian dessert with coffee-soaked ladyfingers and mascarpone cream</p>
+                                <div class="item-price">$6.99</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="chat-section chat-container">
+                <div class="chat-header">
+                <button class="toggle-menu-btn" id="toggle-menu-btn">☰</button>
+                <h2><img src="/static/images/ai-icon.png" alt="AI" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 5px;">AI</h2>
+                <div class="chat-pull-indicator"></div>
+                <button id="toggle-chat">▼</button>
+            </div>
+            
+            <div class="chat-messages" id="chat-messages">
+                <div class="message bot-message">
+                    Salam! Mən Pizza Inn-in menyu köməkçisiyəm. Sizə necə kömək edə bilərəm? Ən populyar pizzalarımız haqqında məlumat verə, hazırlanma vaxtı və ya tərkiblər haqqında suallarınızı cavablandıra bilərəm. Zəhmət olmasa, soruşun!
+                </div>
+                
+                <div class="suggestion-chips">
+                    <div class="suggestion-chip">Ən populyar pizzalar hansılardır?</div>
+                    <div class="suggestion-chip">Vegetarian yeməklər var?</div>
+                    <div class="suggestion-chip">Pepperoni pizzanın tərkibləri nədir?</div>
+                    <div class="suggestion-chip">Qəhvə ilə hansı desert yaxşıdır?</div>
+                </div>
+            </div>
+            
+            <div class="chat-input">
+                <input type="text" id="user-input" placeholder="Nə sifariş etmək istərdiniz? Məndən soruşun...">
+                <button class="send-btn" id="send-btn">➤</button>
+            </div>
+        </div>
+    </main>
+    
+    <div class="item-detail-view" id="item-detail-view">
+        <div class="item-detail-content">
+            <button class="close-detail" id="close-detail">×</button>
+            <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="item-detail-image" id="item-detail-image" alt="Item">
+            <h2 class="item-detail-title" id="item-detail-title">Margherita Pizza</h2>
+            <p class="item-detail-description" id="item-detail-description">Classic pizza with tomato sauce, mozzarella, and basil</p>
+            <div class="item-detail-price" id="item-detail-price">$12.99</div>
+            
+            <div class="item-detail-section">
+                <h3>Ingredients</h3>
+                <ul id="item-detail-ingredients">
+                    <li>Pizza dough</li>
+                    <li>San Marzano tomato sauce</li>
+                    <li>Fresh mozzarella</li>
+                    <li>Fresh basil leaves</li>
+                    <li>Extra virgin olive oil</li>
+                    <li>Salt</li>
+                </ul>
+            </div>
+            
+            <div class="item-detail-section">
+                <h3>Allergens</h3>
+                <div class="item-detail-grid" id="item-detail-allergens">
+                    <div class="item-detail-tag">Dairy</div>
+                    <div class="item-detail-tag">Gluten</div>
+                </div>
+            </div>
+            
+            <div class="item-detail-section">
+                <h3>Nutrition Information</h3>
+                <div class="nutrition-info" id="item-detail-nutrition">
+                    <div class="nutrition-item">
+                        <div class="nutrition-value">850</div>
+                        <div class="nutrition-label">Calories</div>
+                    </div>
+                    <div class="nutrition-item">
+                        <div class="nutrition-value">35g</div>
+                        <div class="nutrition-label">Protein</div>
+                    </div>
+                    <div class="nutrition-item">
+                        <div class="nutrition-value">100g</div>
+                        <div class="nutrition-label">Carbs</div>
+                    </div>
+                    <div class="nutrition-item">
+                        <div class="nutrition-value">25g</div>
+                        <div class="nutrition-label">Fat</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="item-detail-section">
+                <h3>Recommended Pairings</h3>
+                <div class="item-detail-grid" id="item-detail-pairings">
+                    <div class="item-detail-tag">Sparkling Water</div>
+                    <div class="item-detail-tag">Caesar Salad</div>
+                </div>
+            </div>
+            
+            <button class="add-to-order" id="add-to-order">Add to Order</button>
+        </div>
+    </div>
+    
+    <footer>
+        © 2025 Pizza Inn. All Rights Reserved.
+    </footer>
+    
+    <script>
+        // Force the chat to be properly visible on page load
+        window.addEventListener('load', function() {
+            const chatContainer = document.querySelector('.chat-container');
+            if (chatContainer) {
+                // Force display
+                chatContainer.style.display = 'flex';
+                chatContainer.style.flexDirection = 'column';
+                chatContainer.style.height = '100%';
+                
+                // Remove any minimized class if present on desktop
+                if (window.innerWidth > 768) {
+                    chatContainer.classList.remove('minimized');
+                }
+            }
+        });
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            // DOM elements
+            const chatMessages = document.getElementById('chat-messages');
+            const userInput = document.getElementById('user-input');
+            const sendBtn = document.getElementById('send-btn');
+            const toggleMenuBtn = document.getElementById('toggle-menu-btn');
+            const menuSection = document.getElementById('menu-section');
+            const languageSelector = document.getElementById('language-selector');
+            const itemDetailView = document.getElementById('item-detail-view');
+            const closeDetail = document.getElementById('close-detail');
+            const menuItems = document.querySelectorAll('.menu-item');
+            const suggestionChips = document.querySelectorAll('.suggestion-chip');
+            const addToOrderBtn = document.getElementById('add-to-order');
+            
+            // Initialize chat bot functionality
+            function setupChatBot() {
+                // Setup Chat Toggle (Minimize/Expand)
+                const toggleButton = document.getElementById('toggle-chat');
+                const chatContainer = document.querySelector('.chat-container');
+                
+                if (toggleButton && chatContainer) {
+                    // Ensure chat is visible by default on desktop
+                    if (window.innerWidth > 768) {
+                        chatContainer.classList.remove('minimized');
+                    } else {
+                        // On mobile, start minimized
+                        chatContainer.classList.add('minimized');
+                        toggleButton.textContent = '▲';
+                    }
+                    
+                    // Setup toggle functionality
+                    toggleButton.addEventListener('click', () => {
+                        chatContainer.classList.toggle('minimized');
+                        // Update button text based on state
+                        if (chatContainer.classList.contains('minimized')) {
+                            toggleButton.textContent = '▲';
+                        } else {
+                            toggleButton.textContent = '▼';
+                        }
+                    });
+                }
+            }
+            
+            // Run the chat setup
+            setupChatBot();
+            
+            // Menu data (in a real app, this would come from an API)
+            const menuItemsData = {
+                'pizza-001': {
+                    name: 'Margherita Pizza',
+                    description: 'Classic pizza with tomato sauce, mozzarella, and basil',
+                    price: 12.99,
+                    image: 'https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+                    ingredients: ['Pizza dough', 'San Marzano tomato sauce', 'Fresh mozzarella', 'Fresh basil leaves', 'Extra virgin olive oil', 'Salt'],
+                    allergens: ['Dairy', 'Gluten'],
+                    nutrition: {
+                        calories: 850,
+                        protein: 35,
+                        carbs: 100,
+                        fat: 25
+                    },
+                    pairings: ['Sparkling Water', 'Caesar Salad']
+                },
+                'pizza-002': {
+                    name: 'Pepperoni Pizza',
+                    description: 'Tomato sauce, mozzarella, and pepperoni slices',
+                    price: 14.99,
+                    image: 'https://images.unsplash.com/photo-1534308983496-4fabb1a015ee?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+                    ingredients: ['Pizza dough', 'San Marzano tomato sauce', 'Mozzarella cheese', 'Pepperoni slices', 'Olive oil'],
+                    allergens: ['Dairy', 'Gluten'],
+                    nutrition: {
+                        calories: 950,
+                        protein: 40,
+                        carbs: 98,
+                        fat: 30
+                    },
+                    pairings: ['Cola', 'Garlic Bread']
+                },
+                'pasta-001': {
+                    name: 'Spaghetti Carbonara',
+                    description: 'Spaghetti with creamy egg sauce, pancetta, and parmesan',
+                    price: 13.99,
+                    image: 'https://images.unsplash.com/photo-1546549032-9571cd6b27df?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+                    ingredients: ['Spaghetti', 'Eggs', 'Pancetta', 'Parmesan cheese', 'Black pepper', 'Salt'],
+                    allergens: ['Dairy', 'Gluten', 'Egg'],
+                    nutrition: {
+                        calories: 1050,
+                        protein: 35,
+                        carbs: 130,
+                        fat: 40
+                    },
+                    pairings: ['Red Wine', 'Garden Salad']
+                },
+                'dessert-001': {
+                    name: 'Tiramisu',
+                    description: 'Classic Italian dessert with coffee-soaked ladyfingers and mascarpone cream',
+                    price: 6.99,
+                    image: 'https://images.unsplash.com/photo-1571877227200-a0d98ea2756c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+                    ingredients: ['Mascarpone cheese', 'Eggs', 'Sugar', 'Ladyfinger cookies', 'Coffee', 'Cocoa powder'],
+                    allergens: ['Dairy', 'Gluten', 'Egg'],
+                    nutrition: {
+                        calories: 450,
+                        protein: 6,
+                        carbs: 45,
+                        fat: 25
+                    },
+                    pairings: ['Espresso', 'Cappuccino']
+                }
+            };
+            
+            // Toggle menu on mobile
+            toggleMenuBtn.addEventListener('click', function() {
+                menuSection.classList.toggle('active');
+            });
+            
+            // Close menu when clicking outside on mobile
+            document.addEventListener('click', function(e) {
+                if (window.innerWidth <= 768 && 
+                    !menuSection.contains(e.target) && 
+                    e.target !== toggleMenuBtn) {
+                    menuSection.classList.remove('active');
+                }
+            });
+            
+            // Open item detail view when clicking on a menu item
+            menuItems.forEach(item => {
+                item.addEventListener('click', function() {
+                    const itemId = this.getAttribute('data-id');
+                    showItemDetails(itemId);
+                });
+            });
+            
+            // Close item detail view
+            closeDetail.addEventListener('click', function() {
+                itemDetailView.classList.remove('active');
+            });
+            
+            // Close item detail view when clicking outside
+            itemDetailView.addEventListener('click', function(e) {
+                if (e.target === itemDetailView) {
+                    itemDetailView.classList.remove('active');
+                }
+            });
+            
+            // Show item details
+            function showItemDetails(itemId) {
+                const item = menuItemsData[itemId];
+                if (!item) return;
+                
+                document.getElementById('item-detail-image').src = item.image;
+                document.getElementById('item-detail-title').textContent = item.name;
+                document.getElementById('item-detail-description').textContent = item.description;
+                document.getElementById('item-detail-price').textContent = '$' + item.price.toFixed(2);
+                
+                // Update ingredients list
+                const ingredientsList = document.getElementById('item-detail-ingredients');
+                ingredientsList.innerHTML = '';
+                item.ingredients.forEach(ingredient => {
+                    const li = document.createElement('li');
+                    li.textContent = ingredient;
+                    ingredientsList.appendChild(li);
+                });
+                
+                // Update allergens
+                const allergensContainer = document.getElementById('item-detail-allergens');
+                allergensContainer.innerHTML = '';
+                item.allergens.forEach(allergen => {
+                    const div = document.createElement('div');
+                    div.className = 'item-detail-tag';
+                    div.textContent = allergen;
+                    allergensContainer.appendChild(div);
+                });
+                
+                // Update nutrition info
+                const nutritionContainer = document.getElementById('item-detail-nutrition');
+                nutritionContainer.innerHTML = '';
+                
+                const nutrition = item.nutrition;
+                const nutritionItems = [
+                    { value: nutrition.calories, label: 'Calories' },
+                    { value: nutrition.protein + 'g', label: 'Protein' },
+                    { value: nutrition.carbs + 'g', label: 'Carbs' },
+                    { value: nutrition.fat + 'g', label: 'Fat' }
+                ];
+                
+                nutritionItems.forEach(item => {
+                    const div = document.createElement('div');
+                    div.className = 'nutrition-item';
+                    div.innerHTML = `
+                        <div class="nutrition-value">${item.value}</div>
+                        <div class="nutrition-label">${item.label}</div>
+                    `;
+                    nutritionContainer.appendChild(div);
+                });
+                
+                // Update pairings
+                const pairingsContainer = document.getElementById('item-detail-pairings');
+                pairingsContainer.innerHTML = '';
+                item.pairings.forEach(pairing => {
+                    const div = document.createElement('div');
+                    div.className = 'item-detail-tag';
+                    div.textContent = pairing;
+                    pairingsContainer.appendChild(div);
+                });
+                
+                // Show the modal
+                itemDetailView.classList.add('active');
+            }
+            
+            // Handle send button click
+            sendBtn.addEventListener('click', sendMessage);
+            
+            // Handle Enter key press in input field
+            userInput.addEventListener('keypress', function(e) {
+                if (e.key === 'Enter') {
+                    sendMessage();
+                }
+            });
+            
+            // Handle suggestion chip clicks
+            suggestionChips.forEach(chip => {
+                chip.addEventListener('click', function() {
+                    const message = this.textContent;
+                    addUserMessage(message);
+                    simulateResponse(message);
+                });
+            });
+            
+            // Add user message to chat
+            function addUserMessage(message) {
+                const messageElement = document.createElement('div');
+                messageElement.className = 'message user-message';
+                messageElement.textContent = message;
+                chatMessages.appendChild(messageElement);
+                
+                // Clear input field
+                userInput.value = '';
+                
+                // Scroll to bottom
+                chatMessages.scrollTop = chatMessages.scrollHeight;
+            }
+            
+            // Add bot message to chat
+            function addBotMessage(message) {
+                const messageElement = document.createElement('div');
+                messageElement.className = 'message bot-message';
+                messageElement.textContent = message;
+                chatMessages.appendChild(messageElement);
+                
+                // Scroll to bottom
+                chatMessages.scrollTop = chatMessages.scrollHeight;
+            }
+            
+            // Show typing indicator
+            function showTypingIndicator() {
+                const indicator = document.createElement('div');
+                indicator.className = 'typing-indicator';
+                indicator.id = 'typing-indicator';
+                
+                for(let i = 0; i < 3; i++) {
+                    const dot = document.createElement('div');
+                    dot.className = 'typing-dot';
+                    indicator.appendChild(dot);
+                }
+                
+                chatMessages.appendChild(indicator);
+                chatMessages.scrollTop = chatMessages.scrollHeight;
+            }
+            
+            // Hide typing indicator
+            function hideTypingIndicator() {
+                const indicator = document.getElementById('typing-indicator');
+                if (indicator) {
+                    indicator.remove();
+                }
+            }
+            
+            // Send message function
+            function sendMessage() {
+                const message = userInput.value.trim();
+                if (message === '') return;
+                
+                addUserMessage(message);
+                simulateResponse(message);
+            }
+            
+            // Simulate AI response (in a real app, this would be an API call)
+            function simulateResponse(userMessage) {
+                // Show typing indicator
+                showTypingIndicator();
+                
+                // Simulate API delay
+                setTimeout(() => {
+                    hideTypingIndicator();
+                    
+                    let response;
+                    const lowerMessage = userMessage.toLowerCase();
+                    
+                    if (lowerMessage.includes('populyar') || lowerMessage.includes('ən')) {
+                        response = 'Bizim ən populyar pizzalarımız Margarita və Pepperoni pizzalarıdır. Margarita klassik İtalyan pizzasıdır və təzə pomidor sousu, mozzarella pendiri və reyhan ilə hazırlanır. Pepperoni pizzası isə isti və ədviyyatlı pepperoni dilimləri ilə örtülmüş olur.';
+                    } else if (lowerMessage.includes('vegetarian') || lowerMessage.includes('vegan')) {
+                        response = 'Bəli, bizim vegetarianlar üçün xüsusi pizzalarımız var! Margarita pizzası vegetariandır, həmçinin Dörp Pendir pizzası və Tərəvəz Festivalı da. İstəsəniz, hər hansı bir pizza sifarişinə əlavə tərəvəzlər də əlavə edə bilərsiniz.';
+                    } else if (lowerMessage.includes('pepperoni') && lowerMessage.includes('tərkib')) {
+                        response = 'Pepperoni pizzasının tərkibinə daxildir: Pizza xəmiri, San Marzano pomidor sousu, Mozzarella pendiri, Pepperoni dilimləri və Zeytun yağı. Təxminən 20 dəqiqə ərzində Daş sobada 450°C-də bişirilir.';
+                    } else if (lowerMessage.includes('qəhvə') && lowerMessage.includes('desert')) {
+                        response = 'Qəhvə ilə ən yaxşı desert bizim Tiramisu olacaq! Bu klassik İtalyan deserti qəhvəyə batırılmış biskuit barmaqları və zərif maskarpone kremindən hazırlanır. Espresso ilə mükəmməl uyğunlaşır.';
+                    } else if (lowerMessage.includes('sifariş') || lowerMessage.includes('istəyirəm')) {
+                        response = 'Əla seçimdir! Sifarişinizi təsdiqləmək üçün "Sifarişə əlavə et" düyməsini istifadə edə bilərsiniz. Əlavə bir şey istəyirsinizmi? Bəlkə də içki və ya desert əlavə etmək istəyərdiniz?';
+                    } else if (lowerMessage.includes('çatdırılma') || lowerMessage.includes('vaxt')) {
+                        response = 'Çatdırılma vaxtımız adətən 30-45 dəqiqə arasında olur, məşğul vaxtlarda bir az daha çox ola bilər. Sifarişiniz hazır olduqda sizə bildiriş göndərəcəyik.';
+                    } else if (lowerMessage.includes('salam') || lowerMessage.includes('hi') || lowerMessage.includes('hello')) {
+                        response = 'Salam! Pizza Inn-ə xoş gəlmisiniz. Sizə necə kömək edə bilərəm?';
+                    } else {
+                        response = 'Üzr istəyirəm, tam başa düşə bilmədim. Pizzalarımız haqqında məlumat almaq istəyirsiniz, yoxsa sifariş vermək istəyirsiniz?';
+                    }
+                    
+                    addBotMessage(response);
+                    
+                    // Add new suggestion chips based on context
+                    addContextualSuggestionChips(userMessage);
+                    
+                }, 1500);
+            }
+            
+            // Add contextual suggestion chips
+            function addContextualSuggestionChips(userMessage) {
+                // Remove existing suggestion chips
+                const existingChips = document.querySelector('.suggestion-chips');
+                if (existingChips) {
+                    existingChips.remove();
+                }
+                
+                const lowerMessage = userMessage.toLowerCase();
+                const suggestionChipsContainer = document.createElement('div');
+                suggestionChipsContainer.className = 'suggestion-chips';
+                
+                let suggestions = [];
+                
+                if (lowerMessage.includes('pizza')) {
+                    suggestions = [
+                        'Pizzanın ölçüləri nədir?',
+                        'Əlavə ingredientlər olar?',
+                        'Pizza çatdırılma vaxtı?',
+                        'Pepperoni pizzasını sifariş etmək istəyirəm'
+                    ];
+                } else if (lowerMessage.includes('desert') || lowerMessage.includes('tiramisu')) {
+                    suggestions = [
+                        'Başqa desert seçimləriniz var?',
+                        'Tiramisu sifariş etmək istəyirəm',
+                        'Uşaqlar üçün desertlər',
+                        'Qəhvə seçimləriniz hansılardır?'
+                    ];
+                } else if (lowerMessage.includes('sifariş') || lowerMessage.includes('çatdırılma')) {
+                    suggestions = [
+                        'Onlayn ödəmə mümkündür?',
+                        'Çatdırılma haqqı nə qədərdir?',
+                        'Sifarişimi izləyə bilərəm?',
+                        'Sifariş vermək istəyirəm'
+                    ];
+                } else {
+                    suggestions = [
+                        'Günün təklifi nədir?',
+                        'Vegetarian seçimləriniz',
+                        'Ən populyar içkilər',
+                        'Uşaqlar üçün menyu'
+                    ];
+                }
+                
+                suggestions.forEach(text => {
+                    const chip = document.createElement('div');
+                    chip.className = 'suggestion-chip';
+                    chip.textContent = text;
+                    chip.addEventListener('click', function() {
+                        addUserMessage(text);
+                        simulateResponse(text);
+                    });
+                    suggestionChipsContainer.appendChild(chip);
+                });
+                
+                chatMessages.appendChild(suggestionChipsContainer);
+                chatMessages.scrollTop = chatMessages.scrollHeight;
+            }
+            
+            // Language selector functionality
+            languageSelector.addEventListener('change', function() {
+                const language = this.value;
+                changeLanguage(language);
+            });
+            
+            function changeLanguage(language) {
+                // In a real app, this would update all text on the page
+                // Here we just update a few key elements
+                
+                const greetings = {
+                    az: 'Salam! Mən Pizza Inn-in menyu köməkçisiyəm. Sizə necə kömək edə bilərəm?',
+                    en: 'Hello! I\'m the Pizza Inn menu assistant. How can I help you today?',
+                    ru: 'Привет! Я помощник меню Pizza Inn. Чем я могу вам помочь?',
+                    tr: 'Merhaba! Ben Pizza Inn menü asistanıyım. Size nasıl yardımcı olabilirim?',
+                    ar: 'مرحبا! أنا مساعد قائمة بيتزا إن. كيف يمكنني مساعدتك اليوم؟',
+                    hi: 'नमस्ते! मैं पिज़्ज़ा इन मेनू सहायक हूँ। आज मैं आपकी कैसे मदद कर सकता हूँ?',
+                    fr: 'Bonjour! Je suis l\'assistant menu de Pizza Inn. Comment puis-je vous aider aujourd\'hui?',
+                    it: 'Ciao! Sono l\'assistente del menu di Pizza Inn. Come posso aiutarti oggi?'
+                };
+                
+                const placeholders = {
+                    az: 'Nə sifariş etmək istərdiniz? Məndən soruşun...',
+                    en: 'What would you like to order? Ask me...',
+                    ru: 'Что бы вы хотели заказать? Спросите меня...',
+                    tr: 'Ne sipariş etmek istersiniz? Bana sorun...',
+                    ar: 'ماذا تريد أن تطلب؟ اسألني...',
+                    hi: 'आप क्या ऑर्डर करना चाहेंगे? मुझसे पूछें...',
+                    fr: 'Que souhaitez-vous commander? Demandez-moi...',
+                    it: 'Cosa vorresti ordinare? Chiedimi...'
+                };
+                
+                // Update welcome message (for demo purposes - normally you wouldn't replace the first message)
+                const firstMessage = document.querySelector('.bot-message');
+                if (firstMessage) {
+                    firstMessage.textContent = greetings[language] || greetings['en'];
+                }
+                
+                // Update input placeholder
+                userInput.placeholder = placeholders[language] || placeholders['en'];
+                
+                // In a real implementation, you would update all UI text elements
+                // and connect to a proper translation service or use i18n library
+            }
+            
+            // Add to order button functionality
+            addToOrderBtn.addEventListener('click', function() {
+                const itemTitle = document.getElementById('item-detail-title').textContent;
+                itemDetailView.classList.remove('active');
+                
+                addUserMessage(`${itemTitle} sifariş etmək istəyirəm`);
+                simulateResponse(`${itemTitle} sifariş etmək istəyirəm`);
+            });
+        });
+    </script>
+</body>
+</html>

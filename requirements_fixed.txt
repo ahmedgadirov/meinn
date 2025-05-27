@@ -1,0 +1,40 @@
+# Core dependencies
+flask==2.3.3
+flask-cors==4.0.0
+requests==2.31.0
+python-dotenv==1.0.0
+fastapi==0.104.0  # Added for API operations
+uvicorn==0.23.2   # ASGI server for FastAPI
+websockets==11.0.3 # For real-time features
+
+# Database
+# sqlite3 is a built-in Python module
+sqlalchemy==2.0.23  # ORM for database operations
+psycopg2-binary==2.9.9  # PostgreSQL adapter
+firebase-admin==6.2.0   # Firebase integration
+
+# Language processing
+langid==1.1.6
+googletrans==4.0.0-rc1
+babel==2.12.1
+pycountry==23.12.11
+
+# Data processing - Using binary wheels instead of source that requires compilation
+pandas==2.1.0 --only-binary=pandas
+numpy==1.26.0 --only-binary=numpy
+
+# Alternative options if above fails (commented out)
+# pandas==2.0.3 --only-binary=pandas  # Older version if 2.1.0 not available as binary
+# polars==0.19.19  # Alternative to pandas that doesn't require compilation
+
+# Image processing
+pillow==10.0.1  # For image handling in menu items
+
+# Utilities
+python-dateutil==2.8.2
+pydantic==2.4.2  # Data validation
+pytz==2023.3    # Timezone support for restaurant hours
+
+# Testing
+pytest==7.4.2
+pytest-cov==4.1.0

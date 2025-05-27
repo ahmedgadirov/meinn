@@ -1,0 +1,4784 @@
+{
+  "export_info": {
+    "timestamp": "2025-05-25T18:45:37.155491",
+    "total_categories": 15,
+    "total_menu_items": 128
+  },
+  "categories": [
+    {
+      "id": "cat-8-burger-roll",
+      "name": "BURGER ROLL",
+      "description": "BURGER ROLL menu items",
+      "image_url": "/static/images/categories/placeholder.jpg",
+      "translations": {
+        "en": "BURGER ROLL",
+        "az": null,
+        "ru": null
+      }
+    },
+    {
+      "id": "cat-7-desert",
+      "name": "DESERT",
+      "description": "DESERT menu items",
+      "image_url": "/static/images/categories/placeholder.jpg",
+      "translations": {
+        "en": "DESERT",
+        "az": null,
+        "ru": null
+      }
+    },
+    {
+      "id": "cat-15-d-ni-z-m-hsullari-",
+      "name": "DƏNİZ MƏHSULLARİ",
+      "description": "DƏNİZ MƏHSULLARİ menu items",
+      "image_url": "/static/images/categories/placeholder.jpg",
+      "translations": {
+        "en": "DƏNİZ MƏHSULLARİ",
+        "az": null,
+        "ru": null
+      }
+    },
+    {
+      "id": "cat-4-kabablar",
+      "name": "KABABLAR",
+      "description": "KABABLAR menu items",
+      "image_url": "/static/images/categories/placeholder.jpg",
+      "translations": {
+        "en": "KABABLAR",
+        "az": null,
+        "ru": null
+      }
+    },
+    {
+      "id": "cat-6-pastalar",
+      "name": "PASTALAR",
+      "description": "PASTALAR menu items",
+      "image_url": "/static/images/categories/placeholder.jpg",
+      "translations": {
+        "en": "PASTALAR",
+        "az": null,
+        "ru": null
+      }
+    },
+    {
+      "id": "cat-2-pi-zzalar",
+      "name": "PİZZALAR",
+      "description": "PİZZALAR menu items",
+      "image_url": "/static/images/categories/placeholder.jpg",
+      "translations": {
+        "en": "PİZZALAR",
+        "az": null,
+        "ru": null
+      }
+    },
+    {
+      "id": "cat-14-sac",
+      "name": "SAC",
+      "description": "SAC menu items",
+      "image_url": "/static/images/categories/placeholder.jpg",
+      "translations": {
+        "en": "SAC",
+        "az": null,
+        "ru": null
+      }
+    },
+    {
+      "id": "cat-3-salatlar",
+      "name": "SALATLAR",
+      "description": "SALATLAR menu items",
+      "image_url": "/static/images/categories/placeholder.jpg",
+      "translations": {
+        "en": "SALATLAR",
+        "az": null,
+        "ru": null
+      }
+    },
+    {
+      "id": "cat-9-soyuq-q-lyanaltilar",
+      "name": "SOYUQ QƏLYANALTILAR",
+      "description": "SOYUQ QƏLYANALTILAR menu items",
+      "image_url": "/static/images/categories/placeholder.jpg",
+      "translations": {
+        "en": "SOYUQ QƏLYANALTILAR",
+        "az": null,
+        "ru": null
+      }
+    },
+    {
+      "id": "cat-1-s-h-r-yem-yi",
+      "name": "SƏHƏR YEMƏYI",
+      "description": "SƏHƏR YEMƏYI menu items",
+      "image_url": "/static/images/categories/placeholder.jpg",
+      "translations": {
+        "en": "SƏHƏR YEMƏYI",
+        "az": null,
+        "ru": null
+      }
+    },
+    {
+      "id": "cat-11-toyuq-yem-kl-ri-",
+      "name": "TOYUQ YEMƏKLƏRİ",
+      "description": "TOYUQ YEMƏKLƏRİ menu items",
+      "image_url": "/static/images/categories/placeholder.jpg",
+      "translations": {
+        "en": "TOYUQ YEMƏKLƏRİ",
+        "az": null,
+        "ru": null
+      }
+    },
+    {
+      "id": "cat-12-t-r-v-z-yem-kl-ri-",
+      "name": "TƏRƏVƏZ YEMƏKLƏRİ",
+      "description": "TƏRƏVƏZ YEMƏKLƏRİ menu items",
+      "image_url": "/static/images/categories/placeholder.jpg",
+      "translations": {
+        "en": "TƏRƏVƏZ YEMƏKLƏRİ",
+        "az": null,
+        "ru": null
+      }
+    },
+    {
+      "id": "cat-10-i-sti--q-lyanaltilar",
+      "name": "İSTİ QƏLYANALTILAR",
+      "description": "İSTİ QƏLYANALTILAR menu items",
+      "image_url": "/static/images/categories/placeholder.jpg",
+      "translations": {
+        "en": "İSTİ QƏLYANALTILAR",
+        "az": null,
+        "ru": null
+      }
+    },
+    {
+      "id": "cat-5--orbalar",
+      "name": "ŞORBALAR",
+      "description": "ŞORBALAR menu items",
+      "image_url": "/static/images/categories/placeholder.jpg",
+      "translations": {
+        "en": "ŞORBALAR",
+        "az": null,
+        "ru": null
+      }
+    },
+    {
+      "id": "cat-13--t-yem-kl-ri-",
+      "name": "ƏT YEMƏKLƏRİ",
+      "description": "ƏT YEMƏKLƏRİ menu items",
+      "image_url": "/static/images/categories/placeholder.jpg",
+      "translations": {
+        "en": "ƏT YEMƏKLƏRİ",
+        "az": null,
+        "ru": null
+      }
+    }
+  ],
+  "menu_items": [
+    {
+      "id": "cat-8-burger-roll-7-burger-inn",
+      "name": "BURGER INN",
+      "description": "",
+      "category_id": "cat-8-burger-roll",
+      "category_name": "BURGER ROLL",
+      "price": 22.5,
+      "available": true,
+      "image_url": "/spinner.svg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "BURGER INN",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-8-burger-roll-2-club-sendvi--",
+      "name": "CLUB SENDVİÇ",
+      "description": "",
+      "category_id": "cat-8-burger-roll",
+      "category_name": "BURGER ROLL",
+      "price": 16.0,
+      "available": true,
+      "image_url": "/spinner.svg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "CLUB SENDVİÇ",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-8-burger-roll-4-hamburger",
+      "name": "HAMBURGER",
+      "description": "(200qr) Mal əti, pom ...",
+      "category_id": "cat-8-burger-roll",
+      "category_name": "BURGER ROLL",
+      "price": 19.9,
+      "available": true,
+      "image_url": "/spinner.svg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "HAMBURGER",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "(200qr) Mal əti, pom ...",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-8-burger-roll-6-kesadi-lya",
+      "name": "KESADİLYA",
+      "description": "(160qr) Can əti, moz ...",
+      "category_id": "cat-8-burger-roll",
+      "category_name": "BURGER ROLL",
+      "price": 19.9,
+      "available": true,
+      "image_url": "/spinner.svg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "KESADİLYA",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "(160qr) Can əti, moz ...",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-8-burger-roll-1-toyuq-burger",
+      "name": "TOYUQ BURGER",
+      "description": "",
+      "category_id": "cat-8-burger-roll",
+      "category_name": "BURGER ROLL",
+      "price": 14.5,
+      "available": true,
+      "image_url": "/spinner.svg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "TOYUQ BURGER",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-8-burger-roll-3--i-zburger",
+      "name": "ÇİZBURGER",
+      "description": "(200qr) Mal əti, ced ...",
+      "category_id": "cat-8-burger-roll",
+      "category_name": "BURGER ROLL",
+      "price": 21.0,
+      "available": true,
+      "image_url": "/spinner.svg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "ÇİZBURGER",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "(200qr) Mal əti, ced ...",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-8-burger-roll-5---l--burger",
+      "name": "ÜÇLÜ BURGER",
+      "description": "",
+      "category_id": "cat-8-burger-roll",
+      "category_name": "BURGER ROLL",
+      "price": 23.0,
+      "available": true,
+      "image_url": "/spinner.svg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "ÜÇLÜ BURGER",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-7-desert-9-balli-tort",
+      "name": "BALLI TORT",
+      "description": "",
+      "category_id": "cat-7-desert",
+      "category_name": "DESERT",
+      "price": 10.0,
+      "available": true,
+      "image_url": "/spinner.svg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "BALLI TORT",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-7-desert-5-dondurma",
+      "name": "DONDURMA",
+      "description": "",
+      "category_id": "cat-7-desert",
+      "category_name": "DESERT",
+      "price": 8.0,
+      "available": true,
+      "image_url": "/spinner.svg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "DONDURMA",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-7-desert-15-havuc-di-li-m",
+      "name": "HAVUC DİLİM",
+      "description": "",
+      "category_id": "cat-7-desert",
+      "category_name": "DESERT",
+      "price": 10.0,
+      "available": true,
+      "image_url": "/spinner.svg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "HAVUC DİLİM",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-7-desert-2-karamelli--tort",
+      "name": "KARAMELLİ TORT",
+      "description": "",
+      "category_id": "cat-7-desert",
+      "category_name": "DESERT",
+      "price": 10.0,
+      "available": true,
+      "image_url": "/spinner.svg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "KARAMELLİ TORT",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-7-desert-14-k-nefe",
+      "name": "KÜNEFE",
+      "description": "",
+      "category_id": "cat-7-desert",
+      "category_name": "DESERT",
+      "price": 10.0,
+      "available": true,
+      "image_url": "/spinner.svg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "KÜNEFE",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-7-desert-6-mara--dondurma",
+      "name": "MARAŞ DONDURMA",
+      "description": "",
+      "category_id": "cat-7-desert",
+      "category_name": "DESERT",
+      "price": 8.5,
+      "available": true,
+      "image_url": "/spinner.svg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "MARAŞ DONDURMA",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-7-desert-1-qari-iq-meyv-",
+      "name": "QARIŞIQ MEYVƏ",
+      "description": "",
+      "category_id": "cat-7-desert",
+      "category_name": "DESERT",
+      "price": 18.0,
+      "available": true,
+      "image_url": "/spinner.svg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "QARIŞIQ MEYVƏ",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-7-desert-10-san-sebastyan",
+      "name": "SAN SEBASTYAN",
+      "description": "",
+      "category_id": "cat-7-desert",
+      "category_name": "DESERT",
+      "price": 12.0,
+      "available": true,
+      "image_url": "/spinner.svg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "SAN SEBASTYAN",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-7-desert-12-s-dl--paxlava",
+      "name": "SÜDLÜ PAXLAVA",
+      "description": "",
+      "category_id": "cat-7-desert",
+      "category_name": "DESERT",
+      "price": 10.0,
+      "available": true,
+      "image_url": "/spinner.svg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "SÜDLÜ PAXLAVA",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-7-desert-11-s-tlac",
+      "name": "SÜTLAC",
+      "description": "",
+      "category_id": "cat-7-desert",
+      "category_name": "DESERT",
+      "price": 7.9,
+      "available": true,
+      "image_url": "/spinner.svg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "SÜTLAC",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-7-desert-3-trali--e",
+      "name": "TRALİÇE",
+      "description": "",
+      "category_id": "cat-7-desert",
+      "category_name": "DESERT",
+      "price": 9.5,
+      "available": true,
+      "image_url": "/spinner.svg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "TRALİÇE",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-7-desert-13-t-rk-paxlavasi",
+      "name": "TÜRK PAXLAVASI",
+      "description": "",
+      "category_id": "cat-7-desert",
+      "category_name": "DESERT",
+      "price": 10.0,
+      "available": true,
+      "image_url": "/spinner.svg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "TÜRK PAXLAVASI",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-7-desert-7-ti-rami-su",
+      "name": "TİRAMİSU",
+      "description": "",
+      "category_id": "cat-7-desert",
+      "category_name": "DESERT",
+      "price": 12.0,
+      "available": true,
+      "image_url": "/spinner.svg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "TİRAMİSU",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-7-desert-8--i-y-l-kli---i-zkeyk",
+      "name": "ÇİYƏLƏKLİ ÇİZKEYK",
+      "description": "",
+      "category_id": "cat-7-desert",
+      "category_name": "DESERT",
+      "price": 11.0,
+      "available": true,
+      "image_url": "/spinner.svg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "ÇİYƏLƏKLİ ÇİZKEYK",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-7-desert-4--okoladli--i-zkeyk",
+      "name": "ŞOKOLADLI ÇİZKEYK",
+      "description": "",
+      "category_id": "cat-7-desert",
+      "category_name": "DESERT",
+      "price": 11.0,
+      "available": true,
+      "image_url": "/spinner.svg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "ŞOKOLADLI ÇİZKEYK",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-15-d-ni-z-m-hsullari--5-grilled-salmon-with-asian-sause",
+      "name": "GRILLED SALMON WITH ASIAN SAUSE",
+      "description": "(350qr) Salmon balığ ...",
+      "category_id": "cat-15-d-ni-z-m-hsullari-",
+      "category_name": "DƏNİZ MƏHSULLARİ",
+      "price": 29.0,
+      "available": true,
+      "image_url": "/spinner.svg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "GRILLED SALMON WITH ASIAN SAUSE",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "(350qr) Salmon balığ ...",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-15-d-ni-z-m-hsullari--8-k-r--ya-inda-krevetka",
+      "name": "KƏRƏ YAĞINDA KREVETKA",
+      "description": "",
+      "category_id": "cat-15-d-ni-z-m-hsullari-",
+      "category_name": "DƏNİZ MƏHSULLARİ",
+      "price": 24.0,
+      "available": true,
+      "image_url": "/spinner.svg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "KƏRƏ YAĞINDA KREVETKA",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-15-d-ni-z-m-hsullari--7-nar-souslu-n-r--bali-i",
+      "name": "NAR SOUSLU NƏRƏ BALIĞI",
+      "description": "",
+      "category_id": "cat-15-d-ni-z-m-hsullari-",
+      "category_name": "DƏNİZ MƏHSULLARİ",
+      "price": 39.0,
+      "available": true,
+      "image_url": "/spinner.svg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "NAR SOUSLU NƏRƏ BALIĞI",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-15-d-ni-z-m-hsullari--4-n-r--bali-i",
+      "name": "NƏRƏ BALIĞI",
+      "description": "(350qr) Nərə balığı, ...",
+      "category_id": "cat-15-d-ni-z-m-hsullari-",
+      "category_name": "DƏNİZ MƏHSULLARİ",
+      "price": 38.0,
+      "available": true,
+      "image_url": "/spinner.svg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "NƏRƏ BALIĞI",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "(350qr) Nərə balığı, ...",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-15-d-ni-z-m-hsullari--1-qizilbaliq-qri-ld-",
+      "name": "QIZILBALIQ QRİLDƏ",
+      "description": "(240qr) Salmon balığ ...",
+      "category_id": "cat-15-d-ni-z-m-hsullari-",
+      "category_name": "DƏNİZ MƏHSULLARİ",
+      "price": 28.0,
+      "available": true,
+      "image_url": "/spinner.svg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "QIZILBALIQ QRİLDƏ",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "(240qr) Salmon balığ ...",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-15-d-ni-z-m-hsullari--9-si-bas-qovurma",
+      "name": "SİBAS QOVURMA",
+      "description": "",
+      "category_id": "cat-15-d-ni-z-m-hsullari-",
+      "category_name": "DƏNİZ MƏHSULLARİ",
+      "price": 27.0,
+      "available": true,
+      "image_url": "/spinner.svg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "SİBAS QOVURMA",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-15-d-ni-z-m-hsullari--2-tavada-farel",
+      "name": "TAVADA FAREL",
+      "description": "(250qr) Farel balığı ...",
+      "category_id": "cat-15-d-ni-z-m-hsullari-",
+      "category_name": "DƏNİZ MƏHSULLARİ",
+      "price": 25.0,
+      "available": true,
+      "image_url": "/spinner.svg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "TAVADA FAREL",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "(250qr) Farel balığı ...",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-15-d-ni-z-m-hsullari--3--upra-qri-ld-",
+      "name": "ÇUPRA QRİLDƏ",
+      "description": "",
+      "category_id": "cat-15-d-ni-z-m-hsullari-",
+      "category_name": "DƏNİZ MƏHSULLARİ",
+      "price": 29.0,
+      "available": true,
+      "image_url": "/spinner.svg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "ÇUPRA QRİLDƏ",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-15-d-ni-z-m-hsullari--6-i-spanaqli-qizil-baliq",
+      "name": "İSPANAQLI QIZIL BALIQ",
+      "description": "",
+      "category_id": "cat-15-d-ni-z-m-hsullari-",
+      "category_name": "DƏNİZ MƏHSULLARİ",
+      "price": 33.0,
+      "available": true,
+      "image_url": "/spinner.svg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "İSPANAQLI QIZIL BALIQ",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-4-kabablar-6-adana-kabab",
+      "name": "ADANA KABAB",
+      "description": "",
+      "category_id": "cat-4-kabablar",
+      "category_name": "KABABLAR",
+      "price": 22.0,
+      "available": true,
+      "image_url": "/spinner.svg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "ADANA KABAB",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-4-kabablar-1-l-l--kabab",
+      "name": "LÜLƏ KABAB",
+      "description": "",
+      "category_id": "cat-4-kabablar",
+      "category_name": "KABABLAR",
+      "price": 22.0,
+      "available": true,
+      "image_url": "/spinner.svg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "LÜLƏ KABAB",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-4-kabablar-8-n-r--baliq-sarma",
+      "name": "NƏRƏ BALIQ SARMA",
+      "description": "",
+      "category_id": "cat-4-kabablar",
+      "category_name": "KABABLAR",
+      "price": 33.0,
+      "available": true,
+      "image_url": "/spinner.svg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "NƏRƏ BALIQ SARMA",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-4-kabablar-4-qari-iq-kabab",
+      "name": "QARIŞIQ KABAB",
+      "description": "(240qr) Lülə kababı, ...",
+      "category_id": "cat-4-kabablar",
+      "category_name": "KABABLAR",
+      "price": 24.0,
+      "available": true,
+      "image_url": "/spinner.svg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "QARIŞIQ KABAB",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "(240qr) Lülə kababı, ...",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-4-kabablar-3-quzu-qabir-alari",
+      "name": "QUZU QABIRĞALARI",
+      "description": "",
+      "category_id": "cat-4-kabablar",
+      "category_name": "KABABLAR",
+      "price": 23.0,
+      "available": true,
+      "image_url": "/spinner.svg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "QUZU QABIRĞALARI",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-4-kabablar-7-sultan-kababi",
+      "name": "SULTAN KABABI",
+      "description": "(1,4kq) Lülə kababı, ...",
+      "category_id": "cat-4-kabablar",
+      "category_name": "KABABLAR",
+      "price": 121.0,
+      "available": true,
+      "image_url": "/spinner.svg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "SULTAN KABABI",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "(1,4kq) Lülə kababı, ...",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-4-kabablar-2-toyuq-kababi",
+      "name": "TOYUQ KABABI",
+      "description": "",
+      "category_id": "cat-4-kabablar",
+      "category_name": "KABABLAR",
+      "price": 19.0,
+      "available": true,
+      "image_url": "/spinner.svg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "TOYUQ KABABI",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-4-kabablar-5-ti-k--kababi",
+      "name": "TİKƏ KABABI",
+      "description": "",
+      "category_id": "cat-4-kabablar",
+      "category_name": "KABABLAR",
+      "price": 22.0,
+      "available": true,
+      "image_url": "/spinner.svg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "TİKƏ KABABI",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-6-pastalar-9-beef-noodles",
+      "name": "BEEF NOODLES",
+      "description": "",
+      "category_id": "cat-6-pastalar",
+      "category_name": "PASTALAR",
+      "price": 19.0,
+      "available": true,
+      "image_url": "/spinner.svg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "BEEF NOODLES",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-6-pastalar-7-chicken-noodles",
+      "name": "CHICKEN NOODLES",
+      "description": "",
+      "category_id": "cat-6-pastalar",
+      "category_name": "PASTALAR",
+      "price": 17.0,
+      "available": true,
+      "image_url": "/spinner.svg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "CHICKEN NOODLES",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-6-pastalar-6-d-ni-z-m-hsullu-fettu-i-ni-",
+      "name": "DƏNİZ MƏHSULLU FETTUÇİNİ",
+      "description": "",
+      "category_id": "cat-6-pastalar",
+      "category_name": "PASTALAR",
+      "price": 18.5,
+      "available": true,
+      "image_url": "/spinner.svg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "DƏNİZ MƏHSULLU FETTUÇİNİ",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-6-pastalar-3-fettu-i-ni--alfredo",
+      "name": "FETTUÇİNİ ALFREDO",
+      "description": "",
+      "category_id": "cat-6-pastalar",
+      "category_name": "PASTALAR",
+      "price": 18.5,
+      "available": true,
+      "image_url": "/spinner.svg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "FETTUÇİNİ ALFREDO",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-6-pastalar-4-manti",
+      "name": "MANTI",
+      "description": "",
+      "category_id": "cat-6-pastalar",
+      "category_name": "PASTALAR",
+      "price": 14.0,
+      "available": true,
+      "image_url": "/spinner.svg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "MANTI",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-6-pastalar-2-penne-arabi-ata",
+      "name": "PENNE ARABİATA",
+      "description": "",
+      "category_id": "cat-6-pastalar",
+      "category_name": "PASTALAR",
+      "price": 15.5,
+      "available": true,
+      "image_url": "/spinner.svg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "PENNE ARABİATA",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-6-pastalar-10-salmon-papardella",
+      "name": "SALMON PAPARDELLA",
+      "description": "",
+      "category_id": "cat-6-pastalar",
+      "category_name": "PASTALAR",
+      "price": 19.5,
+      "available": true,
+      "image_url": "/spinner.svg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "SALMON PAPARDELLA",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-6-pastalar-8-shrimps-noodles",
+      "name": "SHRIMPS NOODLES",
+      "description": "",
+      "category_id": "cat-6-pastalar",
+      "category_name": "PASTALAR",
+      "price": 19.0,
+      "available": true,
+      "image_url": "/spinner.svg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "SHRIMPS NOODLES",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-6-pastalar-1-spaqetti--bolonez",
+      "name": "SPAQETTİ BOLONEZ",
+      "description": "",
+      "category_id": "cat-6-pastalar",
+      "category_name": "PASTALAR",
+      "price": 18.0,
+      "available": true,
+      "image_url": "/spinner.svg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "SPAQETTİ BOLONEZ",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-6-pastalar-5-toyuqlu-penna",
+      "name": "TOYUQLU PENNA",
+      "description": "",
+      "category_id": "cat-6-pastalar",
+      "category_name": "PASTALAR",
+      "price": 16.4,
+      "available": true,
+      "image_url": "/spinner.svg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "TOYUQLU PENNA",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-2-pi-zzalar-2-alaturka",
+      "name": "ALATURKA",
+      "description": "Mozarella pendiri, t ...",
+      "category_id": "cat-2-pi-zzalar",
+      "category_name": "PİZZALAR",
+      "price": 21.0,
+      "available": true,
+      "image_url": "https://cdn.cafetap.az/storage/images/7xCl2l26NE3OUBi4dZ771N4RlnfMhMSiyiHF0ojK2F4rZjYrtc.jpeg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "ALATURKA",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "Mozarella pendiri, t ...",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-2-pi-zzalar-4-appetito",
+      "name": "APPETITO",
+      "description": "Mozarella pendiri , ...",
+      "category_id": "cat-2-pi-zzalar",
+      "category_name": "PİZZALAR",
+      "price": 21.0,
+      "available": true,
+      "image_url": "https://cdn.cafetap.az/storage/images/YwU5hwRRnyxjwHYwezqXY1ByLlvndM7UxLtu3zFuR6VaahmTEB.jpeg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "APPETITO",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "Mozarella pendiri , ...",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-2-pi-zzalar-6-bbq",
+      "name": "BBQ",
+      "description": "Mozarella pendiri , ...",
+      "category_id": "cat-2-pi-zzalar",
+      "category_name": "PİZZALAR",
+      "price": 22.0,
+      "available": true,
+      "image_url": "https://cdn.cafetap.az/storage/images/lRHXchLp9CbY3HyRqpQ6YoH8Gc2bDYVme6RNItLdNMeS8wIR5t.jpeg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "BBQ",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "Mozarella pendiri , ...",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-2-pi-zzalar-5-buratta",
+      "name": "BURATTA",
+      "description": "Mozarella pendiri , ...",
+      "category_id": "cat-2-pi-zzalar",
+      "category_name": "PİZZALAR",
+      "price": 23.0,
+      "available": true,
+      "image_url": "https://cdn.cafetap.az/storage/images/YsfLfG8ezLOvVIAUaPIrDa6Tb4iYpGEHyAvtXk9YRsPhn5xbhs.jpeg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "BURATTA",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "Mozarella pendiri , ...",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-2-pi-zzalar-14-caesar",
+      "name": "CAESAR",
+      "description": "Mozarella pendiri, t ...",
+      "category_id": "cat-2-pi-zzalar",
+      "category_name": "PİZZALAR",
+      "price": 21.5,
+      "available": true,
+      "image_url": "https://cdn.cafetap.az/storage/images/2ta5Ejn1ImSXD5ZP82pxOTeQT2gSG5ZbjUGMU7ZQ28aVkgnF2Y.jpeg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "CAESAR",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "Mozarella pendiri, t ...",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-2-pi-zzalar-10-caprese",
+      "name": "CAPRESE",
+      "description": "Mozarella pendiri, t ...",
+      "category_id": "cat-2-pi-zzalar",
+      "category_name": "PİZZALAR",
+      "price": 20.0,
+      "available": true,
+      "image_url": "https://cdn.cafetap.az/storage/images/JqraNrBsC1XxgV20bh7l4LojKfqJVVPrGK2tuNg6M0wYd47jGk.jpeg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "CAPRESE",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "Mozarella pendiri, t ...",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-2-pi-zzalar-8-chicken",
+      "name": "CHICKEN",
+      "description": "Mozarella pendiri , ...",
+      "category_id": "cat-2-pi-zzalar",
+      "category_name": "PİZZALAR",
+      "price": 19.9,
+      "available": true,
+      "image_url": "https://cdn.cafetap.az/storage/images/oQ7AoB7leNZBp0NrVVhDxTCTVplzcgzhwqFuEac4URiJUr2Qqh.jpeg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "CHICKEN",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "Mozarella pendiri , ...",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-2-pi-zzalar-9-chicken-bbq",
+      "name": "CHICKEN BBQ",
+      "description": "Mozarella pendiri , ...",
+      "category_id": "cat-2-pi-zzalar",
+      "category_name": "PİZZALAR",
+      "price": 20.5,
+      "available": true,
+      "image_url": "https://cdn.cafetap.az/storage/images/OaDTn1iF8rpnkz3qbPC1wsToyc9lT5dcl9fDvKNMdY2I0U11eR.jpeg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "CHICKEN BBQ",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "Mozarella pendiri , ...",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-2-pi-zzalar-1-gamberetti",
+      "name": "GAMBERETTI",
+      "description": "Mozarella pendiri , ...",
+      "category_id": "cat-2-pi-zzalar",
+      "category_name": "PİZZALAR",
+      "price": 23.0,
+      "available": true,
+      "image_url": "https://cdn.cafetap.az/storage/images/VY3KgOsCshndhQii9rf4KLakR5VfcimwEh1WBHTBaqkJS1ndbQ.jpeg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "GAMBERETTI",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "Mozarella pendiri , ...",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-2-pi-zzalar-20-italiano",
+      "name": "ITALIANO",
+      "description": "Mozarella pendiri, t ...",
+      "category_id": "cat-2-pi-zzalar",
+      "category_name": "PİZZALAR",
+      "price": 22.0,
+      "available": true,
+      "image_url": "https://cdn.cafetap.az/storage/images/SSFPM2Po0opnNNUlyiczGQuIYtoq04nVzMkhe8qJpemNDC34Vl.jpeg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "ITALIANO",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "Mozarella pendiri, t ...",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-2-pi-zzalar-12-kavurma",
+      "name": "KAVURMA",
+      "description": "Mozarella pendiri, t ...",
+      "category_id": "cat-2-pi-zzalar",
+      "category_name": "PİZZALAR",
+      "price": 23.0,
+      "available": true,
+      "image_url": "https://cdn.cafetap.az/storage/images/bYaGeX76fsxzHju83Q9Ipmy3RaJ5kksZwja8fHBxhUPSP6jK2o.jpeg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "KAVURMA",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "Mozarella pendiri, t ...",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-2-pi-zzalar-19-margarita",
+      "name": "MARGARITA",
+      "description": "Mozarella pendiri, t ...",
+      "category_id": "cat-2-pi-zzalar",
+      "category_name": "PİZZALAR",
+      "price": 19.0,
+      "available": true,
+      "image_url": "https://cdn.cafetap.az/storage/images/IUAbVnFecRRGRgApGjaGH5ldc0gKTVapKBanZMw2N13LeBCwNu.jpeg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "MARGARITA",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "Mozarella pendiri, t ...",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-2-pi-zzalar-18-mexicano",
+      "name": "MEXICANO",
+      "description": "Mozarella pendiri, t ...",
+      "category_id": "cat-2-pi-zzalar",
+      "category_name": "PİZZALAR",
+      "price": 19.5,
+      "available": true,
+      "image_url": "https://cdn.cafetap.az/storage/images/L82sLtkasBU0sGuEb9wmX2z3TKXl6cGLcVGGOB3hZQLTZojSn9.jpeg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "MEXICANO",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "Mozarella pendiri, t ...",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-2-pi-zzalar-7-mix",
+      "name": "MIX",
+      "description": "Mozarella pendiri , ...",
+      "category_id": "cat-2-pi-zzalar",
+      "category_name": "PİZZALAR",
+      "price": 20.5,
+      "available": true,
+      "image_url": "https://cdn.cafetap.az/storage/images/M6fOmFFB3mnHCwt7WZJrg1sUXKRDN0PJO0bIRA0dOqYC5yHmax.jpeg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "MIX",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "Mozarella pendiri , ...",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-2-pi-zzalar-17-pepperoni",
+      "name": "PEPPERONI",
+      "description": "Mozarella pendiri, t ...",
+      "category_id": "cat-2-pi-zzalar",
+      "category_name": "PİZZALAR",
+      "price": 22.0,
+      "available": true,
+      "image_url": "https://cdn.cafetap.az/storage/images/5nNHP9UTOKYKG5161kTBc4L7yWD4jbcfoJ3lAVh0URwlRRUpv1.jpeg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "PEPPERONI",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "Mozarella pendiri, t ...",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-2-pi-zzalar-16-quattro-formaggi",
+      "name": "QUATTRO FORMAGGI",
+      "description": "Mozarella pendiri, t ...",
+      "category_id": "cat-2-pi-zzalar",
+      "category_name": "PİZZALAR",
+      "price": 19.9,
+      "available": true,
+      "image_url": "https://cdn.cafetap.az/storage/images/T8FZOOjCn5E1dpPrztipEdWFBZa0hp8u2jMSTnaX3f61oxIkDf.jpeg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "QUATTRO FORMAGGI",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "Mozarella pendiri, t ...",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-2-pi-zzalar-13-salami",
+      "name": "SALAMI",
+      "description": "Mozarella pendiri, t ...",
+      "category_id": "cat-2-pi-zzalar",
+      "category_name": "PİZZALAR",
+      "price": 22.0,
+      "available": true,
+      "image_url": "https://cdn.cafetap.az/storage/images/1IuvCy733PUs3zMmr119xHzzQrZdNudeGbGtSgHKPaBrwzILnv.jpeg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "SALAMI",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "Mozarella pendiri, t ...",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-2-pi-zzalar-15-seafood",
+      "name": "SEAFOOD",
+      "description": "Mozarella pendiri, t ...",
+      "category_id": "cat-2-pi-zzalar",
+      "category_name": "PİZZALAR",
+      "price": 24.0,
+      "available": true,
+      "image_url": "https://cdn.cafetap.az/storage/images/tA94QZZS4WSRmhg3ob3wk2cAhSkhga6e9bn7FSRPo9G7AHWd2H.jpeg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "SEAFOOD",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "Mozarella pendiri, t ...",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-2-pi-zzalar-11-tuna",
+      "name": "TUNA",
+      "description": "Mozarella pendiri, t ...",
+      "category_id": "cat-2-pi-zzalar",
+      "category_name": "PİZZALAR",
+      "price": 22.0,
+      "available": true,
+      "image_url": "https://cdn.cafetap.az/storage/images/m9OcEDoLxB2rRoD29ymx43PN7Q3xCeuLFGyGOqsKgdl4vHiO2r.jpeg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "TUNA",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "Mozarella pendiri, t ...",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-2-pi-zzalar-3-vegi",
+      "name": "VEGI",
+      "description": "Mozarella pendiri, t ...",
+      "category_id": "cat-2-pi-zzalar",
+      "category_name": "PİZZALAR",
+      "price": 18.7,
+      "available": true,
+      "image_url": "https://cdn.cafetap.az/storage/images/R3s80ivlzqzPP16WWwqkJl3ItutFVyX68MnVGZTLJrTuF8WEey.jpeg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "VEGI",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "Mozarella pendiri, t ...",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-14-sac-1-quzu-sac",
+      "name": "QUZU SAC",
+      "description": "(250qr) Quzu əti, bi ...",
+      "category_id": "cat-14-sac",
+      "category_name": "SAC",
+      "price": 28.0,
+      "available": true,
+      "image_url": "/spinner.svg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "QUZU SAC",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "(250qr) Quzu əti, bi ...",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-14-sac-2-toyuq-sac",
+      "name": "TOYUQ SAC",
+      "description": "(250qr) Toyuq filesi ...",
+      "category_id": "cat-14-sac",
+      "category_name": "SAC",
+      "price": 22.0,
+      "available": true,
+      "image_url": "/spinner.svg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "TOYUQ SAC",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "(250qr) Toyuq filesi ...",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-3-salatlar-8-badimcan-xirt-xirt-salati",
+      "name": "BADIMCAN XIRT-XIRT SALATI",
+      "description": "",
+      "category_id": "cat-3-salatlar",
+      "category_name": "SALATLAR",
+      "price": 13.0,
+      "available": true,
+      "image_url": "/spinner.svg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "BADIMCAN XIRT-XIRT SALATI",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-3-salatlar-10-burrata-salati",
+      "name": "BURRATA SALATI",
+      "description": "Buratta pendiri,ceri ...",
+      "category_id": "cat-3-salatlar",
+      "category_name": "SALATLAR",
+      "price": 21.0,
+      "available": true,
+      "image_url": "/spinner.svg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "BURRATA SALATI",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "Buratta pendiri,ceri ...",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-3-salatlar-15-chickhen-bowl",
+      "name": "CHICKHEN BOWL",
+      "description": "",
+      "category_id": "cat-3-salatlar",
+      "category_name": "SALATLAR",
+      "price": 17.0,
+      "available": true,
+      "image_url": "/spinner.svg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "CHICKHEN BOWL",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-3-salatlar-11-krevetkali-avokado-salati",
+      "name": "KREVETKALI AVOKADO SALATI",
+      "description": "(220qr) Avokado,krev ...",
+      "category_id": "cat-3-salatlar",
+      "category_name": "SALATLAR",
+      "price": 19.5,
+      "available": true,
+      "image_url": "/spinner.svg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "KREVETKALI AVOKADO SALATI",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "(220qr) Avokado,krev ...",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-3-salatlar-5-k-nc-tl--toyuq-salati",
+      "name": "KÜNCÜTLÜ TOYUQ SALATI",
+      "description": "(300qr) Toyuq filesi ...",
+      "category_id": "cat-3-salatlar",
+      "category_name": "SALATLAR",
+      "price": 17.5,
+      "available": true,
+      "image_url": "https://cdn.cafetap.az/storage/images/CD9AyQaXUgThbrKAzAHiZbyVlYIzhVDUXFioTIwC7bBWMg0GHn.jpeg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "KÜNCÜTLÜ TOYUQ SALATI",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "(300qr) Toyuq filesi ...",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-3-salatlar-2-qa-iq-salati",
+      "name": "QAŞIQ SALATI",
+      "description": "",
+      "category_id": "cat-3-salatlar",
+      "category_name": "SALATLAR",
+      "price": 11.0,
+      "available": true,
+      "image_url": "https://cdn.cafetap.az/storage/images/UFXnrHbJF9hdjKyxkAyspIrY8NogMxki2aQSmUOn1wkNfPkXpA.jpeg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "QAŞIQ SALATI",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-3-salatlar-12-salat-caprese",
+      "name": "SALAT CAPRESE",
+      "description": "(200qr) Pomidor, Pes ...",
+      "category_id": "cat-3-salatlar",
+      "category_name": "SALATLAR",
+      "price": 19.9,
+      "available": true,
+      "image_url": "/spinner.svg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "SALAT CAPRESE",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "(200qr) Pomidor, Pes ...",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-3-salatlar-1-sezar-salati-krevetl-",
+      "name": "SEZAR SALATI KREVETLƏ",
+      "description": "",
+      "category_id": "cat-3-salatlar",
+      "category_name": "SALATLAR",
+      "price": 19.5,
+      "available": true,
+      "image_url": "https://cdn.cafetap.az/storage/images/DBjh4dc8IcGo4o4FudvZBKTjdBPyqJMBjCSegKUyJDBtG2j3Go.jpeg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "SEZAR SALATI KREVETLƏ",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-3-salatlar-4-sezar-salati-toyuqla",
+      "name": "SEZAR SALATI TOYUQLA",
+      "description": "",
+      "category_id": "cat-3-salatlar",
+      "category_name": "SALATLAR",
+      "price": 17.0,
+      "available": true,
+      "image_url": "https://cdn.cafetap.az/storage/images/PannKnqwnx65jJL496Uuj7V9qBOI0MoFA4FsMKunBj63KOUUty.jpeg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "SEZAR SALATI TOYUQLA",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-3-salatlar-14-smoked-salmon-bowl",
+      "name": "SMOKED SALMON BOWL",
+      "description": "",
+      "category_id": "cat-3-salatlar",
+      "category_name": "SALATLAR",
+      "price": 22.0,
+      "available": true,
+      "image_url": "/spinner.svg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "SMOKED SALMON BOWL",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-3-salatlar-13-tabule-salati",
+      "name": "TABULE SALATI",
+      "description": "",
+      "category_id": "cat-3-salatlar",
+      "category_name": "SALATLAR",
+      "price": 8.0,
+      "available": true,
+      "image_url": "/spinner.svg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "TABULE SALATI",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-3-salatlar-6-ton-baliq-salati",
+      "name": "TON BALIQ SALATI",
+      "description": "",
+      "category_id": "cat-3-salatlar",
+      "category_name": "SALATLAR",
+      "price": 17.5,
+      "available": true,
+      "image_url": "https://cdn.cafetap.az/storage/images/7TpopLiQqSFJk9kp6ZpdeFvDliKDLr1mtWaaQQPkzDBr8FkFz6.jpeg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "TON BALIQ SALATI",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-3-salatlar-7-x-susi--i-sti--salat",
+      "name": "XÜSUSİ İSTİ SALAT",
+      "description": "(300qr) Can əti, qay ...",
+      "category_id": "cat-3-salatlar",
+      "category_name": "SALATLAR",
+      "price": 18.0,
+      "available": true,
+      "image_url": "/spinner.svg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "XÜSUSİ İSTİ SALAT",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "(300qr) Can əti, qay ...",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-3-salatlar-9-zo-al-souslu-pomi-dor-salati",
+      "name": "ZOĞAL SOUSLU POMİDOR SALATI",
+      "description": "",
+      "category_id": "cat-3-salatlar",
+      "category_name": "SALATLAR",
+      "price": 12.5,
+      "available": true,
+      "image_url": "/spinner.svg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "ZOĞAL SOUSLU POMİDOR SALATI",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-3-salatlar-3-i-sti--toyuq-salati",
+      "name": "İSTİ TOYUQ SALATI",
+      "description": "",
+      "category_id": "cat-3-salatlar",
+      "category_name": "SALATLAR",
+      "price": 16.5,
+      "available": true,
+      "image_url": "https://cdn.cafetap.az/storage/images/ryK3aMqOGuo3xf1OkDwcMBYLGtCZIrIAAVKVwlCjJkeWTOk5Qj.jpeg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "İSTİ TOYUQ SALATI",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-9-soyuq-q-lyanaltilar-5-humus",
+      "name": "HUMUS",
+      "description": "(150qr) Noxud, zeytu ...",
+      "category_id": "cat-9-soyuq-q-lyanaltilar",
+      "category_name": "SOYUQ QƏLYANALTILAR",
+      "price": 7.5,
+      "available": true,
+      "image_url": "/spinner.svg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "HUMUS",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "(150qr) Noxud, zeytu ...",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-9-soyuq-q-lyanaltilar-6-kurasan-sendvi--",
+      "name": "KURASAN SENDVİÇ",
+      "description": "(160qr) Kurasan,yumu ...",
+      "category_id": "cat-9-soyuq-q-lyanaltilar",
+      "category_name": "SOYUQ QƏLYANALTILAR",
+      "price": 12.0,
+      "available": true,
+      "image_url": "/spinner.svg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "KURASAN SENDVİÇ",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "(160qr) Kurasan,yumu ...",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-9-soyuq-q-lyanaltilar-4-m-t-bb-l",
+      "name": "MÜTƏBBƏL",
+      "description": "(150qr) Badımcan, sa ...",
+      "category_id": "cat-9-soyuq-q-lyanaltilar",
+      "category_name": "SOYUQ QƏLYANALTILAR",
+      "price": 7.5,
+      "available": true,
+      "image_url": "/spinner.svg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "MÜTƏBBƏL",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "(150qr) Badımcan, sa ...",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-9-soyuq-q-lyanaltilar-3-pa-a--zm-",
+      "name": "PAŞA ƏZMƏ",
+      "description": "(150qr) Pomidor soku ...",
+      "category_id": "cat-9-soyuq-q-lyanaltilar",
+      "category_name": "SOYUQ QƏLYANALTILAR",
+      "price": 7.5,
+      "available": true,
+      "image_url": "/spinner.svg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "PAŞA ƏZMƏ",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "(150qr) Pomidor soku ...",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-9-soyuq-q-lyanaltilar-7-pendi-r-assorti-",
+      "name": "PENDİR ASSORTİ",
+      "description": "(400qr) Ceddar pendi ...",
+      "category_id": "cat-9-soyuq-q-lyanaltilar",
+      "category_name": "SOYUQ QƏLYANALTILAR",
+      "price": 25.0,
+      "available": true,
+      "image_url": "/spinner.svg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "PENDİR ASSORTİ",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "(400qr) Ceddar pendi ...",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-9-soyuq-q-lyanaltilar-1-qari-iq-brusketta",
+      "name": "QARIŞIQ BRUSKETTA",
+      "description": "Can əti, toyuq file ...",
+      "category_id": "cat-9-soyuq-q-lyanaltilar",
+      "category_name": "SOYUQ QƏLYANALTILAR",
+      "price": 14.0,
+      "available": true,
+      "image_url": "/spinner.svg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "QARIŞIQ BRUSKETTA",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "Can əti, toyuq file ...",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-9-soyuq-q-lyanaltilar-2-i-spanaqli-s-zm-",
+      "name": "İSPANAQLI SÜZMƏ",
+      "description": "Qatiq,ispanaq,sarıms ...",
+      "category_id": "cat-9-soyuq-q-lyanaltilar",
+      "category_name": "SOYUQ QƏLYANALTILAR",
+      "price": 7.5,
+      "available": true,
+      "image_url": "/spinner.svg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "İSPANAQLI SÜZMƏ",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "Qatiq,ispanaq,sarıms ...",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-1-s-h-r-yem-yi-6-omlet",
+      "name": "OMLET",
+      "description": "Sadə/Pendirli/Qarışı ...",
+      "category_id": "cat-1-s-h-r-yem-yi",
+      "category_name": "SƏHƏR YEMƏYI",
+      "price": 7.2,
+      "available": true,
+      "image_url": "https://cdn.cafetap.az/storage/images/ybyVPQlhklet8w4PqXRF3EMEmngaPzcRDhdBYrRxgnEtAA8Rpt.jpeg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "OMLET",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "Sadə/Pendirli/Qarışı ...",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-1-s-h-r-yem-yi-1-organi-k-k-nd-s-h-r-yem-yi---iki-n-f-rlik-",
+      "name": "ORGANİK KƏND SƏHƏR YEMƏYİ (iki nəfərlik)",
+      "description": "Organik bal, qaymaq, ...",
+      "category_id": "cat-1-s-h-r-yem-yi",
+      "category_name": "SƏHƏR YEMƏYI",
+      "price": 45.0,
+      "available": true,
+      "image_url": "https://cdn.cafetap.az/storage/images/aUqodNvgs91vgHmfXhzw9v0KRzLVdnP8uFnp5reLeoLv1CBnGq.jpeg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "ORGANİK KƏND SƏHƏR YEMƏYİ (iki nəfərlik)",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "Organik bal, qaymaq, ...",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-1-s-h-r-yem-yi-7-sucuklu-yumurta",
+      "name": "SUCUKLU YUMURTA",
+      "description": "",
+      "category_id": "cat-1-s-h-r-yem-yi",
+      "category_name": "SƏHƏR YEMƏYI",
+      "price": 9.2,
+      "available": true,
+      "image_url": "https://cdn.cafetap.az/storage/images/yrsiUvTHyxH7sQM9kBIjD7wjDJ02jxZvi7vSIDLOMrVBiKm6x1.jpeg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "SUCUKLU YUMURTA",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-1-s-h-r-yem-yi-2-s-h-r-yem-yi-",
+      "name": "SƏHƏR YEMƏYİ",
+      "description": "BİR NƏFƏRLİK",
+      "category_id": "cat-1-s-h-r-yem-yi",
+      "category_name": "SƏHƏR YEMƏYI",
+      "price": 22.0,
+      "available": true,
+      "image_url": "https://cdn.cafetap.az/storage/images/IycA0z1yDMA6SFfSmnkxwhx8CvpWTngqKZJSZjXDF5A84hHvCK.jpeg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "SƏHƏR YEMƏYİ",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "BİR NƏFƏRLİK",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-1-s-h-r-yem-yi-3-s-h-r-yem-yi-",
+      "name": "SƏHƏR YEMƏYİ",
+      "description": "İKİ NƏFƏRLİK",
+      "category_id": "cat-1-s-h-r-yem-yi",
+      "category_name": "SƏHƏR YEMƏYI",
+      "price": 29.5,
+      "available": true,
+      "image_url": "https://cdn.cafetap.az/storage/images/kWshoG5SSlYQrKgRWJOQ4vqs3EpP9jmooKSwaXX3MY8uJlNCsA.jpeg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "SƏHƏR YEMƏYİ",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "İKİ NƏFƏRLİK",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-1-s-h-r-yem-yi-4-s-h-r-yem-yi-",
+      "name": "SƏHƏR YEMƏYİ",
+      "description": "DÖRD NƏFƏRLİK",
+      "category_id": "cat-1-s-h-r-yem-yi",
+      "category_name": "SƏHƏR YEMƏYI",
+      "price": 42.0,
+      "available": true,
+      "image_url": "https://cdn.cafetap.az/storage/images/3XdKeDgPmWT6KMtfyklxmz4TOXy76F0chnNmCX2LnY9Ws430Xa.jpeg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "SƏHƏR YEMƏYİ",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "DÖRD NƏFƏRLİK",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-1-s-h-r-yem-yi-8-t-r-v-zli--yumurta",
+      "name": "TƏRƏVƏZLİ YUMURTA",
+      "description": "Yumurta, gül kələm, ...",
+      "category_id": "cat-1-s-h-r-yem-yi",
+      "category_name": "SƏHƏR YEMƏYI",
+      "price": 9.9,
+      "available": true,
+      "image_url": "https://cdn.cafetap.az/storage/images/LEzFSe1tYZhFlygkxMnLti4fUUUtkq4s2SbM05Xo8Xnbl0rBpv.jpeg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "TƏRƏVƏZLİ YUMURTA",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "Yumurta, gül kələm, ...",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-1-s-h-r-yem-yi-5-i-ngi-li-s-s-h-r-yem-yi-",
+      "name": "İNGİLİS SƏHƏR YEMƏYİ",
+      "description": "",
+      "category_id": "cat-1-s-h-r-yem-yi",
+      "category_name": "SƏHƏR YEMƏYI",
+      "price": 13.0,
+      "available": true,
+      "image_url": "https://cdn.cafetap.az/storage/images/kMAD8aHaiYMTw2Op1UxH9dIsSeUEK3pjH3TlUXfYZJl75FBIz6.jpeg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "İNGİLİS SƏHƏR YEMƏYİ",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-11-toyuq-yem-kl-ri--2-faxi-tas-toyuq-i-l-",
+      "name": "FAXİTAS TOYUQ İLƏ",
+      "description": "",
+      "category_id": "cat-11-toyuq-yem-kl-ri-",
+      "category_name": "TOYUQ YEMƏKLƏRİ",
+      "price": 18.5,
+      "available": true,
+      "image_url": "/spinner.svg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "FAXİTAS TOYUQ İLƏ",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-11-toyuq-yem-kl-ri--4-ki-yev-saya-i-kotlet",
+      "name": "KİYEV SAYAĞI KOTLET",
+      "description": "",
+      "category_id": "cat-11-toyuq-yem-kl-ri-",
+      "category_name": "TOYUQ YEMƏKLƏRİ",
+      "price": 18.0,
+      "available": true,
+      "image_url": "/spinner.svg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "KİYEV SAYAĞI KOTLET",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-11-toyuq-yem-kl-ri--6-li-mon-souslu-toyuq",
+      "name": "LİMON SOUSLU TOYUQ",
+      "description": "",
+      "category_id": "cat-11-toyuq-yem-kl-ri-",
+      "category_name": "TOYUQ YEMƏKLƏRİ",
+      "price": 19.0,
+      "available": true,
+      "image_url": "/spinner.svg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "LİMON SOUSLU TOYUQ",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-11-toyuq-yem-kl-ri--1-qaymaqli-pendi-rli--toyuq",
+      "name": "QAYMAQLI PENDİRLİ TOYUQ",
+      "description": "",
+      "category_id": "cat-11-toyuq-yem-kl-ri-",
+      "category_name": "TOYUQ YEMƏKLƏRİ",
+      "price": 20.5,
+      "available": true,
+      "image_url": "/spinner.svg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "QAYMAQLI PENDİRLİ TOYUQ",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-11-toyuq-yem-kl-ri--5-thai-chicken",
+      "name": "THAI CHICKEN",
+      "description": "",
+      "category_id": "cat-11-toyuq-yem-kl-ri-",
+      "category_name": "TOYUQ YEMƏKLƏRİ",
+      "price": 18.0,
+      "available": true,
+      "image_url": "/spinner.svg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "THAI CHICKEN",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-11-toyuq-yem-kl-ri--3-toyuq-i-zqara",
+      "name": "TOYUQ İZQARA",
+      "description": "",
+      "category_id": "cat-11-toyuq-yem-kl-ri-",
+      "category_name": "TOYUQ YEMƏKLƏRİ",
+      "price": 18.0,
+      "available": true,
+      "image_url": "/spinner.svg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "TOYUQ İZQARA",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-10-i-sti--q-lyanaltilar-4-assorti--q-lyanalti",
+      "name": "ASSORTİ QƏLYANALTI",
+      "description": "",
+      "category_id": "cat-10-i-sti--q-lyanaltilar",
+      "category_name": "İSTİ QƏLYANALTILAR",
+      "price": 19.0,
+      "available": true,
+      "image_url": "/spinner.svg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "ASSORTİ QƏLYANALTI",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-10-i-sti--q-lyanaltilar-5-krevetl-r-klyarda",
+      "name": "KREVETLƏR KLYARDA",
+      "description": "",
+      "category_id": "cat-10-i-sti--q-lyanaltilar",
+      "category_name": "İSTİ QƏLYANALTILAR",
+      "price": 19.5,
+      "available": true,
+      "image_url": "/spinner.svg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "KREVETLƏR KLYARDA",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-10-i-sti--q-lyanaltilar-1-pendi-r--ubuqlari",
+      "name": "PENDİR ÇUBUQLARI",
+      "description": "",
+      "category_id": "cat-10-i-sti--q-lyanaltilar",
+      "category_name": "İSTİ QƏLYANALTILAR",
+      "price": 14.0,
+      "available": true,
+      "image_url": "/spinner.svg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "PENDİR ÇUBUQLARI",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-10-i-sti--q-lyanaltilar-2-qizardilmi--so-an-halqalari",
+      "name": "QIZARDILMIŞ SOĞAN HALQALARI",
+      "description": "",
+      "category_id": "cat-10-i-sti--q-lyanaltilar",
+      "category_name": "İSTİ QƏLYANALTILAR",
+      "price": 15.0,
+      "available": true,
+      "image_url": "/spinner.svg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "QIZARDILMIŞ SOĞAN HALQALARI",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-10-i-sti--q-lyanaltilar-3-toyuq-naggetsl-ri-",
+      "name": "TOYUQ NAGGETSLƏRİ",
+      "description": "",
+      "category_id": "cat-10-i-sti--q-lyanaltilar",
+      "category_name": "İSTİ QƏLYANALTILAR",
+      "price": 14.0,
+      "available": true,
+      "image_url": "/spinner.svg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "TOYUQ NAGGETSLƏRİ",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-5--orbalar-6-buyabes-d-ni-z-m-hsullari--orbasi",
+      "name": "BUYABES DƏNİZ MƏHSULLARI ŞORBASI",
+      "description": "",
+      "category_id": "cat-5--orbalar",
+      "category_name": "ŞORBALAR",
+      "price": 18.0,
+      "available": true,
+      "image_url": "/spinner.svg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "BUYABES DƏNİZ MƏHSULLARI ŞORBASI",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-5--orbalar-5-d--b-r-",
+      "name": "DÜŞBƏRƏ",
+      "description": "",
+      "category_id": "cat-5--orbalar",
+      "category_name": "ŞORBALAR",
+      "price": 8.5,
+      "available": true,
+      "image_url": "/spinner.svg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "DÜŞBƏRƏ",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-5--orbalar-4-g-b-l-k--orbasi",
+      "name": "GÖBƏLƏK ŞORBASI",
+      "description": "",
+      "category_id": "cat-5--orbalar",
+      "category_name": "ŞORBALAR",
+      "price": 6.9,
+      "available": true,
+      "image_url": "/spinner.svg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "GÖBƏLƏK ŞORBASI",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-5--orbalar-3-m-rci---orbasi",
+      "name": "MƏRCİ ŞORBASI",
+      "description": "",
+      "category_id": "cat-5--orbalar",
+      "category_name": "ŞORBALAR",
+      "price": 6.9,
+      "available": true,
+      "image_url": "/spinner.svg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "MƏRCİ ŞORBASI",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-5--orbalar-2-tomat--orbasi",
+      "name": "TOMAT ŞORBASI",
+      "description": "",
+      "category_id": "cat-5--orbalar",
+      "category_name": "ŞORBALAR",
+      "price": 7.5,
+      "available": true,
+      "image_url": "/spinner.svg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "TOMAT ŞORBASI",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-5--orbalar-1-toyuq--orbasi",
+      "name": "TOYUQ ŞORBASI",
+      "description": "",
+      "category_id": "cat-5--orbalar",
+      "category_name": "ŞORBALAR",
+      "price": 6.9,
+      "available": true,
+      "image_url": "/spinner.svg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "TOYUQ ŞORBASI",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-13--t-yem-kl-ri--3-ciz-biz",
+      "name": "CIZ-BIZ",
+      "description": "",
+      "category_id": "cat-13--t-yem-kl-ri-",
+      "category_name": "ƏT YEMƏKLƏRİ",
+      "price": 19.0,
+      "available": true,
+      "image_url": "/spinner.svg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "CIZ-BIZ",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-13--t-yem-kl-ri--2-faxi-tas-can--ti--i-l-",
+      "name": "FAXİTAS CAN ƏTİ İLƏ",
+      "description": "(200qr) Can əti, bib ...",
+      "category_id": "cat-13--t-yem-kl-ri-",
+      "category_name": "ƏT YEMƏKLƏRİ",
+      "price": 28.0,
+      "available": true,
+      "image_url": "/spinner.svg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "FAXİTAS CAN ƏTİ İLƏ",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "(200qr) Can əti, bib ...",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-13--t-yem-kl-ri--9-lazanya",
+      "name": "LAZANYA",
+      "description": "",
+      "category_id": "cat-13--t-yem-kl-ri-",
+      "category_name": "ƏT YEMƏKLƏRİ",
+      "price": 19.0,
+      "available": true,
+      "image_url": "/spinner.svg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "LAZANYA",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-13--t-yem-kl-ri--4-nar-qovurma-quzu--ti--i-l-",
+      "name": "NAR QOVURMA QUZU ƏTİ İLƏ",
+      "description": "(220qr) Quzu əti, so ...",
+      "category_id": "cat-13--t-yem-kl-ri-",
+      "category_name": "ƏT YEMƏKLƏRİ",
+      "price": 24.0,
+      "available": true,
+      "image_url": "/spinner.svg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "NAR QOVURMA QUZU ƏTİ İLƏ",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "(220qr) Quzu əti, so ...",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-13--t-yem-kl-ri--10-qaymaqli-can--ti-",
+      "name": "QAYMAQLI CAN ƏTİ",
+      "description": "",
+      "category_id": "cat-13--t-yem-kl-ri-",
+      "category_name": "ƏT YEMƏKLƏRİ",
+      "price": 33.0,
+      "available": true,
+      "image_url": "/spinner.svg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "QAYMAQLI CAN ƏTİ",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-13--t-yem-kl-ri--5-quzu-barbekyu",
+      "name": "QUZU BARBEKYU",
+      "description": "(240qr) Quzu əti, gö ...",
+      "category_id": "cat-13--t-yem-kl-ri-",
+      "category_name": "ƏT YEMƏKLƏRİ",
+      "price": 27.0,
+      "available": true,
+      "image_url": "/spinner.svg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "QUZU BARBEKYU",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "(240qr) Quzu əti, gö ...",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-13--t-yem-kl-ri--6-quzu-t-ndi-r-plov-i-l-",
+      "name": "QUZU TƏNDİR PLOV İLƏ",
+      "description": "(600qr) Quzu əti, dü ...",
+      "category_id": "cat-13--t-yem-kl-ri-",
+      "category_name": "ƏT YEMƏKLƏRİ",
+      "price": 48.0,
+      "available": true,
+      "image_url": "/spinner.svg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "QUZU TƏNDİR PLOV İLƏ",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "(600qr) Quzu əti, dü ...",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-13--t-yem-kl-ri--1-quzu--ti--i-l--kasarola",
+      "name": "QUZU ƏTİ İLƏ KASAROLA",
+      "description": "(200qr) Quzu əti, ka ...",
+      "category_id": "cat-13--t-yem-kl-ri-",
+      "category_name": "ƏT YEMƏKLƏRİ",
+      "price": 23.0,
+      "available": true,
+      "image_url": "/spinner.svg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "QUZU ƏTİ İLƏ KASAROLA",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "(200qr) Quzu əti, ka ...",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-13--t-yem-kl-ri--7-rib-eye-steak",
+      "name": "RIB-EYE STEAK",
+      "description": "(400qr) Can əti, , s ...",
+      "category_id": "cat-13--t-yem-kl-ri-",
+      "category_name": "ƏT YEMƏKLƏRİ",
+      "price": 55.0,
+      "available": true,
+      "image_url": "/spinner.svg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "RIB-EYE STEAK",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "(400qr) Can əti, , s ...",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    },
+    {
+      "id": "cat-13--t-yem-kl-ri--8-yarpaq-dolma",
+      "name": "YARPAQ DOLMA",
+      "description": "(220qr) Mal əti, quz ...",
+      "category_id": "cat-13--t-yem-kl-ri-",
+      "category_name": "ƏT YEMƏKLƏRİ",
+      "price": 21.0,
+      "available": true,
+      "image_url": "/spinner.svg",
+      "popular": false,
+      "preparation_time": 15,
+      "translations": {
+        "names": {
+          "en": "YARPAQ DOLMA",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        },
+        "descriptions": {
+          "en": "(220qr) Mal əti, quz ...",
+          "az": null,
+          "ru": null,
+          "tr": null,
+          "ar": null,
+          "hi": null,
+          "fr": null,
+          "it": null
+        }
+      },
+      "created_at": "2025-05-08 14:33:57",
+      "updated_at": "2025-05-08 14:33:57"
+    }
+  ]
+}

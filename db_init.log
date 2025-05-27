@@ -1,0 +1,354 @@
+2025-03-26 18:27:47,811 - meinn_ai.db_init - INFO - Initializing databases...
+2025-03-26 18:27:47,844 - meinn_ai.db_init - INFO - Menu database initialized successfully
+2025-03-26 18:27:47,853 - meinn_ai.db_init - INFO - Conversation database initialized successfully
+2025-03-26 18:27:47,870 - meinn_ai.db_init - INFO - Analytics database initialized successfully
+2025-03-26 18:27:47,882 - meinn_ai.db_init - INFO - Translation database initialized successfully
+2025-03-26 18:27:47,883 - meinn_ai.db_init - INFO - Database initialization complete
+2025-03-26 18:28:06,714 - meinn_ai.db_init - INFO - Initializing databases...
+2025-03-26 18:28:06,719 - meinn_ai.db_init - INFO - Menu database initialized successfully
+2025-03-26 18:28:06,721 - meinn_ai.db_init - INFO - Conversation database initialized successfully
+2025-03-26 18:28:06,723 - meinn_ai.db_init - INFO - Analytics database initialized successfully
+2025-03-26 18:28:06,725 - meinn_ai.db_init - INFO - Translation database initialized successfully
+2025-03-26 18:28:06,726 - meinn_ai.db_init - INFO - Database initialization complete
+2025-03-26 18:32:32,733 - meinn_ai.db_init - INFO - Initializing databases...
+2025-03-26 18:32:32,735 - meinn_ai.db_init - INFO - Menu database initialized successfully
+2025-03-26 18:32:32,736 - meinn_ai.db_init - INFO - Conversation database initialized successfully
+2025-03-26 18:32:32,737 - meinn_ai.db_init - INFO - Analytics database initialized successfully
+2025-03-26 18:32:32,738 - meinn_ai.db_init - INFO - Translation database initialized successfully
+2025-03-26 18:32:32,738 - meinn_ai.db_init - INFO - Database initialization complete
+2025-03-26 18:33:19,714 - meinn_ai.db_init - INFO - Initializing databases...
+2025-03-26 18:33:19,716 - meinn_ai.db_init - INFO - Menu database initialized successfully
+2025-03-26 18:33:19,717 - meinn_ai.db_init - INFO - Conversation database initialized successfully
+2025-03-26 18:33:19,717 - meinn_ai.db_init - INFO - Analytics database initialized successfully
+2025-03-26 18:33:19,718 - meinn_ai.db_init - INFO - Translation database initialized successfully
+2025-03-26 18:33:19,718 - meinn_ai.db_init - INFO - Database initialization complete
+2025-03-26 18:33:31,074 - meinn_ai.db_init - INFO - Initializing databases...
+2025-03-26 18:33:31,076 - meinn_ai.db_init - INFO - Menu database initialized successfully
+2025-03-26 18:33:31,078 - meinn_ai.db_init - INFO - Conversation database initialized successfully
+2025-03-26 18:33:31,079 - meinn_ai.db_init - INFO - Analytics database initialized successfully
+2025-03-26 18:33:31,081 - meinn_ai.db_init - INFO - Translation database initialized successfully
+2025-03-26 18:33:31,081 - meinn_ai.db_init - INFO - Database initialization complete
+2025-03-26 18:59:50,947 - meinn_ai.db_init - INFO - Initializing databases...
+2025-03-26 18:59:50,948 - meinn_ai.db_init - INFO - Menu database initialized successfully
+2025-03-26 18:59:50,948 - meinn_ai.db_init - INFO - Conversation database initialized successfully
+2025-03-26 18:59:50,949 - meinn_ai.db_init - INFO - Analytics database initialized successfully
+2025-03-26 18:59:50,949 - meinn_ai.db_init - INFO - Translation database initialized successfully
+2025-03-26 18:59:50,949 - meinn_ai.db_init - INFO - Database initialization complete
+2025-04-24 16:36:15,252 - meinn_ai.db_init - INFO - Initializing databases...
+2025-04-24 16:36:15,252 - meinn_ai.db_init - INFO - Menu database initialized successfully
+2025-04-24 16:36:15,253 - meinn_ai.db_init - INFO - Conversation database initialized successfully
+2025-04-24 16:36:15,253 - meinn_ai.db_init - INFO - Analytics database initialized successfully
+2025-04-24 16:36:15,253 - meinn_ai.db_init - INFO - Translation database initialized successfully
+2025-04-24 16:36:15,253 - meinn_ai.db_init - INFO - Database initialization complete
+2025-04-24 16:39:42,521 - meinn_ai.db_init - INFO - Initializing databases...
+2025-04-24 16:39:42,523 - meinn_ai.db_init - INFO - Menu database initialized successfully
+2025-04-24 16:39:42,524 - meinn_ai.db_init - INFO - Conversation database initialized successfully
+2025-04-24 16:39:42,525 - meinn_ai.db_init - INFO - Analytics database initialized successfully
+2025-04-24 16:39:42,525 - meinn_ai.db_init - INFO - Translation database initialized successfully
+2025-04-24 16:39:42,526 - meinn_ai.db_init - INFO - Database initialization complete
+2025-04-24 16:53:03,198 - meinn_ai.db_init - INFO - Initializing databases...
+2025-04-24 16:53:03,199 - meinn_ai.db_init - INFO - Menu database initialized successfully
+2025-04-24 16:53:03,199 - meinn_ai.db_init - INFO - Conversation database initialized successfully
+2025-04-24 16:53:03,200 - meinn_ai.db_init - INFO - Analytics database initialized successfully
+2025-04-24 16:53:03,200 - meinn_ai.db_init - INFO - Translation database initialized successfully
+2025-04-24 16:53:03,200 - meinn_ai.db_init - INFO - Database initialization complete
+2025-04-24 17:35:39,755 - meinn_ai.db_init - INFO - Initializing databases...
+2025-04-24 17:35:39,756 - meinn_ai.db_init - INFO - Menu database initialized successfully
+2025-04-24 17:35:39,757 - meinn_ai.db_init - INFO - Conversation database initialized successfully
+2025-04-24 17:35:39,757 - meinn_ai.db_init - INFO - Analytics database initialized successfully
+2025-04-24 17:35:39,758 - meinn_ai.db_init - INFO - Translation database initialized successfully
+2025-04-24 17:35:39,758 - meinn_ai.db_init - INFO - Database initialization complete
+2025-04-24 17:46:31,518 - meinn_ai.db_init - INFO - Initializing databases...
+2025-04-24 17:46:31,519 - meinn_ai.db_init - INFO - Menu database initialized successfully
+2025-04-24 17:46:31,519 - meinn_ai.db_init - INFO - Conversation database initialized successfully
+2025-04-24 17:46:31,520 - meinn_ai.db_init - INFO - Analytics database initialized successfully
+2025-04-24 17:46:31,520 - meinn_ai.db_init - INFO - Translation database initialized successfully
+2025-04-24 17:46:31,520 - meinn_ai.db_init - INFO - Database initialization complete
+2025-04-24 17:46:50,952 - meinn_ai.db_init - INFO - Initializing databases...
+2025-04-24 17:46:50,953 - meinn_ai.db_init - INFO - Menu database initialized successfully
+2025-04-24 17:46:50,953 - meinn_ai.db_init - INFO - Conversation database initialized successfully
+2025-04-24 17:46:50,953 - meinn_ai.db_init - INFO - Analytics database initialized successfully
+2025-04-24 17:46:50,954 - meinn_ai.db_init - INFO - Translation database initialized successfully
+2025-04-24 17:46:50,954 - meinn_ai.db_init - INFO - Database initialization complete
+2025-04-24 17:58:03,311 - meinn_ai.db_init - INFO - Initializing databases...
+2025-04-24 17:58:03,311 - meinn_ai.db_init - INFO - Menu database initialized successfully
+2025-04-24 17:58:03,312 - meinn_ai.db_init - INFO - Conversation database initialized successfully
+2025-04-24 17:58:03,312 - meinn_ai.db_init - INFO - Analytics database initialized successfully
+2025-04-24 17:58:03,313 - meinn_ai.db_init - INFO - Translation database initialized successfully
+2025-04-24 17:58:03,313 - meinn_ai.db_init - INFO - Database initialization complete
+2025-04-28 09:59:13,790 - meinn_ai.db_init - INFO - Initializing databases...
+2025-04-28 09:59:13,791 - meinn_ai.db_init - INFO - Menu database initialized successfully
+2025-04-28 09:59:13,791 - meinn_ai.db_init - INFO - Conversation database initialized successfully
+2025-04-28 09:59:13,792 - meinn_ai.db_init - INFO - Analytics database initialized successfully
+2025-04-28 09:59:13,792 - meinn_ai.db_init - INFO - Translation database initialized successfully
+2025-04-28 09:59:13,792 - meinn_ai.db_init - INFO - Database initialization complete
+2025-04-30 21:02:50,526 - meinn_ai.db_init - INFO - Initializing databases...
+2025-04-30 21:02:50,527 - meinn_ai.db_init - INFO - Menu database initialized successfully
+2025-04-30 21:02:50,527 - meinn_ai.db_init - INFO - Conversation database initialized successfully
+2025-04-30 21:02:50,528 - meinn_ai.db_init - INFO - Analytics database initialized successfully
+2025-04-30 21:02:50,528 - meinn_ai.db_init - INFO - Translation database initialized successfully
+2025-04-30 21:02:50,528 - meinn_ai.db_init - INFO - Database initialization complete
+2025-05-08 16:12:37,661 - meinn_ai.db_init - INFO - Initializing databases...
+2025-05-08 16:12:37,664 - meinn_ai.db_init - INFO - Menu database initialized successfully
+2025-05-08 16:12:37,665 - meinn_ai.db_init - INFO - Conversation database initialized successfully
+2025-05-08 16:12:37,666 - meinn_ai.db_init - INFO - Analytics database initialized successfully
+2025-05-08 16:12:37,667 - meinn_ai.db_init - INFO - Translation database initialized successfully
+2025-05-08 16:12:37,667 - meinn_ai.db_init - INFO - Database initialization complete
+2025-05-08 17:41:16,706 - meinn_ai.db_init - INFO - Initializing databases...
+2025-05-08 17:41:16,707 - meinn_ai.db_init - INFO - Menu database initialized successfully
+2025-05-08 17:41:16,707 - meinn_ai.db_init - INFO - Conversation database initialized successfully
+2025-05-08 17:41:16,708 - meinn_ai.db_init - INFO - Analytics database initialized successfully
+2025-05-08 17:41:16,708 - meinn_ai.db_init - INFO - Translation database initialized successfully
+2025-05-08 17:41:16,708 - meinn_ai.db_init - INFO - Database initialization complete
+2025-05-08 22:58:53,454 - meinn_ai.db_init - INFO - Initializing databases...
+2025-05-08 22:58:53,455 - meinn_ai.db_init - INFO - Menu database initialized successfully
+2025-05-08 22:58:53,456 - meinn_ai.db_init - INFO - Conversation database initialized successfully
+2025-05-08 22:58:53,456 - meinn_ai.db_init - INFO - Analytics database initialized successfully
+2025-05-08 22:58:53,457 - meinn_ai.db_init - INFO - Translation database initialized successfully
+2025-05-08 22:58:53,457 - meinn_ai.db_init - INFO - Database initialization complete
+2025-05-08 23:06:25,203 - meinn_ai.db_init - INFO - Initializing databases...
+2025-05-08 23:06:25,204 - meinn_ai.db_init - INFO - Menu database initialized successfully
+2025-05-08 23:06:25,204 - meinn_ai.db_init - INFO - Conversation database initialized successfully
+2025-05-08 23:06:25,205 - meinn_ai.db_init - INFO - Analytics database initialized successfully
+2025-05-08 23:06:25,205 - meinn_ai.db_init - INFO - Translation database initialized successfully
+2025-05-08 23:06:25,205 - meinn_ai.db_init - INFO - Database initialization complete
+2025-05-08 23:12:50,725 - meinn_ai.db_init - INFO - Initializing databases...
+2025-05-08 23:12:50,727 - meinn_ai.db_init - INFO - Menu database initialized successfully
+2025-05-08 23:12:50,728 - meinn_ai.db_init - INFO - Conversation database initialized successfully
+2025-05-08 23:12:50,729 - meinn_ai.db_init - INFO - Analytics database initialized successfully
+2025-05-08 23:12:50,731 - meinn_ai.db_init - INFO - Translation database initialized successfully
+2025-05-08 23:12:50,731 - meinn_ai.db_init - INFO - Database initialization complete
+2025-05-09 01:01:42,935 - meinn_ai.db_init - INFO - Initializing databases...
+2025-05-09 01:01:42,942 - meinn_ai.db_init - INFO - Menu database initialized successfully
+2025-05-09 01:01:42,943 - meinn_ai.db_init - INFO - Conversation database initialized successfully
+2025-05-09 01:01:42,943 - meinn_ai.db_init - INFO - Analytics database initialized successfully
+2025-05-09 01:01:42,944 - meinn_ai.db_init - INFO - Translation database initialized successfully
+2025-05-09 01:01:42,944 - meinn_ai.db_init - INFO - Database initialization complete
+2025-05-09 01:14:02,910 - meinn_ai.db_init - INFO - Initializing databases...
+2025-05-09 01:14:02,913 - meinn_ai.db_init - INFO - Menu database initialized successfully
+2025-05-09 01:14:02,914 - meinn_ai.db_init - INFO - Conversation database initialized successfully
+2025-05-09 01:14:02,917 - meinn_ai.db_init - INFO - Analytics database initialized successfully
+2025-05-09 01:14:02,918 - meinn_ai.db_init - INFO - Translation database initialized successfully
+2025-05-09 01:14:02,919 - meinn_ai.db_init - INFO - Database initialization complete
+2025-05-09 01:21:06,309 - meinn_ai.db_init - INFO - Initializing databases...
+2025-05-09 01:21:06,310 - meinn_ai.db_init - INFO - Menu database initialized successfully
+2025-05-09 01:21:06,310 - meinn_ai.db_init - INFO - Conversation database initialized successfully
+2025-05-09 01:21:06,311 - meinn_ai.db_init - INFO - Analytics database initialized successfully
+2025-05-09 01:21:06,311 - meinn_ai.db_init - INFO - Translation database initialized successfully
+2025-05-09 01:21:06,311 - meinn_ai.db_init - INFO - Database initialization complete
+2025-05-09 14:44:51,884 - meinn_ai.db_init - INFO - Initializing databases...
+2025-05-09 14:44:51,885 - meinn_ai.db_init - INFO - Menu database initialized successfully
+2025-05-09 14:44:51,885 - meinn_ai.db_init - INFO - Conversation database initialized successfully
+2025-05-09 14:44:51,886 - meinn_ai.db_init - INFO - Analytics database initialized successfully
+2025-05-09 14:44:51,886 - meinn_ai.db_init - INFO - Translation database initialized successfully
+2025-05-09 14:44:51,886 - meinn_ai.db_init - INFO - Database initialization complete
+2025-05-09 16:19:13,829 - meinn_ai.db_init - INFO - Initializing databases...
+2025-05-09 16:19:13,830 - meinn_ai.db_init - INFO - Menu database initialized successfully
+2025-05-09 16:19:13,831 - meinn_ai.db_init - INFO - Conversation database initialized successfully
+2025-05-09 16:19:13,831 - meinn_ai.db_init - INFO - Analytics database initialized successfully
+2025-05-09 16:19:13,831 - meinn_ai.db_init - INFO - Translation database initialized successfully
+2025-05-09 16:19:13,831 - meinn_ai.db_init - INFO - Database initialization complete
+2025-05-09 16:19:17,660 - meinn_ai.db_init - INFO - Initializing databases...
+2025-05-09 16:19:17,661 - meinn_ai.db_init - INFO - Menu database initialized successfully
+2025-05-09 16:19:17,661 - meinn_ai.db_init - INFO - Conversation database initialized successfully
+2025-05-09 16:19:17,661 - meinn_ai.db_init - INFO - Analytics database initialized successfully
+2025-05-09 16:19:17,662 - meinn_ai.db_init - INFO - Translation database initialized successfully
+2025-05-09 16:19:17,662 - meinn_ai.db_init - INFO - Database initialization complete
+2025-05-09 16:26:54,398 - meinn_ai.db_init - INFO - Initializing databases...
+2025-05-09 16:26:54,399 - meinn_ai.db_init - INFO - Menu database initialized successfully
+2025-05-09 16:26:54,399 - meinn_ai.db_init - INFO - Conversation database initialized successfully
+2025-05-09 16:26:54,400 - meinn_ai.db_init - INFO - Analytics database initialized successfully
+2025-05-09 16:26:54,400 - meinn_ai.db_init - INFO - Translation database initialized successfully
+2025-05-09 16:26:54,400 - meinn_ai.db_init - INFO - Database initialization complete
+2025-05-09 16:42:05,905 - meinn_ai.db_init - INFO - Initializing databases...
+2025-05-09 16:42:05,906 - meinn_ai.db_init - INFO - Menu database initialized successfully
+2025-05-09 16:42:05,906 - meinn_ai.db_init - INFO - Conversation database initialized successfully
+2025-05-09 16:42:05,906 - meinn_ai.db_init - INFO - Analytics database initialized successfully
+2025-05-09 16:42:05,907 - meinn_ai.db_init - INFO - Translation database initialized successfully
+2025-05-09 16:42:05,907 - meinn_ai.db_init - INFO - Database initialization complete
+2025-05-09 16:52:33,380 - meinn_ai.db_init - INFO - Initializing databases...
+2025-05-09 16:52:33,380 - meinn_ai.db_init - INFO - Menu database initialized successfully
+2025-05-09 16:52:33,381 - meinn_ai.db_init - INFO - Conversation database initialized successfully
+2025-05-09 16:52:33,381 - meinn_ai.db_init - INFO - Analytics database initialized successfully
+2025-05-09 16:52:33,382 - meinn_ai.db_init - INFO - Translation database initialized successfully
+2025-05-09 16:52:33,382 - meinn_ai.db_init - INFO - Database initialization complete
+2025-05-09 17:00:19,366 - meinn_ai.db_init - INFO - Initializing databases...
+2025-05-09 17:00:19,367 - meinn_ai.db_init - INFO - Menu database initialized successfully
+2025-05-09 17:00:19,367 - meinn_ai.db_init - INFO - Conversation database initialized successfully
+2025-05-09 17:00:19,368 - meinn_ai.db_init - INFO - Analytics database initialized successfully
+2025-05-09 17:00:19,368 - meinn_ai.db_init - INFO - Translation database initialized successfully
+2025-05-09 17:00:19,368 - meinn_ai.db_init - INFO - Database initialization complete
+2025-05-09 17:09:46,770 - meinn_ai.db_init - INFO - Initializing databases...
+2025-05-09 17:09:46,772 - meinn_ai.db_init - INFO - Menu database initialized successfully
+2025-05-09 17:09:46,773 - meinn_ai.db_init - INFO - Conversation database initialized successfully
+2025-05-09 17:09:46,774 - meinn_ai.db_init - INFO - Analytics database initialized successfully
+2025-05-09 17:09:46,776 - meinn_ai.db_init - INFO - Translation database initialized successfully
+2025-05-09 17:09:46,776 - meinn_ai.db_init - INFO - Database initialization complete
+2025-05-09 17:13:00,993 - meinn_ai.db_init - INFO - Initializing databases...
+2025-05-09 17:13:00,995 - meinn_ai.db_init - INFO - Menu database initialized successfully
+2025-05-09 17:13:00,996 - meinn_ai.db_init - INFO - Conversation database initialized successfully
+2025-05-09 17:13:00,997 - meinn_ai.db_init - INFO - Analytics database initialized successfully
+2025-05-09 17:13:00,998 - meinn_ai.db_init - INFO - Translation database initialized successfully
+2025-05-09 17:13:00,998 - meinn_ai.db_init - INFO - Database initialization complete
+2025-05-09 17:14:11,162 - meinn_ai.db_init - INFO - Initializing databases...
+2025-05-09 17:14:11,163 - meinn_ai.db_init - INFO - Menu database initialized successfully
+2025-05-09 17:14:11,164 - meinn_ai.db_init - INFO - Conversation database initialized successfully
+2025-05-09 17:14:11,164 - meinn_ai.db_init - INFO - Analytics database initialized successfully
+2025-05-09 17:14:11,164 - meinn_ai.db_init - INFO - Translation database initialized successfully
+2025-05-09 17:14:11,164 - meinn_ai.db_init - INFO - Database initialization complete
+2025-05-09 17:54:29,437 - meinn_ai.db_init - INFO - Initializing databases...
+2025-05-09 17:54:29,438 - meinn_ai.db_init - INFO - Menu database initialized successfully
+2025-05-09 17:54:29,438 - meinn_ai.db_init - INFO - Conversation database initialized successfully
+2025-05-09 17:54:29,439 - meinn_ai.db_init - INFO - Analytics database initialized successfully
+2025-05-09 17:54:29,439 - meinn_ai.db_init - INFO - Translation database initialized successfully
+2025-05-09 17:54:29,439 - meinn_ai.db_init - INFO - Database initialization complete
+2025-05-09 18:18:25,943 - meinn_ai.db_init - INFO - Initializing databases...
+2025-05-09 18:18:25,944 - meinn_ai.db_init - INFO - Menu database initialized successfully
+2025-05-09 18:18:25,945 - meinn_ai.db_init - INFO - Conversation database initialized successfully
+2025-05-09 18:18:25,946 - meinn_ai.db_init - INFO - Analytics database initialized successfully
+2025-05-09 18:18:25,946 - meinn_ai.db_init - INFO - Translation database initialized successfully
+2025-05-09 18:18:25,946 - meinn_ai.db_init - INFO - Database initialization complete
+2025-05-09 18:36:03,101 - meinn_ai.db_init - INFO - Initializing databases...
+2025-05-09 18:36:03,102 - meinn_ai.db_init - INFO - Menu database initialized successfully
+2025-05-09 18:36:03,103 - meinn_ai.db_init - INFO - Conversation database initialized successfully
+2025-05-09 18:36:03,104 - meinn_ai.db_init - INFO - Analytics database initialized successfully
+2025-05-09 18:36:03,105 - meinn_ai.db_init - INFO - Translation database initialized successfully
+2025-05-09 18:36:03,105 - meinn_ai.db_init - INFO - Database initialization complete
+2025-05-09 18:36:24,465 - meinn_ai.db_init - INFO - Initializing databases...
+2025-05-09 18:36:24,466 - meinn_ai.db_init - INFO - Menu database initialized successfully
+2025-05-09 18:36:24,467 - meinn_ai.db_init - INFO - Conversation database initialized successfully
+2025-05-09 18:36:24,468 - meinn_ai.db_init - INFO - Analytics database initialized successfully
+2025-05-09 18:36:24,468 - meinn_ai.db_init - INFO - Translation database initialized successfully
+2025-05-09 18:36:24,468 - meinn_ai.db_init - INFO - Database initialization complete
+2025-05-09 18:45:40,792 - meinn_ai.db_init - INFO - Initializing databases...
+2025-05-09 18:45:40,794 - meinn_ai.db_init - INFO - Menu database initialized successfully
+2025-05-09 18:45:40,796 - meinn_ai.db_init - INFO - Conversation database initialized successfully
+2025-05-09 18:45:40,798 - meinn_ai.db_init - INFO - Analytics database initialized successfully
+2025-05-09 18:45:40,800 - meinn_ai.db_init - INFO - Translation database initialized successfully
+2025-05-09 18:45:40,800 - meinn_ai.db_init - INFO - Database initialization complete
+2025-05-09 19:04:10,696 - meinn_ai.db_init - INFO - Initializing databases...
+2025-05-09 19:04:10,697 - meinn_ai.db_init - INFO - Menu database initialized successfully
+2025-05-09 19:04:10,697 - meinn_ai.db_init - INFO - Conversation database initialized successfully
+2025-05-09 19:04:10,698 - meinn_ai.db_init - INFO - Analytics database initialized successfully
+2025-05-09 19:04:10,698 - meinn_ai.db_init - INFO - Translation database initialized successfully
+2025-05-09 19:04:10,698 - meinn_ai.db_init - INFO - Database initialization complete
+2025-05-09 19:04:29,022 - meinn_ai.db_init - INFO - Initializing databases...
+2025-05-09 19:04:29,022 - meinn_ai.db_init - INFO - Menu database initialized successfully
+2025-05-09 19:04:29,023 - meinn_ai.db_init - INFO - Conversation database initialized successfully
+2025-05-09 19:04:29,023 - meinn_ai.db_init - INFO - Analytics database initialized successfully
+2025-05-09 19:04:29,024 - meinn_ai.db_init - INFO - Translation database initialized successfully
+2025-05-09 19:04:29,024 - meinn_ai.db_init - INFO - Database initialization complete
+2025-05-09 19:20:45,984 - meinn_ai.db_init - INFO - Initializing databases...
+2025-05-09 19:20:45,985 - meinn_ai.db_init - INFO - Menu database initialized successfully
+2025-05-09 19:20:45,985 - meinn_ai.db_init - INFO - Conversation database initialized successfully
+2025-05-09 19:20:45,986 - meinn_ai.db_init - INFO - Analytics database initialized successfully
+2025-05-09 19:20:45,986 - meinn_ai.db_init - INFO - Translation database initialized successfully
+2025-05-09 19:20:45,986 - meinn_ai.db_init - INFO - Database initialization complete
+2025-05-09 19:23:30,049 - meinn_ai.db_init - INFO - Initializing databases...
+2025-05-09 19:23:30,050 - meinn_ai.db_init - INFO - Menu database initialized successfully
+2025-05-09 19:23:30,050 - meinn_ai.db_init - INFO - Conversation database initialized successfully
+2025-05-09 19:23:30,050 - meinn_ai.db_init - INFO - Analytics database initialized successfully
+2025-05-09 19:23:30,051 - meinn_ai.db_init - INFO - Translation database initialized successfully
+2025-05-09 19:23:30,051 - meinn_ai.db_init - INFO - Database initialization complete
+2025-05-09 19:31:14,164 - meinn_ai.db_init - INFO - Initializing databases...
+2025-05-09 19:31:14,165 - meinn_ai.db_init - INFO - Menu database initialized successfully
+2025-05-09 19:31:14,165 - meinn_ai.db_init - INFO - Conversation database initialized successfully
+2025-05-09 19:31:14,166 - meinn_ai.db_init - INFO - Analytics database initialized successfully
+2025-05-09 19:31:14,166 - meinn_ai.db_init - INFO - Translation database initialized successfully
+2025-05-09 19:31:14,166 - meinn_ai.db_init - INFO - Database initialization complete
+2025-05-09 19:46:33,932 - meinn_ai.db_init - INFO - Initializing databases...
+2025-05-09 19:46:33,932 - meinn_ai.db_init - INFO - Menu database initialized successfully
+2025-05-09 19:46:33,933 - meinn_ai.db_init - INFO - Conversation database initialized successfully
+2025-05-09 19:46:33,933 - meinn_ai.db_init - INFO - Analytics database initialized successfully
+2025-05-09 19:46:33,934 - meinn_ai.db_init - INFO - Translation database initialized successfully
+2025-05-09 19:46:33,934 - meinn_ai.db_init - INFO - Database initialization complete
+2025-05-09 20:15:46,267 - meinn_ai.db_init - INFO - Initializing databases...
+2025-05-09 20:15:46,268 - meinn_ai.db_init - INFO - Menu database initialized successfully
+2025-05-09 20:15:46,269 - meinn_ai.db_init - INFO - Conversation database initialized successfully
+2025-05-09 20:15:46,269 - meinn_ai.db_init - INFO - Analytics database initialized successfully
+2025-05-09 20:15:46,269 - meinn_ai.db_init - INFO - Translation database initialized successfully
+2025-05-09 20:15:46,270 - meinn_ai.db_init - INFO - Database initialization complete
+2025-05-09 20:49:24,518 - meinn_ai.db_init - INFO - Initializing databases...
+2025-05-09 20:49:24,519 - meinn_ai.db_init - INFO - Menu database initialized successfully
+2025-05-09 20:49:24,519 - meinn_ai.db_init - INFO - Conversation database initialized successfully
+2025-05-09 20:49:24,519 - meinn_ai.db_init - INFO - Analytics database initialized successfully
+2025-05-09 20:49:24,520 - meinn_ai.db_init - INFO - Translation database initialized successfully
+2025-05-09 20:49:24,520 - meinn_ai.db_init - INFO - Database initialization complete
+2025-05-09 21:11:55,542 - meinn_ai.db_init - INFO - Initializing databases...
+2025-05-09 21:11:55,543 - meinn_ai.db_init - INFO - Menu database initialized successfully
+2025-05-09 21:11:55,543 - meinn_ai.db_init - INFO - Conversation database initialized successfully
+2025-05-09 21:11:55,544 - meinn_ai.db_init - INFO - Analytics database initialized successfully
+2025-05-09 21:11:55,545 - meinn_ai.db_init - INFO - Translation database initialized successfully
+2025-05-09 21:11:55,545 - meinn_ai.db_init - INFO - Database initialization complete
+2025-05-09 21:31:37,957 - meinn_ai.db_init - INFO - Initializing databases...
+2025-05-09 21:31:37,958 - meinn_ai.db_init - INFO - Menu database initialized successfully
+2025-05-09 21:31:37,958 - meinn_ai.db_init - INFO - Conversation database initialized successfully
+2025-05-09 21:31:37,959 - meinn_ai.db_init - INFO - Analytics database initialized successfully
+2025-05-09 21:31:37,960 - meinn_ai.db_init - INFO - Translation database initialized successfully
+2025-05-09 21:31:37,960 - meinn_ai.db_init - INFO - Database initialization complete
+2025-05-09 21:45:32,577 - meinn_ai.db_init - INFO - Initializing databases...
+2025-05-09 21:45:32,578 - meinn_ai.db_init - INFO - Menu database initialized successfully
+2025-05-09 21:45:32,578 - meinn_ai.db_init - INFO - Conversation database initialized successfully
+2025-05-09 21:45:32,578 - meinn_ai.db_init - INFO - Analytics database initialized successfully
+2025-05-09 21:45:32,579 - meinn_ai.db_init - INFO - Translation database initialized successfully
+2025-05-09 21:45:32,579 - meinn_ai.db_init - INFO - Database initialization complete
+2025-05-09 21:52:52,745 - meinn_ai.db_init - INFO - Initializing databases...
+2025-05-09 21:52:52,745 - meinn_ai.db_init - INFO - Menu database initialized successfully
+2025-05-09 21:52:52,746 - meinn_ai.db_init - INFO - Conversation database initialized successfully
+2025-05-09 21:52:52,746 - meinn_ai.db_init - INFO - Analytics database initialized successfully
+2025-05-09 21:52:52,747 - meinn_ai.db_init - INFO - Translation database initialized successfully
+2025-05-09 21:52:52,747 - meinn_ai.db_init - INFO - Database initialization complete
+2025-05-25 15:49:01,346 - meinn_ai.db_init - INFO - Initializing databases...
+2025-05-25 15:49:01,347 - meinn_ai.db_init - INFO - Menu database initialized successfully
+2025-05-25 15:49:01,348 - meinn_ai.db_init - INFO - Conversation database initialized successfully
+2025-05-25 15:49:01,349 - meinn_ai.db_init - INFO - Analytics database initialized successfully
+2025-05-25 15:49:01,350 - meinn_ai.db_init - INFO - Translation database initialized successfully
+2025-05-25 15:49:01,350 - meinn_ai.db_init - INFO - Database initialization complete
+2025-05-25 16:08:55,753 - meinn_ai.db_init - INFO - Initializing databases...
+2025-05-25 16:08:55,754 - meinn_ai.db_init - INFO - Menu database initialized successfully
+2025-05-25 16:08:55,754 - meinn_ai.db_init - INFO - Conversation database initialized successfully
+2025-05-25 16:08:55,755 - meinn_ai.db_init - INFO - Analytics database initialized successfully
+2025-05-25 16:08:55,756 - meinn_ai.db_init - INFO - Translation database initialized successfully
+2025-05-25 16:08:55,756 - meinn_ai.db_init - INFO - Database initialization complete
+2025-05-25 19:42:46,156 - meinn_ai.db_init - INFO - Initializing databases...
+2025-05-25 19:42:46,157 - meinn_ai.db_init - INFO - Menu database initialized successfully
+2025-05-25 19:42:46,158 - meinn_ai.db_init - INFO - Conversation database initialized successfully
+2025-05-25 19:42:46,158 - meinn_ai.db_init - INFO - Analytics database initialized successfully
+2025-05-25 19:42:46,159 - meinn_ai.db_init - INFO - Translation database initialized successfully
+2025-05-25 19:42:46,159 - meinn_ai.db_init - INFO - Database initialization complete
+2025-05-25 19:43:18,756 - meinn_ai.db_init - INFO - Initializing databases...
+2025-05-25 19:43:18,757 - meinn_ai.db_init - INFO - Menu database initialized successfully
+2025-05-25 19:43:18,757 - meinn_ai.db_init - INFO - Conversation database initialized successfully
+2025-05-25 19:43:18,758 - meinn_ai.db_init - INFO - Analytics database initialized successfully
+2025-05-25 19:43:18,758 - meinn_ai.db_init - INFO - Translation database initialized successfully
+2025-05-25 19:43:18,758 - meinn_ai.db_init - INFO - Database initialization complete
+2025-05-25 19:46:07,968 - meinn_ai.db_init - INFO - Initializing databases...
+2025-05-25 19:46:07,969 - meinn_ai.db_init - INFO - Menu database initialized successfully
+2025-05-25 19:46:07,969 - meinn_ai.db_init - INFO - Conversation database initialized successfully
+2025-05-25 19:46:07,970 - meinn_ai.db_init - INFO - Analytics database initialized successfully
+2025-05-25 19:46:07,970 - meinn_ai.db_init - INFO - Translation database initialized successfully
+2025-05-25 19:46:07,970 - meinn_ai.db_init - INFO - Database initialization complete
+2025-05-25 19:46:25,619 - meinn_ai.db_init - INFO - Initializing databases...
+2025-05-25 19:46:25,620 - meinn_ai.db_init - INFO - Menu database initialized successfully
+2025-05-25 19:46:25,620 - meinn_ai.db_init - INFO - Conversation database initialized successfully
+2025-05-25 19:46:25,621 - meinn_ai.db_init - INFO - Analytics database initialized successfully
+2025-05-25 19:46:25,621 - meinn_ai.db_init - INFO - Translation database initialized successfully
+2025-05-25 19:46:25,621 - meinn_ai.db_init - INFO - Database initialization complete
+2025-05-25 20:21:31,004 - meinn_ai.db_init - INFO - Initializing databases...
+2025-05-25 20:21:31,005 - meinn_ai.db_init - INFO - Menu database initialized successfully
+2025-05-25 20:21:31,005 - meinn_ai.db_init - INFO - Conversation database initialized successfully
+2025-05-25 20:21:31,006 - meinn_ai.db_init - INFO - Analytics database initialized successfully
+2025-05-25 20:21:31,006 - meinn_ai.db_init - INFO - Translation database initialized successfully
+2025-05-25 20:21:31,006 - meinn_ai.db_init - INFO - Database initialization complete
+2025-05-26 22:51:33,776 - meinn_ai.db_init - INFO - Initializing databases...
+2025-05-26 22:51:33,777 - meinn_ai.db_init - INFO - Menu database initialized successfully
+2025-05-26 22:51:33,778 - meinn_ai.db_init - INFO - Conversation database initialized successfully
+2025-05-26 22:51:33,778 - meinn_ai.db_init - INFO - Analytics database initialized successfully
+2025-05-26 22:51:33,781 - meinn_ai.db_init - INFO - Translation database initialized successfully
+2025-05-26 22:51:33,781 - meinn_ai.db_init - INFO - Database initialization complete
+2025-05-27 19:41:30,325 - meinn_ai.db_init - INFO - Initializing databases...
+2025-05-27 19:41:30,329 - meinn_ai.db_init - INFO - Menu database initialized successfully
+2025-05-27 19:41:30,332 - meinn_ai.db_init - INFO - Conversation database initialized successfully
+2025-05-27 19:41:30,333 - meinn_ai.db_init - INFO - Analytics database initialized successfully
+2025-05-27 19:41:30,334 - meinn_ai.db_init - INFO - Translation database initialized successfully
+2025-05-27 19:41:30,334 - meinn_ai.db_init - INFO - Database initialization complete

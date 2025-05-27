@@ -1,0 +1,16 @@
+2025-05-25 17:15:47,645 - meinn_ai.conversation_learner - INFO - Conversation Learner initialized
+2025-05-25 17:15:47,659 - meinn_ai.conversation_learner - INFO - Conversation database initialized successfully
+2025-05-25 17:15:47,659 - meinn_ai - INFO - Conversation learner initialized
+2025-05-25 17:15:47,659 - meinn_ai.translation_agent - INFO - Translation Agent initialized
+2025-05-25 17:15:47,696 - meinn_ai.translation_agent - INFO - Default translations inserted
+2025-05-25 17:15:47,696 - meinn_ai.translation_agent - INFO - Translation database initialized successfully
+2025-05-25 17:15:47,697 - meinn_ai - INFO - Translation agent initialized
+2025-05-25 17:15:47,697 - meinn_ai.menu_manager - INFO - Menu Manager initialized
+2025-05-25 17:15:47,752 - meinn_ai.menu_manager - INFO - Sample menu data inserted into database
+2025-05-25 17:15:47,752 - meinn_ai.menu_manager - INFO - Menu database initialized
+2025-05-25 17:15:47,753 - meinn_ai - INFO - Menu manager initialized
+2025-05-25 17:15:47,765 - meinn_ai.conversation_learner - INFO - Conversation Learner initialized
+2025-05-25 17:15:47,766 - meinn_ai.translation_agent - INFO - Translation Agent initialized
+2025-05-25 17:15:47,767 - meinn_ai.menu_manager - INFO - Menu Manager initialized
+2025-05-25 17:15:47,844 - meinn_ai - INFO - Initializing Meinn AI for Pizza Inn
+2025-05-25 17:15:47,845 - meinn_ai - INFO - Starting Meinn Restaurant Menu AI Assistant on port 5002 (debug=False)

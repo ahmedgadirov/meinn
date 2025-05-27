@@ -1,0 +1,556 @@
+/* Mobile-Optimized Styles */
+
+/* Mobile Breakpoints */
+@media (max-width: 768px) {
+  /* Reset some desktop spacing for mobile */
+  :root {
+    --spacing-xs: 0.25rem;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 0.75rem;
+    --spacing-lg: 1rem;
+    --spacing-xl: 1.5rem;
+    --spacing-2xl: 2rem;
+    --cart-width: 100%;
+  }
+
+  /* Header Adjustments */
+  .header-content {
+    padding: var(--spacing-md);
+    height: 60px;
+  }
+
+  .restaurant-name {
+    font-size: var(--font-size-lg);
+  }
+
+  .restaurant-tagline {
+    display: none;
+  }
+
+  .brand-logo {
+    width: 36px;
+    height: 36px;
+  }
+
+  .header-actions {
+    gap: var(--spacing-sm);
+  }
+
+  /* Search Bar Mobile */
+  .search-bar {
+    padding: var(--spacing-md);
+  }
+
+  .search-input-container input {
+    font-size: var(--font-size-base);
+  }
+
+  /* Hero Section Mobile */
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: var(--spacing-xl) var(--spacing-md);
+    min-height: 300px;
+    gap: var(--spacing-lg);
+  }
+
+  .hero-title {
+    font-size: var(--font-size-2xl);
+  }
+
+  .hero-subtitle {
+    font-size: var(--font-size-base);
+  }
+
+  .hero-image-placeholder {
+    width: 150px;
+    height: 150px;
+  }
+
+  /* Section Spacing */
+  section {
+    padding: var(--spacing-xl) var(--spacing-md);
+  }
+
+  .section-title {
+    font-size: var(--font-size-2xl);
+  }
+
+  /* Menu Filters Mobile */
+  .menu-filters {
+    flex-direction: column;
+    align-items: stretch;
+    gap: var(--spacing-md);
+  }
+
+  .filter-tabs {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    padding-bottom: var(--spacing-sm);
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .filter-tabs::-webkit-scrollbar {
+    display: none;
+  }
+
+  .filter-tab {
+    flex-shrink: 0;
+  }
+
+  .view-controls {
+    align-self: flex-end;
+  }
+
+  /* Categories Grid Mobile */
+  .categories-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: var(--spacing-md);
+  }
+
+  .category-card {
+    padding: var(--spacing-md);
+  }
+
+  .category-icon {
+    width: 50px;
+    height: 50px;
+    font-size: var(--font-size-xl);
+  }
+
+  .category-name {
+    font-size: var(--font-size-base);
+  }
+
+  /* Menu Grid Mobile */
+  .menu-grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
+
+  .menu-item-image {
+    height: 180px;
+  }
+
+  .menu-item-content {
+    padding: var(--spacing-md);
+  }
+
+  .menu-item-name {
+    font-size: var(--font-size-base);
+  }
+
+  .menu-item-price {
+    font-size: var(--font-size-lg);
+  }
+
+  .add-to-cart-btn {
+    width: 40px;
+    height: 40px;
+  }
+
+  /* List View Mobile */
+  .menu-grid.list-view .menu-item {
+    padding: var(--spacing-md);
+  }
+
+  .menu-grid.list-view .menu-item-image {
+    width: 80px;
+    height: 80px;
+    margin-right: var(--spacing-md);
+  }
+
+  .menu-grid.list-view .menu-item-content {
+    gap: var(--spacing-sm);
+  }
+
+  .menu-grid.list-view .menu-item-footer {
+    gap: var(--spacing-xs);
+  }
+
+  /* Cart Sidebar Mobile */
+  .cart-sidebar {
+    width: 100%;
+    right: -100%;
+  }
+
+  .cart-header {
+    padding: var(--spacing-md);
+  }
+
+  .cart-content {
+    padding: var(--spacing-md);
+  }
+
+  .cart-footer {
+    padding: var(--spacing-md);
+  }
+
+  .cart-item {
+    padding: var(--spacing-sm);
+  }
+
+  .cart-item-image {
+    width: 40px;
+    height: 40px;
+  }
+
+  /* Recommendations Mobile */
+  .recommendations-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: var(--spacing-md);
+  }
+
+  .recommendation-image {
+    height: 100px;
+  }
+
+  .recommendation-content {
+    padding: var(--spacing-sm);
+  }
+
+  /* Modals Mobile */
+  .item-modal,
+  .checkout-modal {
+    width: 95%;
+    max-height: 85vh;
+    margin: var(--spacing-md);
+  }
+
+  .modal-header,
+  .modal-content {
+    padding: var(--spacing-md);
+  }
+
+  /* Item Modal Mobile Specific Styles */
+  .item-modal-image {
+    height: 250px;
+  }
+
+  .item-modal-info {
+    padding: var(--spacing-md);
+  }
+
+  .item-modal-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-sm);
+  }
+
+  .item-modal-name {
+    font-size: var(--font-size-xl);
+  }
+
+  .item-modal-footer {
+    flex-direction: column;
+    align-items: stretch;
+    gap: var(--spacing-md);
+  }
+
+  .item-modal-price {
+    text-align: center;
+    margin-bottom: var(--spacing-md);
+  }
+
+  .item-modal-actions {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .modal-add-to-cart-btn {
+    width: 100%;
+  }
+
+  .nutrition-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .allergen-tags {
+    justify-content: center;
+  }
+
+  /* Bottom Navigation */
+  .bottom-nav {
+    display: flex;
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+
+  /* Hide cart sidebar on mobile in favor of bottom nav */
+  body {
+    padding-bottom: var(--bottom-nav-height);
+  }
+
+  /* Toast Mobile */
+  .toast-container {
+    top: var(--spacing-md);
+    right: var(--spacing-md);
+    left: var(--spacing-md);
+    max-width: none;
+  }
+
+  .toast {
+    margin-bottom: var(--spacing-xs);
+  }
+}
+
+/* Small Mobile Devices */
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: var(--font-size-xl);
+  }
+
+  .section-title {
+    font-size: var(--font-size-xl);
+  }
+
+  .categories-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .filter-tab {
+    padding: var(--spacing-xs) var(--spacing-md);
+    font-size: var(--font-size-xs);
+  }
+
+  .menu-item-image {
+    height: 160px;
+  }
+
+  .menu-item-badges {
+    flex-wrap: wrap;
+  }
+
+  .item-badge {
+    font-size: 9px;
+    padding: 1px var(--spacing-xs);
+  }
+}
+
+/* Very Small Mobile Devices */
+@media (max-width: 360px) {
+  :root {
+    --spacing-md: 0.5rem;
+    --spacing-lg: 0.75rem;
+    --spacing-xl: 1rem;
+  }
+
+  .restaurant-name {
+    font-size: var(--font-size-base);
+  }
+
+  .brand-logo {
+    width: 32px;
+    height: 32px;
+  }
+
+  .hero {
+    padding: var(--spacing-lg) var(--spacing-md);
+  }
+
+  .hero-title {
+    font-size: var(--font-size-lg);
+  }
+
+  .section-title {
+    font-size: var(--font-size-lg);
+  }
+
+  .categories-grid {
+    gap: var(--spacing-sm);
+  }
+
+  .menu-item-image {
+    height: 140px;
+  }
+
+  .menu-item-name {
+    font-size: var(--font-size-sm);
+  }
+
+  .menu-item-price {
+    font-size: var(--font-size-base);
+  }
+
+  .add-to-cart-btn {
+    width: 36px;
+    height: 36px;
+    font-size: var(--font-size-base);
+  }
+}
+
+/* Landscape Mobile */
+@media (max-height: 500px) and (orientation: landscape) {
+  .hero {
+    min-height: 200px;
+    padding: var(--spacing-lg) var(--spacing-md);
+  }
+
+  .hero-image-placeholder {
+    width: 100px;
+    height: 100px;
+  }
+
+  .section-header {
+    margin-bottom: var(--spacing-lg);
+  }
+
+  .menu-item-image {
+    height: 140px;
+  }
+}
+
+/* Touch Improvements */
+@media (hover: none) and (pointer: coarse) {
+  /* Remove hover effects on touch devices */
+  .menu-item:hover,
+  .category-card:hover,
+  .recommendation-item:hover {
+    transform: none;
+    box-shadow: var(--shadow-light);
+  }
+
+  .add-to-cart-btn:hover {
+    transform: none;
+    background-color: var(--primary-color);
+  }
+
+  /* Larger touch targets */
+  .filter-tab,
+  .view-btn,
+  .add-to-cart-btn,
+  .cart-toggle,
+  .search-btn {
+    min-height: 44px;
+    min-width: 44px;
+  }
+
+  /* Improve button feedback */
+  .add-to-cart-btn:active {
+    transform: scale(0.95);
+    background-color: var(--primary-light);
+  }
+
+  .filter-tab:active {
+    background-color: var(--primary-light);
+  }
+}
+
+/* Dark Mode Mobile Adjustments */
+@media (prefers-color-scheme: dark) {
+  .bottom-nav {
+    background-color: #1a1a1a;
+    border-top-color: #333;
+  }
+
+  .loading-screen {
+    background-color: #121212;
+  }
+}
+
+/* Accessibility Improvements */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .menu-item:hover,
+  .category-card:hover {
+    transform: none;
+  }
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+  .menu-item,
+  .category-card,
+  .cart-item {
+    border-width: 2px;
+  }
+
+  .filter-tab.active {
+    border-width: 3px;
+  }
+
+  .add-to-cart-btn {
+    border: 2px solid var(--text-white);
+  }
+}
+
+/* Focus Improvements for Mobile */
+.filter-tab:focus,
+.add-to-cart-btn:focus,
+.view-btn:focus,
+.nav-item:focus {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+}
+
+/* Loading States Mobile */
+.menu-loading {
+  padding: var(--spacing-xl) var(--spacing-md);
+}
+
+.skeleton-item {
+  margin-bottom: var(--spacing-md);
+}
+
+/* Swipe Gestures Hint */
+.filter-tabs::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 20px;
+  background: linear-gradient(to left, var(--bg-primary), transparent);
+  pointer-events: none;
+}
+
+@media (max-width: 480px) {
+  .filter-tabs::after {
+    width: 15px;
+  }
+}
+
+/* Smooth Scrolling for Mobile */
+html {
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Prevent zoom on input focus */
+input,
+textarea,
+select {
+  font-size: 16px;
+}
+
+/* iOS specific fixes */
+@supports (-webkit-touch-callout: none) {
+  .cart-sidebar,
+  .modal-overlay {
+    height: 100vh;
+    height: -webkit-fill-available;
+  }
+
+  .bottom-nav {
+    padding-bottom: env(safe-area-inset-bottom, 0);
+  }
+
+  body {
+    padding-bottom: calc(var(--bottom-nav-height) + env(safe-area-inset-bottom, 0));
+  }
+}
+
+/* Android specific fixes */
+@media screen and (max-width: 768px) {
+  .menu-grid {
+    /* Prevent horizontal scroll issues on Android */
+    overflow-x: hidden;
+  }
+}

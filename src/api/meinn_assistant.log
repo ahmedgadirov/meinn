@@ -1,0 +1,673 @@
+2025-05-25 19:56:42,647 - meinn_ai.conversation_learner - INFO - Conversation Learner initialized
+2025-05-25 19:56:42,666 - meinn_ai.conversation_learner - INFO - Conversation database initialized successfully
+2025-05-25 19:56:42,666 - meinn_ai - INFO - Conversation learner initialized
+2025-05-25 19:56:42,666 - meinn_ai.translation_agent - INFO - Translation Agent initialized
+2025-05-25 19:56:42,699 - meinn_ai.translation_agent - INFO - Default translations inserted
+2025-05-25 19:56:42,699 - meinn_ai.translation_agent - INFO - Translation database initialized successfully
+2025-05-25 19:56:42,699 - meinn_ai - INFO - Translation agent initialized
+2025-05-25 19:56:42,699 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 19:56:42,699 - meinn_ai - INFO - Menu manager initialized
+2025-05-25 19:56:42,702 - meinn_ai.conversation_learner - INFO - Conversation Learner initialized
+2025-05-25 19:56:42,703 - meinn_ai.translation_agent - INFO - Translation Agent initialized
+2025-05-25 19:56:42,703 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 19:56:42,730 - meinn_ai - INFO - Initializing Meinn AI for Pizza Inn
+2025-05-25 19:56:42,730 - meinn_ai - INFO - Starting Meinn Restaurant Menu AI Assistant on port 5002 (debug=False)
+2025-05-25 19:56:42,743 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5002
+ * Running on http://192.168.2.232:5002
+2025-05-25 19:56:42,743 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-25 19:57:05,810 - meinn_ai.conversation_learner - INFO - Conversation Learner initialized
+2025-05-25 19:57:05,810 - meinn_ai.conversation_learner - INFO - Conversation database initialized successfully
+2025-05-25 19:57:05,811 - meinn_ai - INFO - Conversation learner initialized
+2025-05-25 19:57:05,811 - meinn_ai.translation_agent - INFO - Translation Agent initialized
+2025-05-25 19:57:05,821 - meinn_ai.translation_agent - INFO - Default translations inserted
+2025-05-25 19:57:05,822 - meinn_ai.translation_agent - INFO - Translation database initialized successfully
+2025-05-25 19:57:05,822 - meinn_ai - INFO - Translation agent initialized
+2025-05-25 19:57:05,822 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 19:57:05,822 - meinn_ai - INFO - Menu manager initialized
+2025-05-25 19:57:05,826 - meinn_ai.conversation_learner - INFO - Conversation Learner initialized
+2025-05-25 19:57:05,826 - meinn_ai.translation_agent - INFO - Translation Agent initialized
+2025-05-25 19:57:05,826 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 19:57:05,847 - meinn_ai - INFO - Initializing Meinn AI for Pizza Inn
+2025-05-25 19:57:05,847 - meinn_ai - INFO - Starting Meinn Restaurant Menu AI Assistant on port 5002 (debug=False)
+2025-05-25 19:57:05,857 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5002
+ * Running on http://192.168.2.232:5002
+2025-05-25 19:57:05,857 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-25 19:57:50,898 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 19:57:50] "GET / HTTP/1.1" 200 -
+2025-05-25 19:57:50,983 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 19:57:50] "[36mGET /static/css/restaurant-theme.css HTTP/1.1[0m" 304 -
+2025-05-25 19:57:50,988 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 19:57:50] "[36mGET /static/css/menu-modern.css HTTP/1.1[0m" 304 -
+2025-05-25 19:57:50,989 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 19:57:50] "[36mGET /static/css/mobile-optimized.css HTTP/1.1[0m" 304 -
+2025-05-25 19:57:50,995 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 19:57:50] "[36mGET /static/js/translations.js HTTP/1.1[0m" 304 -
+2025-05-25 19:57:50,999 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 19:57:50] "[36mGET /static/js/restaurant-app.js HTTP/1.1[0m" 304 -
+2025-05-25 19:57:51,001 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 19:57:51] "[36mGET /static/js/menu-enhanced.js HTTP/1.1[0m" 304 -
+2025-05-25 19:57:51,005 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 19:57:51] "[36mGET /static/js/cart-modern.js HTTP/1.1[0m" 304 -
+2025-05-25 19:57:51,582 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 19:57:51,584 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 19:57:51,584 - meinn_ai.menu_manager - ERROR - Error retrieving categories: no such table: categories
+Traceback (most recent call last):
+  File "/home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/menu_manager.py", line 276, in get_categories
+    cursor.execute("SELECT * FROM categories ORDER BY id")
+sqlite3.OperationalError: no such table: categories
+2025-05-25 19:57:51,584 - meinn_ai.menu_manager - ERROR - Error retrieving menu items: no such table: menu_items
+Traceback (most recent call last):
+  File "/home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/menu_manager.py", line 127, in get_menu_items
+    cursor.execute(query, params)
+sqlite3.OperationalError: no such table: menu_items
+2025-05-25 19:57:51,587 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 19:57:51] "GET /api/menu/categories HTTP/1.1" 200 -
+2025-05-25 19:57:51,587 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 19:57:51] "GET /api/menu/items HTTP/1.1" 200 -
+2025-05-25 19:57:51,680 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 19:57:51,681 - meinn_ai.menu_manager - ERROR - Error retrieving menu items: no such table: menu_items
+Traceback (most recent call last):
+  File "/home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/menu_manager.py", line 127, in get_menu_items
+    cursor.execute(query, params)
+sqlite3.OperationalError: no such table: menu_items
+2025-05-25 19:57:51,682 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 19:57:51] "GET /api/menu/recommendations HTTP/1.1" 200 -
+2025-05-25 19:57:52,820 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 19:57:52,821 - meinn_ai.menu_manager - ERROR - Error retrieving categories: no such table: categories
+Traceback (most recent call last):
+  File "/home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/menu_manager.py", line 276, in get_categories
+    cursor.execute("SELECT * FROM categories ORDER BY id")
+sqlite3.OperationalError: no such table: categories
+2025-05-25 19:57:52,821 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 19:57:52] "GET /api/menu/categories HTTP/1.1" 200 -
+2025-05-25 19:57:52,824 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 19:57:52,825 - meinn_ai.menu_manager - ERROR - Error retrieving categories: no such table: categories
+Traceback (most recent call last):
+  File "/home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/menu_manager.py", line 276, in get_categories
+    cursor.execute("SELECT * FROM categories ORDER BY id")
+sqlite3.OperationalError: no such table: categories
+2025-05-25 19:57:52,825 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 19:57:52] "GET /api/menu/categories?language=en HTTP/1.1" 200 -
+2025-05-25 19:57:52,828 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 19:57:52,828 - meinn_ai.menu_manager - ERROR - Error retrieving categories: no such table: categories
+Traceback (most recent call last):
+  File "/home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/menu_manager.py", line 276, in get_categories
+    cursor.execute("SELECT * FROM categories ORDER BY id")
+sqlite3.OperationalError: no such table: categories
+2025-05-25 19:57:52,829 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 19:57:52] "GET /api/menu/categories?language=az HTTP/1.1" 200 -
+2025-05-25 19:57:52,832 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 19:57:52,832 - meinn_ai.menu_manager - ERROR - Error retrieving categories: no such table: categories
+Traceback (most recent call last):
+  File "/home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/menu_manager.py", line 276, in get_categories
+    cursor.execute("SELECT * FROM categories ORDER BY id")
+sqlite3.OperationalError: no such table: categories
+2025-05-25 19:57:52,833 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 19:57:52] "GET /api/menu/categories?language=ru HTTP/1.1" 200 -
+2025-05-25 19:57:52,835 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 19:57:52,836 - meinn_ai.menu_manager - ERROR - Error retrieving categories: no such table: categories
+Traceback (most recent call last):
+  File "/home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/menu_manager.py", line 276, in get_categories
+    cursor.execute("SELECT * FROM categories ORDER BY id")
+sqlite3.OperationalError: no such table: categories
+2025-05-25 19:57:52,836 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 19:57:52] "GET /api/menu/categories?language=tr HTTP/1.1" 200 -
+2025-05-25 19:57:52,839 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 19:57:52,839 - meinn_ai.menu_manager - ERROR - Error retrieving menu items: no such table: menu_items
+Traceback (most recent call last):
+  File "/home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/menu_manager.py", line 127, in get_menu_items
+    cursor.execute(query, params)
+sqlite3.OperationalError: no such table: menu_items
+2025-05-25 19:57:52,840 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 19:57:52] "GET /api/menu/items?language=en HTTP/1.1" 200 -
+2025-05-25 19:57:52,843 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 19:57:52,844 - meinn_ai.menu_manager - ERROR - Error retrieving menu items: no such table: menu_items
+Traceback (most recent call last):
+  File "/home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/menu_manager.py", line 127, in get_menu_items
+    cursor.execute(query, params)
+sqlite3.OperationalError: no such table: menu_items
+2025-05-25 19:57:52,845 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 19:57:52] "GET /api/menu/items?language=az HTTP/1.1" 200 -
+2025-05-25 19:57:52,847 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 19:57:52,848 - meinn_ai.menu_manager - ERROR - Error retrieving menu items: no such table: menu_items
+Traceback (most recent call last):
+  File "/home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/menu_manager.py", line 127, in get_menu_items
+    cursor.execute(query, params)
+sqlite3.OperationalError: no such table: menu_items
+2025-05-25 19:57:52,849 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 19:57:52] "GET /api/menu/items?language=ru HTTP/1.1" 200 -
+2025-05-25 19:57:52,851 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 19:57:52,851 - meinn_ai.menu_manager - ERROR - Error retrieving menu items: no such table: menu_items
+Traceback (most recent call last):
+  File "/home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/menu_manager.py", line 127, in get_menu_items
+    cursor.execute(query, params)
+sqlite3.OperationalError: no such table: menu_items
+2025-05-25 19:57:52,852 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 19:57:52] "GET /api/menu/items?language=tr HTTP/1.1" 200 -
+2025-05-25 19:57:52,855 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 19:57:52,856 - meinn_ai.menu_manager - ERROR - Error searching menu: no such table: menu_items
+Traceback (most recent call last):
+  File "/home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/menu_manager.py", line 395, in search_menu
+    cursor.execute(query_sql, (search_term, search_term, search_term, search_term, search_term))
+sqlite3.OperationalError: no such table: menu_items
+2025-05-25 19:57:52,857 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 19:57:52] "GET /api/menu/items?language=en&search=burger HTTP/1.1" 200 -
+2025-05-25 19:57:52,859 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 19:57:52,860 - meinn_ai.menu_manager - ERROR - Error searching menu: no such table: menu_items
+Traceback (most recent call last):
+  File "/home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/menu_manager.py", line 395, in search_menu
+    cursor.execute(query_sql, (search_term, search_term, search_term, search_term, search_term))
+sqlite3.OperationalError: no such table: menu_items
+2025-05-25 19:57:52,860 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 19:57:52] "GET /api/menu/items?language=az&search=burger HTTP/1.1" 200 -
+2025-05-25 19:57:52,864 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 19:57:52,864 - meinn_ai.menu_manager - ERROR - Error searching menu: no such table: menu_items
+Traceback (most recent call last):
+  File "/home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/menu_manager.py", line 395, in search_menu
+    cursor.execute(query_sql, (search_term, search_term, search_term, search_term, search_term))
+sqlite3.OperationalError: no such table: menu_items
+2025-05-25 19:57:52,865 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 19:57:52] "GET /api/menu/items?language=ru&search=бургер HTTP/1.1" 200 -
+2025-05-25 19:57:52,867 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 19:57:52,868 - meinn_ai.menu_manager - ERROR - Error searching menu: no such table: menu_items
+Traceback (most recent call last):
+  File "/home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/menu_manager.py", line 395, in search_menu
+    cursor.execute(query_sql, (search_term, search_term, search_term, search_term, search_term))
+sqlite3.OperationalError: no such table: menu_items
+2025-05-25 19:57:52,868 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 19:57:52] "GET /api/menu/items?language=tr&search=burger HTTP/1.1" 200 -
+2025-05-25 19:57:52,871 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 19:57:52,871 - meinn_ai.menu_manager - ERROR - Error retrieving menu items: no such table: menu_items
+Traceback (most recent call last):
+  File "/home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/menu_manager.py", line 127, in get_menu_items
+    cursor.execute(query, params)
+sqlite3.OperationalError: no such table: menu_items
+2025-05-25 19:57:52,872 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 19:57:52] "GET /api/menu/items HTTP/1.1" 200 -
+2025-05-25 19:57:52,874 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 19:57:52,874 - meinn_ai.menu_manager - ERROR - Error retrieving menu items: no such table: menu_items
+Traceback (most recent call last):
+  File "/home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/menu_manager.py", line 127, in get_menu_items
+    cursor.execute(query, params)
+sqlite3.OperationalError: no such table: menu_items
+2025-05-25 19:57:52,875 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 19:57:52] "GET /api/menu/recommendations?language=en HTTP/1.1" 200 -
+2025-05-25 19:57:52,878 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 19:57:52,878 - meinn_ai.menu_manager - ERROR - Error retrieving menu items: no such table: menu_items
+Traceback (most recent call last):
+  File "/home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/menu_manager.py", line 127, in get_menu_items
+    cursor.execute(query, params)
+sqlite3.OperationalError: no such table: menu_items
+2025-05-25 19:57:52,879 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 19:57:52] "GET /api/menu/recommendations?language=az HTTP/1.1" 200 -
+2025-05-25 19:57:52,882 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 19:57:52,882 - meinn_ai.menu_manager - ERROR - Error retrieving categories: no such table: categories
+Traceback (most recent call last):
+  File "/home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/menu_manager.py", line 276, in get_categories
+    cursor.execute("SELECT * FROM categories ORDER BY id")
+sqlite3.OperationalError: no such table: categories
+2025-05-25 19:57:52,883 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 19:57:52] "GET /api/menu/categories HTTP/1.1" 200 -
+2025-05-25 19:58:13,784 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 19:58:13] "GET / HTTP/1.1" 200 -
+2025-05-25 19:58:13,865 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 19:58:13] "[36mGET /static/css/restaurant-theme.css HTTP/1.1[0m" 304 -
+2025-05-25 19:58:13,877 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 19:58:13] "[36mGET /static/css/menu-modern.css HTTP/1.1[0m" 304 -
+2025-05-25 19:58:13,881 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 19:58:13] "[36mGET /static/js/menu-enhanced.js HTTP/1.1[0m" 304 -
+2025-05-25 19:58:13,882 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 19:58:13] "[36mGET /static/js/cart-modern.js HTTP/1.1[0m" 304 -
+2025-05-25 19:58:13,883 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 19:58:13] "[36mGET /static/js/translations.js HTTP/1.1[0m" 304 -
+2025-05-25 19:58:13,884 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 19:58:13] "[36mGET /static/js/restaurant-app.js HTTP/1.1[0m" 304 -
+2025-05-25 19:58:13,887 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 19:58:13] "[36mGET /static/css/mobile-optimized.css HTTP/1.1[0m" 304 -
+2025-05-25 19:58:14,150 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 19:58:14,151 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 19:58:14,151 - meinn_ai.menu_manager - ERROR - Error retrieving categories: no such table: categories
+Traceback (most recent call last):
+  File "/home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/menu_manager.py", line 276, in get_categories
+    try:
+        ^
+sqlite3.OperationalError: no such table: categories
+2025-05-25 19:58:14,152 - meinn_ai.menu_manager - ERROR - Error retrieving menu items: no such table: menu_items
+Traceback (most recent call last):
+  File "/home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/menu_manager.py", line 127, in get_menu_items
+    where_clauses.append("m.available = 1")
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: menu_items
+2025-05-25 19:58:14,153 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 19:58:14] "GET /api/menu/categories HTTP/1.1" 200 -
+2025-05-25 19:58:14,154 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 19:58:14] "GET /api/menu/items HTTP/1.1" 200 -
+2025-05-25 19:58:14,173 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 19:58:14,174 - meinn_ai.menu_manager - ERROR - Error retrieving menu items: no such table: menu_items
+Traceback (most recent call last):
+  File "/home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/menu_manager.py", line 127, in get_menu_items
+    where_clauses.append("m.available = 1")
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: menu_items
+2025-05-25 19:58:14,176 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 19:58:14] "GET /api/menu/recommendations HTTP/1.1" 200 -
+2025-05-25 19:58:23,301 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 19:58:23] "[33mPOST /api/cart/sync HTTP/1.1[0m" 404 -
+2025-05-25 19:58:24,040 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 19:58:24] "[33mPOST /api/cart/sync HTTP/1.1[0m" 404 -
+2025-05-25 19:58:25,475 - meinn_ai.conversation_learner - INFO - Conversation Learner initialized
+2025-05-25 19:58:25,476 - meinn_ai.conversation_learner - INFO - Conversation database initialized successfully
+2025-05-25 19:58:25,476 - meinn_ai - INFO - Conversation learner initialized
+2025-05-25 19:58:25,476 - meinn_ai.translation_agent - INFO - Translation Agent initialized
+2025-05-25 19:58:25,484 - meinn_ai.translation_agent - INFO - Default translations inserted
+2025-05-25 19:58:25,484 - meinn_ai.translation_agent - INFO - Translation database initialized successfully
+2025-05-25 19:58:25,484 - meinn_ai - INFO - Translation agent initialized
+2025-05-25 19:58:25,484 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 19:58:25,485 - meinn_ai.menu_manager - INFO - Database path: /home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/../../../menu_data.db
+2025-05-25 19:58:25,485 - meinn_ai - INFO - Menu manager initialized
+2025-05-25 19:58:25,487 - meinn_ai.conversation_learner - INFO - Conversation Learner initialized
+2025-05-25 19:58:25,487 - meinn_ai.translation_agent - INFO - Translation Agent initialized
+2025-05-25 19:58:25,487 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 19:58:25,487 - meinn_ai.menu_manager - INFO - Database path: /home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/../../../menu_data.db
+2025-05-25 19:58:25,511 - meinn_ai - INFO - Initializing Meinn AI for Pizza Inn
+2025-05-25 19:58:25,511 - meinn_ai - INFO - Starting Meinn Restaurant Menu AI Assistant on port 5002 (debug=False)
+2025-05-25 19:58:39,061 - meinn_ai.conversation_learner - INFO - Conversation Learner initialized
+2025-05-25 19:58:39,062 - meinn_ai.conversation_learner - INFO - Conversation database initialized successfully
+2025-05-25 19:58:39,062 - meinn_ai - INFO - Conversation learner initialized
+2025-05-25 19:58:39,062 - meinn_ai.translation_agent - INFO - Translation Agent initialized
+2025-05-25 19:58:39,071 - meinn_ai.translation_agent - INFO - Default translations inserted
+2025-05-25 19:58:39,071 - meinn_ai.translation_agent - INFO - Translation database initialized successfully
+2025-05-25 19:58:39,071 - meinn_ai - INFO - Translation agent initialized
+2025-05-25 19:58:39,071 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 19:58:39,071 - meinn_ai.menu_manager - INFO - Database path: /home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/../../../menu_data.db
+2025-05-25 19:58:39,071 - meinn_ai - INFO - Menu manager initialized
+2025-05-25 19:58:39,074 - meinn_ai.conversation_learner - INFO - Conversation Learner initialized
+2025-05-25 19:58:39,074 - meinn_ai.translation_agent - INFO - Translation Agent initialized
+2025-05-25 19:58:39,074 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 19:58:39,074 - meinn_ai.menu_manager - INFO - Database path: /home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/../../../menu_data.db
+2025-05-25 19:58:39,089 - meinn_ai - INFO - Initializing Meinn AI for Pizza Inn
+2025-05-25 19:58:39,090 - meinn_ai - INFO - Starting Meinn Restaurant Menu AI Assistant on port 5002 (debug=False)
+2025-05-25 19:58:39,102 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5002
+ * Running on http://192.168.2.232:5002
+2025-05-25 19:58:39,102 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-25 19:58:41,564 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 19:58:41] "GET / HTTP/1.1" 200 -
+2025-05-25 19:58:41,637 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 19:58:41] "[36mGET /static/css/restaurant-theme.css HTTP/1.1[0m" 304 -
+2025-05-25 19:58:41,638 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 19:58:41] "[36mGET /static/css/menu-modern.css HTTP/1.1[0m" 304 -
+2025-05-25 19:58:41,639 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 19:58:41] "[36mGET /static/css/mobile-optimized.css HTTP/1.1[0m" 304 -
+2025-05-25 19:58:41,647 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 19:58:41] "[36mGET /static/js/translations.js HTTP/1.1[0m" 304 -
+2025-05-25 19:58:41,649 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 19:58:41] "[36mGET /static/js/restaurant-app.js HTTP/1.1[0m" 304 -
+2025-05-25 19:58:41,652 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 19:58:41] "[36mGET /static/js/menu-enhanced.js HTTP/1.1[0m" 304 -
+2025-05-25 19:58:41,657 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 19:58:41] "[36mGET /static/js/cart-modern.js HTTP/1.1[0m" 304 -
+2025-05-25 19:58:42,168 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 19:58:42,168 - meinn_ai.menu_manager - INFO - Database path: /home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/../../../menu_data.db
+2025-05-25 19:58:42,169 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 19:58:42,170 - meinn_ai.menu_manager - INFO - Database path: /home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/../../../menu_data.db
+2025-05-25 19:58:42,171 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 19:58:42] "GET /api/menu/categories HTTP/1.1" 200 -
+2025-05-25 19:58:42,187 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 19:58:42] "GET /api/menu/items HTTP/1.1" 200 -
+2025-05-25 19:58:42,263 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 19:58:42,263 - meinn_ai.menu_manager - INFO - Database path: /home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/../../../menu_data.db
+2025-05-25 19:58:42,273 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 19:58:42] "GET /api/menu/recommendations HTTP/1.1" 200 -
+2025-05-25 19:58:42,306 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 19:58:42] "[33mGET /spinner.svg HTTP/1.1[0m" 404 -
+2025-05-25 19:58:42,333 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 19:58:42] "[36mGET /static/images/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-05-25 19:58:57,818 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 19:58:57] "[36mGET /static/css/restaurant-theme.css HTTP/1.1[0m" 304 -
+2025-05-25 19:58:57,822 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 19:58:57] "[36mGET /static/css/menu-modern.css HTTP/1.1[0m" 304 -
+2025-05-25 19:58:57,828 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 19:58:57] "[36mGET /static/css/mobile-optimized.css HTTP/1.1[0m" 304 -
+2025-05-25 19:58:57,840 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 19:58:57] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-05-25 19:59:04,319 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 19:59:04] "[33mGET /spinner.svg HTTP/1.1[0m" 404 -
+2025-05-25 19:59:04,390 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 19:59:04] "[36mGET /static/images/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-05-25 19:59:33,558 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 19:59:33,559 - meinn_ai.menu_manager - INFO - Database path: /home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/../../../menu_data.db
+2025-05-25 19:59:33,560 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 19:59:33] "GET /api/menu/categories HTTP/1.1" 200 -
+2025-05-25 19:59:33,564 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 19:59:33,564 - meinn_ai.menu_manager - INFO - Database path: /home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/../../../menu_data.db
+2025-05-25 19:59:33,565 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 19:59:33] "GET /api/menu/categories?language=en HTTP/1.1" 200 -
+2025-05-25 19:59:33,568 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 19:59:33,568 - meinn_ai.menu_manager - INFO - Database path: /home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/../../../menu_data.db
+2025-05-25 19:59:33,569 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 19:59:33] "GET /api/menu/categories?language=az HTTP/1.1" 200 -
+2025-05-25 19:59:33,575 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 19:59:33,575 - meinn_ai.menu_manager - INFO - Database path: /home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/../../../menu_data.db
+2025-05-25 19:59:33,580 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 19:59:33] "GET /api/menu/categories?language=ru HTTP/1.1" 200 -
+2025-05-25 19:59:33,583 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 19:59:33,583 - meinn_ai.menu_manager - INFO - Database path: /home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/../../../menu_data.db
+2025-05-25 19:59:33,584 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 19:59:33] "GET /api/menu/categories?language=tr HTTP/1.1" 200 -
+2025-05-25 19:59:33,587 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 19:59:33,587 - meinn_ai.menu_manager - INFO - Database path: /home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/../../../menu_data.db
+2025-05-25 19:59:33,601 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 19:59:33] "GET /api/menu/items?language=en HTTP/1.1" 200 -
+2025-05-25 19:59:33,605 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 19:59:33,605 - meinn_ai.menu_manager - INFO - Database path: /home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/../../../menu_data.db
+2025-05-25 19:59:33,617 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 19:59:33] "GET /api/menu/items?language=az HTTP/1.1" 200 -
+2025-05-25 19:59:33,620 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 19:59:33,620 - meinn_ai.menu_manager - INFO - Database path: /home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/../../../menu_data.db
+2025-05-25 19:59:33,629 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 19:59:33] "GET /api/menu/items?language=ru HTTP/1.1" 200 -
+2025-05-25 19:59:33,632 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 19:59:33,632 - meinn_ai.menu_manager - INFO - Database path: /home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/../../../menu_data.db
+2025-05-25 19:59:33,642 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 19:59:33] "GET /api/menu/items?language=tr HTTP/1.1" 200 -
+2025-05-25 19:59:33,647 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 19:59:33,647 - meinn_ai.menu_manager - INFO - Database path: /home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/../../../menu_data.db
+2025-05-25 19:59:33,648 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 19:59:33] "GET /api/menu/items?language=en&search=burger HTTP/1.1" 200 -
+2025-05-25 19:59:33,651 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 19:59:33,651 - meinn_ai.menu_manager - INFO - Database path: /home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/../../../menu_data.db
+2025-05-25 19:59:33,653 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 19:59:33] "GET /api/menu/items?language=az&search=burger HTTP/1.1" 200 -
+2025-05-25 19:59:33,656 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 19:59:33,656 - meinn_ai.menu_manager - INFO - Database path: /home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/../../../menu_data.db
+2025-05-25 19:59:33,657 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 19:59:33] "GET /api/menu/items?language=ru&search=бургер HTTP/1.1" 200 -
+2025-05-25 19:59:33,660 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 19:59:33,660 - meinn_ai.menu_manager - INFO - Database path: /home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/../../../menu_data.db
+2025-05-25 19:59:33,662 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 19:59:33] "GET /api/menu/items?language=tr&search=burger HTTP/1.1" 200 -
+2025-05-25 19:59:33,664 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 19:59:33,664 - meinn_ai.menu_manager - INFO - Database path: /home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/../../../menu_data.db
+2025-05-25 19:59:33,673 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 19:59:33] "GET /api/menu/items HTTP/1.1" 200 -
+2025-05-25 19:59:33,676 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 19:59:33,676 - meinn_ai.menu_manager - INFO - Database path: /home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/../../../menu_data.db
+2025-05-25 19:59:33,677 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 19:59:33] "GET /api/menu/items/cat-8-burger-roll-7-burger-inn?language=en HTTP/1.1" 200 -
+2025-05-25 19:59:33,680 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 19:59:33,680 - meinn_ai.menu_manager - INFO - Database path: /home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/../../../menu_data.db
+2025-05-25 19:59:33,681 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 19:59:33] "GET /api/menu/items/cat-8-burger-roll-7-burger-inn?language=az HTTP/1.1" 200 -
+2025-05-25 19:59:33,684 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 19:59:33,684 - meinn_ai.menu_manager - INFO - Database path: /home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/../../../menu_data.db
+2025-05-25 19:59:33,685 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 19:59:33] "GET /api/menu/items/cat-8-burger-roll-7-burger-inn?language=ru HTTP/1.1" 200 -
+2025-05-25 19:59:33,688 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 19:59:33,689 - meinn_ai.menu_manager - INFO - Database path: /home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/../../../menu_data.db
+2025-05-25 19:59:33,695 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 19:59:33] "GET /api/menu/recommendations?language=en HTTP/1.1" 200 -
+2025-05-25 19:59:33,698 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 19:59:33,699 - meinn_ai.menu_manager - INFO - Database path: /home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/../../../menu_data.db
+2025-05-25 19:59:33,706 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 19:59:33] "GET /api/menu/recommendations?language=az HTTP/1.1" 200 -
+2025-05-25 19:59:33,709 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 19:59:33,709 - meinn_ai.menu_manager - INFO - Database path: /home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/../../../menu_data.db
+2025-05-25 19:59:33,710 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 19:59:33] "GET /api/menu/categories HTTP/1.1" 200 -
+2025-05-25 19:59:33,713 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 19:59:33,713 - meinn_ai.menu_manager - INFO - Database path: /home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/../../../menu_data.db
+2025-05-25 19:59:33,715 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 19:59:33] "GET /api/menu/items?language=en&category=cat-1-s-h-r-yem-yi HTTP/1.1" 200 -
+2025-05-25 19:59:33,717 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 19:59:33,717 - meinn_ai.menu_manager - INFO - Database path: /home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/../../../menu_data.db
+2025-05-25 19:59:33,720 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 19:59:33] "GET /api/menu/items?language=az&category=cat-1-s-h-r-yem-yi HTTP/1.1" 200 -
+2025-05-25 20:00:18,540 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:00:18] "GET / HTTP/1.1" 200 -
+2025-05-25 20:00:18,652 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:00:18] "[36mGET /static/css/restaurant-theme.css HTTP/1.1[0m" 304 -
+2025-05-25 20:00:18,657 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:00:18] "[36mGET /static/css/mobile-optimized.css HTTP/1.1[0m" 304 -
+2025-05-25 20:00:18,678 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:00:18] "[36mGET /static/js/translations.js HTTP/1.1[0m" 304 -
+2025-05-25 20:00:18,685 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:00:18] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-05-25 20:00:18,686 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:00:18] "[36mGET /static/css/menu-modern.css HTTP/1.1[0m" 304 -
+2025-05-25 20:00:18,689 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:00:18] "GET /static/js/menu-enhanced.js HTTP/1.1" 200 -
+2025-05-25 20:00:18,691 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:00:18] "[36mGET /static/js/restaurant-app.js HTTP/1.1[0m" 304 -
+2025-05-25 20:00:18,695 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:00:18] "[36mGET /static/js/cart-modern.js HTTP/1.1[0m" 304 -
+2025-05-25 20:00:19,434 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 20:00:19,434 - meinn_ai.menu_manager - INFO - Database path: /home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/../../../menu_data.db
+2025-05-25 20:00:19,436 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 20:00:19,437 - meinn_ai.menu_manager - INFO - Database path: /home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/../../../menu_data.db
+2025-05-25 20:00:19,440 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:00:19] "GET /api/menu/categories HTTP/1.1" 200 -
+2025-05-25 20:00:19,464 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:00:19] "GET /api/menu/items HTTP/1.1" 200 -
+2025-05-25 20:00:19,540 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 20:00:19,540 - meinn_ai.menu_manager - INFO - Database path: /home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/../../../menu_data.db
+2025-05-25 20:00:19,560 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:00:19] "GET /api/menu/recommendations HTTP/1.1" 200 -
+2025-05-25 20:00:19,639 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:00:19] "[33mGET /spinner.svg HTTP/1.1[0m" 404 -
+2025-05-25 20:00:19,695 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:00:19] "[36mGET /static/images/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-05-25 20:01:11,121 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 20:01:11,122 - meinn_ai.menu_manager - INFO - Database path: /home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/../../../menu_data.db
+2025-05-25 20:01:11,124 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:01:11] "GET /api/menu/categories?language=az HTTP/1.1" 200 -
+2025-05-25 20:01:23,313 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 20:01:23,314 - meinn_ai.menu_manager - INFO - Database path: /home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/../../../menu_data.db
+2025-05-25 20:01:23,316 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:01:23] "GET /api/menu/categories?language=ru HTTP/1.1" 200 -
+2025-05-25 20:01:34,462 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 20:01:34,463 - meinn_ai.menu_manager - INFO - Database path: /home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/../../../menu_data.db
+2025-05-25 20:01:34,476 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:01:34] "GET /api/menu/items?language=az&limit=2 HTTP/1.1" 200 -
+2025-05-25 20:01:48,240 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:01:48] "GET / HTTP/1.1" 200 -
+2025-05-25 20:01:48,330 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:01:48] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-05-25 20:01:48,390 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:01:48] "[36mGET /static/css/restaurant-theme.css HTTP/1.1[0m" 304 -
+2025-05-25 20:01:48,401 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:01:48] "[36mGET /static/css/mobile-optimized.css HTTP/1.1[0m" 304 -
+2025-05-25 20:01:48,402 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:01:48] "[36mGET /static/css/menu-modern.css HTTP/1.1[0m" 304 -
+2025-05-25 20:01:48,415 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:01:48] "[36mGET /static/js/translations.js HTTP/1.1[0m" 304 -
+2025-05-25 20:01:48,417 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:01:48] "GET /static/js/restaurant-app.js HTTP/1.1" 200 -
+2025-05-25 20:01:48,421 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:01:48] "[36mGET /static/js/menu-enhanced.js HTTP/1.1[0m" 304 -
+2025-05-25 20:01:48,425 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:01:48] "[36mGET /static/js/cart-modern.js HTTP/1.1[0m" 304 -
+2025-05-25 20:01:48,984 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 20:01:48,984 - meinn_ai.menu_manager - INFO - Database path: /home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/../../../menu_data.db
+2025-05-25 20:01:48,986 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 20:01:48,986 - meinn_ai.menu_manager - INFO - Database path: /home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/../../../menu_data.db
+2025-05-25 20:01:48,988 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:01:48] "GET /api/menu/categories?language=az HTTP/1.1" 200 -
+2025-05-25 20:01:49,002 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:01:49] "GET /api/menu/items?language=az HTTP/1.1" 200 -
+2025-05-25 20:01:49,069 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 20:01:49,070 - meinn_ai.menu_manager - INFO - Database path: /home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/../../../menu_data.db
+2025-05-25 20:01:49,085 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:01:49] "GET /api/menu/recommendations HTTP/1.1" 200 -
+2025-05-25 20:01:49,131 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:01:49] "[33mGET /spinner.svg HTTP/1.1[0m" 404 -
+2025-05-25 20:01:49,235 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:01:49] "[36mGET /static/images/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-05-25 20:01:52,433 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 20:01:52,436 - meinn_ai.menu_manager - INFO - Database path: /home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/../../../menu_data.db
+2025-05-25 20:01:52,453 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:01:52] "GET /api/menu/items?language=ru&limit=1 HTTP/1.1" 200 -
+2025-05-25 20:02:34,889 - meinn_ai.conversation_learner - INFO - Conversation Learner initialized
+2025-05-25 20:02:34,890 - meinn_ai.conversation_learner - INFO - Conversation database initialized successfully
+2025-05-25 20:02:34,890 - meinn_ai - INFO - Conversation learner initialized
+2025-05-25 20:02:34,890 - meinn_ai.translation_agent - INFO - Translation Agent initialized
+2025-05-25 20:02:34,903 - meinn_ai.translation_agent - INFO - Default translations inserted
+2025-05-25 20:02:34,903 - meinn_ai.translation_agent - INFO - Translation database initialized successfully
+2025-05-25 20:02:34,904 - meinn_ai - INFO - Translation agent initialized
+2025-05-25 20:02:34,904 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 20:02:34,904 - meinn_ai.menu_manager - INFO - Database path: /home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/../../../menu_data.db
+2025-05-25 20:02:34,904 - meinn_ai - INFO - Menu manager initialized
+2025-05-25 20:02:34,908 - meinn_ai.conversation_learner - INFO - Conversation Learner initialized
+2025-05-25 20:02:34,908 - meinn_ai.translation_agent - INFO - Translation Agent initialized
+2025-05-25 20:02:34,908 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 20:02:34,908 - meinn_ai.menu_manager - INFO - Database path: /home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/../../../menu_data.db
+2025-05-25 20:02:34,931 - meinn_ai - INFO - Initializing Meinn AI for Pizza Inn
+2025-05-25 20:02:34,933 - meinn_ai - INFO - Starting Meinn Restaurant Menu AI Assistant on port 5002 (debug=False)
+2025-05-25 20:02:34,951 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5002
+ * Running on http://192.168.2.232:5002
+2025-05-25 20:02:34,951 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-25 20:02:36,989 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:02:36] "GET / HTTP/1.1" 200 -
+2025-05-25 20:02:37,064 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:02:37] "[36mGET /static/css/restaurant-theme.css HTTP/1.1[0m" 304 -
+2025-05-25 20:02:37,074 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:02:37] "[36mGET /static/js/translations.js HTTP/1.1[0m" 304 -
+2025-05-25 20:02:37,079 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:02:37] "[36mGET /static/css/menu-modern.css HTTP/1.1[0m" 304 -
+2025-05-25 20:02:37,080 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:02:37] "[36mGET /static/js/menu-enhanced.js HTTP/1.1[0m" 304 -
+2025-05-25 20:02:37,083 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:02:37] "[36mGET /static/js/restaurant-app.js HTTP/1.1[0m" 304 -
+2025-05-25 20:02:37,084 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:02:37] "[36mGET /static/css/mobile-optimized.css HTTP/1.1[0m" 304 -
+2025-05-25 20:02:37,086 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:02:37] "[36mGET /static/js/cart-modern.js HTTP/1.1[0m" 304 -
+2025-05-25 20:02:37,571 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 20:02:37,571 - meinn_ai.menu_manager - INFO - Database path: /home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/../../../menu_data.db
+2025-05-25 20:02:37,572 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 20:02:37,573 - meinn_ai.menu_manager - INFO - Database path: /home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/../../../menu_data.db
+2025-05-25 20:02:37,574 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:02:37] "GET /api/menu/categories?language=az HTTP/1.1" 200 -
+2025-05-25 20:02:37,590 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:02:37] "GET /api/menu/items?language=az HTTP/1.1" 200 -
+2025-05-25 20:02:37,649 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 20:02:37,649 - meinn_ai.menu_manager - INFO - Database path: /home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/../../../menu_data.db
+2025-05-25 20:02:37,657 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:02:37] "GET /api/menu/recommendations HTTP/1.1" 200 -
+2025-05-25 20:02:37,692 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:02:37] "[33mGET /spinner.svg HTTP/1.1[0m" 404 -
+2025-05-25 20:02:37,740 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:02:37] "[36mGET /static/images/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-05-25 20:02:46,464 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:02:46] "[33mGET /spinner.svg HTTP/1.1[0m" 404 -
+2025-05-25 20:02:46,560 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:02:46] "[36mGET /static/images/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-05-25 20:08:38,782 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:08:38] "GET / HTTP/1.1" 200 -
+2025-05-25 20:08:38,884 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:08:38] "[36mGET /static/css/restaurant-theme.css HTTP/1.1[0m" 304 -
+2025-05-25 20:08:38,888 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:08:38] "[36mGET /static/css/menu-modern.css HTTP/1.1[0m" 304 -
+2025-05-25 20:08:38,891 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:08:38] "[36mGET /static/js/translations.js HTTP/1.1[0m" 304 -
+2025-05-25 20:08:38,894 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:08:38] "GET /static/js/restaurant-app.js HTTP/1.1" 200 -
+2025-05-25 20:08:38,895 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:08:38] "[36mGET /static/css/mobile-optimized.css HTTP/1.1[0m" 304 -
+2025-05-25 20:08:38,901 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:08:38] "[36mGET /static/js/cart-modern.js HTTP/1.1[0m" 304 -
+2025-05-25 20:08:38,906 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:08:38] "[36mGET /static/js/menu-enhanced.js HTTP/1.1[0m" 304 -
+2025-05-25 20:08:39,120 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 20:08:39,120 - meinn_ai.menu_manager - INFO - Database path: /home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/../../../menu_data.db
+2025-05-25 20:08:39,120 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 20:08:39,121 - meinn_ai.menu_manager - INFO - Database path: /home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/../../../menu_data.db
+2025-05-25 20:08:39,122 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:08:39] "GET /api/menu/categories?language=az HTTP/1.1" 200 -
+2025-05-25 20:08:39,139 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:08:39] "GET /api/menu/items?language=az HTTP/1.1" 200 -
+2025-05-25 20:08:39,183 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 20:08:39,184 - meinn_ai.menu_manager - INFO - Database path: /home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/../../../menu_data.db
+2025-05-25 20:08:39,198 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:08:39] "GET /api/menu/recommendations HTTP/1.1" 200 -
+2025-05-25 20:08:39,224 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:08:39] "[33mGET /spinner.svg HTTP/1.1[0m" 404 -
+2025-05-25 20:08:39,271 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:08:39] "[36mGET /static/images/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-05-25 20:08:43,061 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 20:08:43,061 - meinn_ai.menu_manager - INFO - Database path: /home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/../../../menu_data.db
+2025-05-25 20:08:43,063 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 20:08:43,064 - meinn_ai.menu_manager - INFO - Database path: /home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/../../../menu_data.db
+2025-05-25 20:08:43,069 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:08:43] "GET /api/menu/categories?language=ru HTTP/1.1" 200 -
+2025-05-25 20:08:43,094 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:08:43] "GET /api/menu/items?language=ru HTTP/1.1" 200 -
+2025-05-25 20:08:43,159 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 20:08:43,159 - meinn_ai.menu_manager - INFO - Database path: /home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/../../../menu_data.db
+2025-05-25 20:08:43,166 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:08:43] "GET /api/menu/recommendations HTTP/1.1" 200 -
+2025-05-25 20:08:43,205 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:08:43] "[33mGET /spinner.svg HTTP/1.1[0m" 404 -
+2025-05-25 20:08:46,125 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 20:08:46,125 - meinn_ai.menu_manager - INFO - Database path: /home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/../../../menu_data.db
+2025-05-25 20:08:46,128 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 20:08:46,128 - meinn_ai.menu_manager - INFO - Database path: /home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/../../../menu_data.db
+2025-05-25 20:08:46,130 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:08:46] "GET /api/menu/categories?language=fr HTTP/1.1" 200 -
+2025-05-25 20:08:46,159 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:08:46] "GET /api/menu/items?language=fr HTTP/1.1" 200 -
+2025-05-25 20:08:46,230 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 20:08:46,230 - meinn_ai.menu_manager - INFO - Database path: /home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/../../../menu_data.db
+2025-05-25 20:08:46,236 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:08:46] "GET /api/menu/recommendations HTTP/1.1" 200 -
+2025-05-25 20:08:46,271 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:08:46] "[33mGET /spinner.svg HTTP/1.1[0m" 404 -
+2025-05-25 20:08:50,106 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 20:08:50,108 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 20:08:50,108 - meinn_ai.menu_manager - INFO - Database path: /home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/../../../menu_data.db
+2025-05-25 20:08:50,109 - meinn_ai.menu_manager - INFO - Database path: /home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/../../../menu_data.db
+2025-05-25 20:08:50,112 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:08:50] "GET /api/menu/categories?language=ar HTTP/1.1" 200 -
+2025-05-25 20:08:50,139 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:08:50] "GET /api/menu/items?language=ar HTTP/1.1" 200 -
+2025-05-25 20:08:50,236 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 20:08:50,237 - meinn_ai.menu_manager - INFO - Database path: /home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/../../../menu_data.db
+2025-05-25 20:08:50,249 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:08:50] "GET /api/menu/recommendations HTTP/1.1" 200 -
+2025-05-25 20:08:50,358 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:08:50] "[33mGET /spinner.svg HTTP/1.1[0m" 404 -
+2025-05-25 20:08:55,101 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 20:08:55,102 - meinn_ai.menu_manager - INFO - Database path: /home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/../../../menu_data.db
+2025-05-25 20:08:55,103 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 20:08:55,103 - meinn_ai.menu_manager - INFO - Database path: /home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/../../../menu_data.db
+2025-05-25 20:08:55,106 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:08:55] "GET /api/menu/categories?language=it HTTP/1.1" 200 -
+2025-05-25 20:08:55,129 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:08:55] "GET /api/menu/items?language=it HTTP/1.1" 200 -
+2025-05-25 20:08:55,235 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 20:08:55,235 - meinn_ai.menu_manager - INFO - Database path: /home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/../../../menu_data.db
+2025-05-25 20:08:55,241 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:08:55] "GET /api/menu/recommendations HTTP/1.1" 200 -
+2025-05-25 20:08:55,262 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:08:55] "[33mGET /spinner.svg HTTP/1.1[0m" 404 -
+2025-05-25 20:11:05,338 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:11:05] "GET / HTTP/1.1" 200 -
+2025-05-25 20:11:05,473 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:11:05] "[36mGET /static/css/restaurant-theme.css HTTP/1.1[0m" 304 -
+2025-05-25 20:11:05,476 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:11:05] "[36mGET /static/css/menu-modern.css HTTP/1.1[0m" 304 -
+2025-05-25 20:11:05,478 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:11:05] "[36mGET /static/css/mobile-optimized.css HTTP/1.1[0m" 304 -
+2025-05-25 20:11:05,485 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:11:05] "[36mGET /static/js/translations.js HTTP/1.1[0m" 304 -
+2025-05-25 20:11:05,487 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:11:05] "[36mGET /static/js/restaurant-app.js HTTP/1.1[0m" 304 -
+2025-05-25 20:11:05,491 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:11:05] "[36mGET /static/js/cart-modern.js HTTP/1.1[0m" 304 -
+2025-05-25 20:11:05,493 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:11:05] "GET /static/js/menu-enhanced.js HTTP/1.1" 200 -
+2025-05-25 20:11:05,692 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 20:11:05,692 - meinn_ai.menu_manager - INFO - Database path: /home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/../../../menu_data.db
+2025-05-25 20:11:05,693 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 20:11:05,693 - meinn_ai.menu_manager - INFO - Database path: /home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/../../../menu_data.db
+2025-05-25 20:11:05,696 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:11:05] "GET /api/menu/categories?language=az HTTP/1.1" 200 -
+2025-05-25 20:11:05,697 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 20:11:05,697 - meinn_ai.menu_manager - INFO - Database path: /home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/../../../menu_data.db
+2025-05-25 20:11:05,700 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:11:05] "GET /api/menu/categories?language=az HTTP/1.1" 200 -
+2025-05-25 20:11:05,716 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:11:05] "GET /api/menu/items?language=az HTTP/1.1" 200 -
+2025-05-25 20:11:05,718 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 20:11:05,718 - meinn_ai.menu_manager - INFO - Database path: /home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/../../../menu_data.db
+2025-05-25 20:11:05,736 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:11:05] "GET /api/menu/items?language=az HTTP/1.1" 200 -
+2025-05-25 20:11:05,758 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 20:11:05,758 - meinn_ai.menu_manager - INFO - Database path: /home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/../../../menu_data.db
+2025-05-25 20:11:05,773 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:11:05] "GET /api/menu/recommendations HTTP/1.1" 200 -
+2025-05-25 20:11:05,800 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:11:05] "[33mGET /spinner.svg HTTP/1.1[0m" 404 -
+2025-05-25 20:11:05,862 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:11:05] "[36mGET /static/images/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-05-25 20:11:17,017 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 20:11:17,017 - meinn_ai.menu_manager - INFO - Database path: /home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/../../../menu_data.db
+2025-05-25 20:11:17,021 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 20:11:17,022 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:11:17] "GET /api/menu/categories?language=ar HTTP/1.1" 200 -
+2025-05-25 20:11:17,022 - meinn_ai.menu_manager - INFO - Database path: /home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/../../../menu_data.db
+2025-05-25 20:11:17,029 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 20:11:17,030 - meinn_ai.menu_manager - INFO - Database path: /home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/../../../menu_data.db
+2025-05-25 20:11:17,041 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:11:17] "GET /api/menu/categories?language=ar HTTP/1.1" 200 -
+2025-05-25 20:11:17,074 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:11:17] "GET /api/menu/items?language=ar HTTP/1.1" 200 -
+2025-05-25 20:11:17,076 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 20:11:17,076 - meinn_ai.menu_manager - INFO - Database path: /home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/../../../menu_data.db
+2025-05-25 20:11:17,104 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:11:17] "GET /api/menu/items?language=ar HTTP/1.1" 200 -
+2025-05-25 20:11:17,176 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 20:11:17,176 - meinn_ai.menu_manager - INFO - Database path: /home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/../../../menu_data.db
+2025-05-25 20:11:17,190 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:11:17] "GET /api/menu/recommendations HTTP/1.1" 200 -
+2025-05-25 20:11:17,282 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:11:17] "[33mGET /spinner.svg HTTP/1.1[0m" 404 -
+2025-05-25 20:11:18,889 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 20:11:18,890 - meinn_ai.menu_manager - INFO - Database path: /home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/../../../menu_data.db
+2025-05-25 20:11:18,901 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:11:18] "GET /api/menu/categories?language=it HTTP/1.1" 200 -
+2025-05-25 20:11:18,923 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 20:11:18,924 - meinn_ai.menu_manager - INFO - Database path: /home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/../../../menu_data.db
+2025-05-25 20:11:18,929 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 20:11:18,932 - meinn_ai.menu_manager - INFO - Database path: /home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/../../../menu_data.db
+2025-05-25 20:11:18,943 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:11:18] "GET /api/menu/categories?language=it HTTP/1.1" 200 -
+2025-05-25 20:11:18,985 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:11:18] "GET /api/menu/items?language=it HTTP/1.1" 200 -
+2025-05-25 20:11:18,991 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 20:11:18,991 - meinn_ai.menu_manager - INFO - Database path: /home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/../../../menu_data.db
+2025-05-25 20:11:19,018 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:11:19] "GET /api/menu/items?language=it HTTP/1.1" 200 -
+2025-05-25 20:11:19,153 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 20:11:19,153 - meinn_ai.menu_manager - INFO - Database path: /home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/../../../menu_data.db
+2025-05-25 20:11:19,169 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:11:19] "GET /api/menu/recommendations HTTP/1.1" 200 -
+2025-05-25 20:11:19,225 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:11:19] "[33mGET /spinner.svg HTTP/1.1[0m" 404 -
+2025-05-25 20:11:22,278 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 20:11:22,279 - meinn_ai.menu_manager - INFO - Database path: /home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/../../../menu_data.db
+2025-05-25 20:11:22,281 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 20:11:22,282 - meinn_ai.menu_manager - INFO - Database path: /home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/../../../menu_data.db
+2025-05-25 20:11:22,283 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:11:22] "GET /api/menu/categories?language=az HTTP/1.1" 200 -
+2025-05-25 20:11:22,286 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 20:11:22,286 - meinn_ai.menu_manager - INFO - Database path: /home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/../../../menu_data.db
+2025-05-25 20:11:22,294 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:11:22] "GET /api/menu/categories?language=az HTTP/1.1" 200 -
+2025-05-25 20:11:22,326 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:11:22] "GET /api/menu/items?language=az HTTP/1.1" 200 -
+2025-05-25 20:11:22,336 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 20:11:22,337 - meinn_ai.menu_manager - INFO - Database path: /home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/../../../menu_data.db
+2025-05-25 20:11:22,361 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:11:22] "GET /api/menu/items?language=az HTTP/1.1" 200 -
+2025-05-25 20:11:22,443 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 20:11:22,443 - meinn_ai.menu_manager - INFO - Database path: /home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/../../../menu_data.db
+2025-05-25 20:11:22,459 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:11:22] "GET /api/menu/recommendations HTTP/1.1" 200 -
+2025-05-25 20:11:22,514 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:11:22] "[33mGET /spinner.svg HTTP/1.1[0m" 404 -
+2025-05-25 20:11:24,587 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:11:24] "[36mGET /static/css/menu-modern.css HTTP/1.1[0m" 304 -
+2025-05-25 20:11:24,588 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:11:24] "[36mGET /static/css/restaurant-theme.css HTTP/1.1[0m" 304 -
+2025-05-25 20:11:24,588 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:11:24] "[36mGET /static/css/mobile-optimized.css HTTP/1.1[0m" 304 -
+2025-05-25 20:11:24,604 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:11:24] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-05-25 20:11:31,685 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 20:11:31,686 - meinn_ai.menu_manager - INFO - Database path: /home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/../../../menu_data.db
+2025-05-25 20:11:31,699 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:11:31] "GET /api/menu/items?category=cat-8-burger-roll&language=az HTTP/1.1" 200 -
+2025-05-25 20:11:31,778 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:11:31] "[33mGET /spinner.svg HTTP/1.1[0m" 404 -
+2025-05-25 20:11:31,825 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:11:31] "[36mGET /static/images/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-05-25 20:11:45,181 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 20:11:45,182 - meinn_ai.menu_manager - INFO - Database path: /home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/../../../menu_data.db
+2025-05-25 20:11:45,191 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:11:45] "GET /api/menu/items?category=cat-7-desert&language=az HTTP/1.1" 200 -
+2025-05-25 20:11:45,245 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:11:45] "[33mGET /spinner.svg HTTP/1.1[0m" 404 -
+2025-05-25 20:11:46,055 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 20:11:46,056 - meinn_ai.menu_manager - INFO - Database path: /home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/../../../menu_data.db
+2025-05-25 20:11:46,059 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:11:46] "GET /api/menu/items?category=cat-6-pastalar&language=az HTTP/1.1" 200 -
+2025-05-25 20:11:46,086 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:11:46] "[33mGET /spinner.svg HTTP/1.1[0m" 404 -
+2025-05-25 20:11:48,146 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 20:11:48,147 - meinn_ai.menu_manager - INFO - Database path: /home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/../../../menu_data.db
+2025-05-25 20:11:48,162 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:11:48] "GET /api/menu/items?category=cat-13--t-yem-kl-ri-&language=az HTTP/1.1" 200 -
+2025-05-25 20:11:48,227 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:11:48] "[33mGET /spinner.svg HTTP/1.1[0m" 404 -
+2025-05-25 20:11:49,008 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 20:11:49,009 - meinn_ai.menu_manager - INFO - Database path: /home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/../../../menu_data.db
+2025-05-25 20:11:49,013 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:11:49] "GET /api/menu/items?category=cat-12-t-r-v-z-yem-kl-ri-&language=az HTTP/1.1" 200 -
+2025-05-25 20:11:51,974 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 20:11:51,974 - meinn_ai.menu_manager - INFO - Database path: /home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/../../../menu_data.db
+2025-05-25 20:11:51,982 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:11:51] "GET /api/menu/items?category=cat-1-s-h-r-yem-yi&language=az HTTP/1.1" 200 -
+2025-05-25 20:11:57,688 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 20:11:57,688 - meinn_ai.menu_manager - INFO - Database path: /home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/../../../menu_data.db
+2025-05-25 20:11:57,691 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:11:57] "GET /api/menu/categories?language=en HTTP/1.1" 200 -
+2025-05-25 20:11:57,698 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 20:11:57,699 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 20:11:57,700 - meinn_ai.menu_manager - INFO - Database path: /home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/../../../menu_data.db
+2025-05-25 20:11:57,700 - meinn_ai.menu_manager - INFO - Database path: /home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/../../../menu_data.db
+2025-05-25 20:11:57,709 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:11:57] "GET /api/menu/categories?language=en HTTP/1.1" 200 -
+2025-05-25 20:11:57,745 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:11:57] "GET /api/menu/items?language=en HTTP/1.1" 200 -
+2025-05-25 20:11:57,751 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 20:11:57,751 - meinn_ai.menu_manager - INFO - Database path: /home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/../../../menu_data.db
+2025-05-25 20:11:57,777 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:11:57] "GET /api/menu/items?language=en HTTP/1.1" 200 -
+2025-05-25 20:11:57,852 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 20:11:57,852 - meinn_ai.menu_manager - INFO - Database path: /home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/../../../menu_data.db
+2025-05-25 20:11:57,861 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:11:57] "GET /api/menu/recommendations HTTP/1.1" 200 -
+2025-05-25 20:11:57,928 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:11:57] "[33mGET /spinner.svg HTTP/1.1[0m" 404 -
+2025-05-25 20:11:57,966 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:11:57] "[36mGET /static/images/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-05-25 20:11:59,623 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:11:59] "[33mGET /spinner.svg HTTP/1.1[0m" 404 -
+2025-05-25 20:12:00,456 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 20:12:00,457 - meinn_ai.menu_manager - INFO - Database path: /home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/../../../menu_data.db
+2025-05-25 20:12:00,473 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:12:00] "GET /api/menu/items?category=cat-1-s-h-r-yem-yi&language=en HTTP/1.1" 200 -
+2025-05-25 20:14:06,698 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:14:06] "[36mGET /admin HTTP/1.1[0m" 304 -
+2025-05-25 20:14:06,881 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:14:06] "[33mGET /static/css/admin-mobile-fixes.css HTTP/1.1[0m" 404 -
+2025-05-25 20:14:06,886 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:14:06] "[33mGET /static/css/admin-modern.css HTTP/1.1[0m" 404 -
+2025-05-25 20:14:06,909 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:14:06] "GET /static/js/components/admin.js HTTP/1.1" 200 -
+2025-05-25 20:14:07,126 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 20:14:07,126 - meinn_ai.menu_manager - INFO - Database path: /home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/../../../menu_data.db
+2025-05-25 20:14:07,129 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:14:07] "GET /api/menu/categories HTTP/1.1" 200 -
+2025-05-25 20:14:07,210 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 20:14:07,210 - meinn_ai.menu_manager - INFO - Database path: /home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/../../../menu_data.db
+2025-05-25 20:14:07,230 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:14:07] "GET /api/menu/items HTTP/1.1" 200 -
+2025-05-25 20:16:04,198 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:16:04] "[36mGET /admin HTTP/1.1[0m" 304 -
+2025-05-25 20:16:04,300 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:16:04] "[33mGET /static/css/admin-mobile-fixes.css HTTP/1.1[0m" 404 -
+2025-05-25 20:16:04,301 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:16:04] "[33mGET /static/css/admin-modern.css HTTP/1.1[0m" 404 -
+2025-05-25 20:16:04,305 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:16:04] "[36mGET /static/js/components/admin.js HTTP/1.1[0m" 304 -
+2025-05-25 20:16:04,551 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 20:16:04,552 - meinn_ai.menu_manager - INFO - Database path: /home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/../../../menu_data.db
+2025-05-25 20:16:04,554 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:16:04] "GET /api/menu/categories HTTP/1.1" 200 -
+2025-05-25 20:16:04,572 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 20:16:04,573 - meinn_ai.menu_manager - INFO - Database path: /home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/../../../menu_data.db
+2025-05-25 20:16:04,587 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:16:04] "GET /api/menu/items HTTP/1.1" 200 -
+2025-05-25 20:16:55,744 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:16:55] "[36mGET /admin HTTP/1.1[0m" 304 -
+2025-05-25 20:16:55,866 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:16:55] "[33mGET /static/css/admin-mobile-fixes.css HTTP/1.1[0m" 404 -
+2025-05-25 20:16:55,869 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:16:55] "[33mGET /static/css/admin-modern.css HTTP/1.1[0m" 404 -
+2025-05-25 20:16:55,873 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:16:55] "[36mGET /static/js/components/admin.js HTTP/1.1[0m" 304 -
+2025-05-25 20:16:56,215 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 20:16:56,215 - meinn_ai.menu_manager - INFO - Database path: /home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/../../../menu_data.db
+2025-05-25 20:16:56,217 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:16:56] "GET /api/menu/categories HTTP/1.1" 200 -
+2025-05-25 20:16:56,248 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 20:16:56,249 - meinn_ai.menu_manager - INFO - Database path: /home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/../../../menu_data.db
+2025-05-25 20:16:56,265 - werkzeug - INFO - 127.0.0.1 - - [25/May/2025 20:16:56] "GET /api/menu/items HTTP/1.1" 200 -
+2025-05-25 20:20:47,667 - meinn_ai.conversation_learner - INFO - Conversation Learner initialized
+2025-05-25 20:20:47,667 - meinn_ai.conversation_learner - INFO - Conversation database initialized successfully
+2025-05-25 20:20:47,667 - meinn_ai - INFO - Conversation learner initialized
+2025-05-25 20:20:47,668 - meinn_ai.translation_agent - INFO - Translation Agent initialized
+2025-05-25 20:20:47,675 - meinn_ai.translation_agent - INFO - Default translations inserted
+2025-05-25 20:20:47,676 - meinn_ai.translation_agent - INFO - Translation database initialized successfully
+2025-05-25 20:20:47,676 - meinn_ai - INFO - Translation agent initialized
+2025-05-25 20:20:47,676 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 20:20:47,676 - meinn_ai.menu_manager - INFO - Database path: /home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/../../../menu_data.db
+2025-05-25 20:20:47,676 - meinn_ai - INFO - Menu manager initialized
+2025-05-25 20:20:47,678 - meinn_ai.conversation_learner - INFO - Conversation Learner initialized
+2025-05-25 20:20:47,678 - meinn_ai.translation_agent - INFO - Translation Agent initialized
+2025-05-25 20:20:47,678 - meinn_ai.menu_manager - INFO - Menu Manager initialized with multilingual support
+2025-05-25 20:20:47,678 - meinn_ai.menu_manager - INFO - Database path: /home/ahmd/Desktop/linux/meinn-e397c5c372f3b3ec18c4eb218d8865e647c364e8/src/services/product/../../../menu_data.db
+2025-05-25 20:20:47,701 - meinn_ai - INFO - Initializing Meinn AI for Pizza Inn
+2025-05-25 20:20:47,701 - meinn_ai - INFO - Starting Meinn Restaurant Menu AI Assistant on port 5002 (debug=False)
+2025-05-25 20:20:47,714 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5002
+ * Running on http://192.168.2.232:5002
+2025-05-25 20:20:47,715 - werkzeug - INFO - [33mPress CTRL+C to quit[0m

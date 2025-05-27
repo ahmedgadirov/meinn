@@ -1,0 +1,1129 @@
+MEINN RESTAURANT MENU EXPORT
+==================================================
+Export Date: 2025-05-25 18:45:37
+Total Categories: 15
+Total Menu Items: 128
+==================================================
+
+
+==================== BURGER ROLL ====================
+
+• BURGER INN
+  Price: $22.5
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: BURGER INN
+  ID: cat-8-burger-roll-7-burger-inn
+
+• CLUB SENDVİÇ
+  Price: $16.0
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: CLUB SENDVİÇ
+  ID: cat-8-burger-roll-2-club-sendvi--
+
+• HAMBURGER
+  Description: (200qr) Mal əti, pom ...
+  Price: $19.9
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: HAMBURGER
+  ID: cat-8-burger-roll-4-hamburger
+
+• KESADİLYA
+  Description: (160qr) Can əti, moz ...
+  Price: $19.9
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: KESADİLYA
+  ID: cat-8-burger-roll-6-kesadi-lya
+
+• TOYUQ BURGER
+  Price: $14.5
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: TOYUQ BURGER
+  ID: cat-8-burger-roll-1-toyuq-burger
+
+• ÇİZBURGER
+  Description: (200qr) Mal əti, ced ...
+  Price: $21.0
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: ÇİZBURGER
+  ID: cat-8-burger-roll-3--i-zburger
+
+• ÜÇLÜ BURGER
+  Price: $23.0
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: ÜÇLÜ BURGER
+  ID: cat-8-burger-roll-5---l--burger
+
+
+==================== DESERT ====================
+
+• BALLI TORT
+  Price: $10.0
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: BALLI TORT
+  ID: cat-7-desert-9-balli-tort
+
+• DONDURMA
+  Price: $8.0
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: DONDURMA
+  ID: cat-7-desert-5-dondurma
+
+• HAVUC DİLİM
+  Price: $10.0
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: HAVUC DİLİM
+  ID: cat-7-desert-15-havuc-di-li-m
+
+• KARAMELLİ TORT
+  Price: $10.0
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: KARAMELLİ TORT
+  ID: cat-7-desert-2-karamelli--tort
+
+• KÜNEFE
+  Price: $10.0
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: KÜNEFE
+  ID: cat-7-desert-14-k-nefe
+
+• MARAŞ DONDURMA
+  Price: $8.5
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: MARAŞ DONDURMA
+  ID: cat-7-desert-6-mara--dondurma
+
+• QARIŞIQ MEYVƏ
+  Price: $18.0
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: QARIŞIQ MEYVƏ
+  ID: cat-7-desert-1-qari-iq-meyv-
+
+• SAN SEBASTYAN
+  Price: $12.0
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: SAN SEBASTYAN
+  ID: cat-7-desert-10-san-sebastyan
+
+• SÜDLÜ PAXLAVA
+  Price: $10.0
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: SÜDLÜ PAXLAVA
+  ID: cat-7-desert-12-s-dl--paxlava
+
+• SÜTLAC
+  Price: $7.9
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: SÜTLAC
+  ID: cat-7-desert-11-s-tlac
+
+• TRALİÇE
+  Price: $9.5
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: TRALİÇE
+  ID: cat-7-desert-3-trali--e
+
+• TÜRK PAXLAVASI
+  Price: $10.0
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: TÜRK PAXLAVASI
+  ID: cat-7-desert-13-t-rk-paxlavasi
+
+• TİRAMİSU
+  Price: $12.0
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: TİRAMİSU
+  ID: cat-7-desert-7-ti-rami-su
+
+• ÇİYƏLƏKLİ ÇİZKEYK
+  Price: $11.0
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: ÇİYƏLƏKLİ ÇİZKEYK
+  ID: cat-7-desert-8--i-y-l-kli---i-zkeyk
+
+• ŞOKOLADLI ÇİZKEYK
+  Price: $11.0
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: ŞOKOLADLI ÇİZKEYK
+  ID: cat-7-desert-4--okoladli--i-zkeyk
+
+
+==================== DƏNİZ MƏHSULLARİ ====================
+
+• GRILLED SALMON WITH ASIAN SAUSE
+  Description: (350qr) Salmon balığ ...
+  Price: $29.0
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: GRILLED SALMON WITH ASIAN SAUSE
+  ID: cat-15-d-ni-z-m-hsullari--5-grilled-salmon-with-asian-sause
+
+• KƏRƏ YAĞINDA KREVETKA
+  Price: $24.0
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: KƏRƏ YAĞINDA KREVETKA
+  ID: cat-15-d-ni-z-m-hsullari--8-k-r--ya-inda-krevetka
+
+• NAR SOUSLU NƏRƏ BALIĞI
+  Price: $39.0
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: NAR SOUSLU NƏRƏ BALIĞI
+  ID: cat-15-d-ni-z-m-hsullari--7-nar-souslu-n-r--bali-i
+
+• NƏRƏ BALIĞI
+  Description: (350qr) Nərə balığı, ...
+  Price: $38.0
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: NƏRƏ BALIĞI
+  ID: cat-15-d-ni-z-m-hsullari--4-n-r--bali-i
+
+• QIZILBALIQ QRİLDƏ
+  Description: (240qr) Salmon balığ ...
+  Price: $28.0
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: QIZILBALIQ QRİLDƏ
+  ID: cat-15-d-ni-z-m-hsullari--1-qizilbaliq-qri-ld-
+
+• SİBAS QOVURMA
+  Price: $27.0
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: SİBAS QOVURMA
+  ID: cat-15-d-ni-z-m-hsullari--9-si-bas-qovurma
+
+• TAVADA FAREL
+  Description: (250qr) Farel balığı ...
+  Price: $25.0
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: TAVADA FAREL
+  ID: cat-15-d-ni-z-m-hsullari--2-tavada-farel
+
+• ÇUPRA QRİLDƏ
+  Price: $29.0
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: ÇUPRA QRİLDƏ
+  ID: cat-15-d-ni-z-m-hsullari--3--upra-qri-ld-
+
+• İSPANAQLI QIZIL BALIQ
+  Price: $33.0
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: İSPANAQLI QIZIL BALIQ
+  ID: cat-15-d-ni-z-m-hsullari--6-i-spanaqli-qizil-baliq
+
+
+==================== KABABLAR ====================
+
+• ADANA KABAB
+  Price: $22.0
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: ADANA KABAB
+  ID: cat-4-kabablar-6-adana-kabab
+
+• LÜLƏ KABAB
+  Price: $22.0
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: LÜLƏ KABAB
+  ID: cat-4-kabablar-1-l-l--kabab
+
+• NƏRƏ BALIQ SARMA
+  Price: $33.0
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: NƏRƏ BALIQ SARMA
+  ID: cat-4-kabablar-8-n-r--baliq-sarma
+
+• QARIŞIQ KABAB
+  Description: (240qr) Lülə kababı, ...
+  Price: $24.0
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: QARIŞIQ KABAB
+  ID: cat-4-kabablar-4-qari-iq-kabab
+
+• QUZU QABIRĞALARI
+  Price: $23.0
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: QUZU QABIRĞALARI
+  ID: cat-4-kabablar-3-quzu-qabir-alari
+
+• SULTAN KABABI
+  Description: (1,4kq) Lülə kababı, ...
+  Price: $121.0
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: SULTAN KABABI
+  ID: cat-4-kabablar-7-sultan-kababi
+
+• TOYUQ KABABI
+  Price: $19.0
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: TOYUQ KABABI
+  ID: cat-4-kabablar-2-toyuq-kababi
+
+• TİKƏ KABABI
+  Price: $22.0
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: TİKƏ KABABI
+  ID: cat-4-kabablar-5-ti-k--kababi
+
+
+==================== PASTALAR ====================
+
+• BEEF NOODLES
+  Price: $19.0
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: BEEF NOODLES
+  ID: cat-6-pastalar-9-beef-noodles
+
+• CHICKEN NOODLES
+  Price: $17.0
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: CHICKEN NOODLES
+  ID: cat-6-pastalar-7-chicken-noodles
+
+• DƏNİZ MƏHSULLU FETTUÇİNİ
+  Price: $18.5
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: DƏNİZ MƏHSULLU FETTUÇİNİ
+  ID: cat-6-pastalar-6-d-ni-z-m-hsullu-fettu-i-ni-
+
+• FETTUÇİNİ ALFREDO
+  Price: $18.5
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: FETTUÇİNİ ALFREDO
+  ID: cat-6-pastalar-3-fettu-i-ni--alfredo
+
+• MANTI
+  Price: $14.0
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: MANTI
+  ID: cat-6-pastalar-4-manti
+
+• PENNE ARABİATA
+  Price: $15.5
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: PENNE ARABİATA
+  ID: cat-6-pastalar-2-penne-arabi-ata
+
+• SALMON PAPARDELLA
+  Price: $19.5
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: SALMON PAPARDELLA
+  ID: cat-6-pastalar-10-salmon-papardella
+
+• SHRIMPS NOODLES
+  Price: $19.0
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: SHRIMPS NOODLES
+  ID: cat-6-pastalar-8-shrimps-noodles
+
+• SPAQETTİ BOLONEZ
+  Price: $18.0
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: SPAQETTİ BOLONEZ
+  ID: cat-6-pastalar-1-spaqetti--bolonez
+
+• TOYUQLU PENNA
+  Price: $16.4
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: TOYUQLU PENNA
+  ID: cat-6-pastalar-5-toyuqlu-penna
+
+
+==================== PİZZALAR ====================
+
+• ALATURKA
+  Description: Mozarella pendiri, t ...
+  Price: $21.0
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: ALATURKA
+  ID: cat-2-pi-zzalar-2-alaturka
+
+• APPETITO
+  Description: Mozarella pendiri , ...
+  Price: $21.0
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: APPETITO
+  ID: cat-2-pi-zzalar-4-appetito
+
+• BBQ
+  Description: Mozarella pendiri , ...
+  Price: $22.0
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: BBQ
+  ID: cat-2-pi-zzalar-6-bbq
+
+• BURATTA
+  Description: Mozarella pendiri , ...
+  Price: $23.0
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: BURATTA
+  ID: cat-2-pi-zzalar-5-buratta
+
+• CAESAR
+  Description: Mozarella pendiri, t ...
+  Price: $21.5
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: CAESAR
+  ID: cat-2-pi-zzalar-14-caesar
+
+• CAPRESE
+  Description: Mozarella pendiri, t ...
+  Price: $20.0
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: CAPRESE
+  ID: cat-2-pi-zzalar-10-caprese
+
+• CHICKEN
+  Description: Mozarella pendiri , ...
+  Price: $19.9
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: CHICKEN
+  ID: cat-2-pi-zzalar-8-chicken
+
+• CHICKEN BBQ
+  Description: Mozarella pendiri , ...
+  Price: $20.5
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: CHICKEN BBQ
+  ID: cat-2-pi-zzalar-9-chicken-bbq
+
+• GAMBERETTI
+  Description: Mozarella pendiri , ...
+  Price: $23.0
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: GAMBERETTI
+  ID: cat-2-pi-zzalar-1-gamberetti
+
+• ITALIANO
+  Description: Mozarella pendiri, t ...
+  Price: $22.0
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: ITALIANO
+  ID: cat-2-pi-zzalar-20-italiano
+
+• KAVURMA
+  Description: Mozarella pendiri, t ...
+  Price: $23.0
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: KAVURMA
+  ID: cat-2-pi-zzalar-12-kavurma
+
+• MARGARITA
+  Description: Mozarella pendiri, t ...
+  Price: $19.0
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: MARGARITA
+  ID: cat-2-pi-zzalar-19-margarita
+
+• MEXICANO
+  Description: Mozarella pendiri, t ...
+  Price: $19.5
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: MEXICANO
+  ID: cat-2-pi-zzalar-18-mexicano
+
+• MIX
+  Description: Mozarella pendiri , ...
+  Price: $20.5
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: MIX
+  ID: cat-2-pi-zzalar-7-mix
+
+• PEPPERONI
+  Description: Mozarella pendiri, t ...
+  Price: $22.0
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: PEPPERONI
+  ID: cat-2-pi-zzalar-17-pepperoni
+
+• QUATTRO FORMAGGI
+  Description: Mozarella pendiri, t ...
+  Price: $19.9
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: QUATTRO FORMAGGI
+  ID: cat-2-pi-zzalar-16-quattro-formaggi
+
+• SALAMI
+  Description: Mozarella pendiri, t ...
+  Price: $22.0
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: SALAMI
+  ID: cat-2-pi-zzalar-13-salami
+
+• SEAFOOD
+  Description: Mozarella pendiri, t ...
+  Price: $24.0
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: SEAFOOD
+  ID: cat-2-pi-zzalar-15-seafood
+
+• TUNA
+  Description: Mozarella pendiri, t ...
+  Price: $22.0
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: TUNA
+  ID: cat-2-pi-zzalar-11-tuna
+
+• VEGI
+  Description: Mozarella pendiri, t ...
+  Price: $18.7
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: VEGI
+  ID: cat-2-pi-zzalar-3-vegi
+
+
+==================== SAC ====================
+
+• QUZU SAC
+  Description: (250qr) Quzu əti, bi ...
+  Price: $28.0
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: QUZU SAC
+  ID: cat-14-sac-1-quzu-sac
+
+• TOYUQ SAC
+  Description: (250qr) Toyuq filesi ...
+  Price: $22.0
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: TOYUQ SAC
+  ID: cat-14-sac-2-toyuq-sac
+
+
+==================== SALATLAR ====================
+
+• BADIMCAN XIRT-XIRT SALATI
+  Price: $13.0
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: BADIMCAN XIRT-XIRT SALATI
+  ID: cat-3-salatlar-8-badimcan-xirt-xirt-salati
+
+• BURRATA SALATI
+  Description: Buratta pendiri,ceri ...
+  Price: $21.0
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: BURRATA SALATI
+  ID: cat-3-salatlar-10-burrata-salati
+
+• CHICKHEN BOWL
+  Price: $17.0
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: CHICKHEN BOWL
+  ID: cat-3-salatlar-15-chickhen-bowl
+
+• KREVETKALI AVOKADO SALATI
+  Description: (220qr) Avokado,krev ...
+  Price: $19.5
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: KREVETKALI AVOKADO SALATI
+  ID: cat-3-salatlar-11-krevetkali-avokado-salati
+
+• KÜNCÜTLÜ TOYUQ SALATI
+  Description: (300qr) Toyuq filesi ...
+  Price: $17.5
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: KÜNCÜTLÜ TOYUQ SALATI
+  ID: cat-3-salatlar-5-k-nc-tl--toyuq-salati
+
+• QAŞIQ SALATI
+  Price: $11.0
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: QAŞIQ SALATI
+  ID: cat-3-salatlar-2-qa-iq-salati
+
+• SALAT CAPRESE
+  Description: (200qr) Pomidor, Pes ...
+  Price: $19.9
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: SALAT CAPRESE
+  ID: cat-3-salatlar-12-salat-caprese
+
+• SEZAR SALATI KREVETLƏ
+  Price: $19.5
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: SEZAR SALATI KREVETLƏ
+  ID: cat-3-salatlar-1-sezar-salati-krevetl-
+
+• SEZAR SALATI TOYUQLA
+  Price: $17.0
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: SEZAR SALATI TOYUQLA
+  ID: cat-3-salatlar-4-sezar-salati-toyuqla
+
+• SMOKED SALMON BOWL
+  Price: $22.0
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: SMOKED SALMON BOWL
+  ID: cat-3-salatlar-14-smoked-salmon-bowl
+
+• TABULE SALATI
+  Price: $8.0
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: TABULE SALATI
+  ID: cat-3-salatlar-13-tabule-salati
+
+• TON BALIQ SALATI
+  Price: $17.5
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: TON BALIQ SALATI
+  ID: cat-3-salatlar-6-ton-baliq-salati
+
+• XÜSUSİ İSTİ SALAT
+  Description: (300qr) Can əti, qay ...
+  Price: $18.0
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: XÜSUSİ İSTİ SALAT
+  ID: cat-3-salatlar-7-x-susi--i-sti--salat
+
+• ZOĞAL SOUSLU POMİDOR SALATI
+  Price: $12.5
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: ZOĞAL SOUSLU POMİDOR SALATI
+  ID: cat-3-salatlar-9-zo-al-souslu-pomi-dor-salati
+
+• İSTİ TOYUQ SALATI
+  Price: $16.5
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: İSTİ TOYUQ SALATI
+  ID: cat-3-salatlar-3-i-sti--toyuq-salati
+
+
+==================== SOYUQ QƏLYANALTILAR ====================
+
+• HUMUS
+  Description: (150qr) Noxud, zeytu ...
+  Price: $7.5
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: HUMUS
+  ID: cat-9-soyuq-q-lyanaltilar-5-humus
+
+• KURASAN SENDVİÇ
+  Description: (160qr) Kurasan,yumu ...
+  Price: $12.0
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: KURASAN SENDVİÇ
+  ID: cat-9-soyuq-q-lyanaltilar-6-kurasan-sendvi--
+
+• MÜTƏBBƏL
+  Description: (150qr) Badımcan, sa ...
+  Price: $7.5
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: MÜTƏBBƏL
+  ID: cat-9-soyuq-q-lyanaltilar-4-m-t-bb-l
+
+• PAŞA ƏZMƏ
+  Description: (150qr) Pomidor soku ...
+  Price: $7.5
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: PAŞA ƏZMƏ
+  ID: cat-9-soyuq-q-lyanaltilar-3-pa-a--zm-
+
+• PENDİR ASSORTİ
+  Description: (400qr) Ceddar pendi ...
+  Price: $25.0
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: PENDİR ASSORTİ
+  ID: cat-9-soyuq-q-lyanaltilar-7-pendi-r-assorti-
+
+• QARIŞIQ BRUSKETTA
+  Description: Can əti, toyuq file ...
+  Price: $14.0
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: QARIŞIQ BRUSKETTA
+  ID: cat-9-soyuq-q-lyanaltilar-1-qari-iq-brusketta
+
+• İSPANAQLI SÜZMƏ
+  Description: Qatiq,ispanaq,sarıms ...
+  Price: $7.5
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: İSPANAQLI SÜZMƏ
+  ID: cat-9-soyuq-q-lyanaltilar-2-i-spanaqli-s-zm-
+
+
+==================== SƏHƏR YEMƏYI ====================
+
+• OMLET
+  Description: Sadə/Pendirli/Qarışı ...
+  Price: $7.2
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: OMLET
+  ID: cat-1-s-h-r-yem-yi-6-omlet
+
+• ORGANİK KƏND SƏHƏR YEMƏYİ (iki nəfərlik)
+  Description: Organik bal, qaymaq, ...
+  Price: $45.0
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: ORGANİK KƏND SƏHƏR YEMƏYİ (iki nəfərlik)
+  ID: cat-1-s-h-r-yem-yi-1-organi-k-k-nd-s-h-r-yem-yi---iki-n-f-rlik-
+
+• SUCUKLU YUMURTA
+  Price: $9.2
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: SUCUKLU YUMURTA
+  ID: cat-1-s-h-r-yem-yi-7-sucuklu-yumurta
+
+• SƏHƏR YEMƏYİ
+  Description: BİR NƏFƏRLİK
+  Price: $22.0
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: SƏHƏR YEMƏYİ
+  ID: cat-1-s-h-r-yem-yi-2-s-h-r-yem-yi-
+
+• SƏHƏR YEMƏYİ
+  Description: İKİ NƏFƏRLİK
+  Price: $29.5
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: SƏHƏR YEMƏYİ
+  ID: cat-1-s-h-r-yem-yi-3-s-h-r-yem-yi-
+
+• SƏHƏR YEMƏYİ
+  Description: DÖRD NƏFƏRLİK
+  Price: $42.0
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: SƏHƏR YEMƏYİ
+  ID: cat-1-s-h-r-yem-yi-4-s-h-r-yem-yi-
+
+• TƏRƏVƏZLİ YUMURTA
+  Description: Yumurta, gül kələm, ...
+  Price: $9.9
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: TƏRƏVƏZLİ YUMURTA
+  ID: cat-1-s-h-r-yem-yi-8-t-r-v-zli--yumurta
+
+• İNGİLİS SƏHƏR YEMƏYİ
+  Price: $13.0
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: İNGİLİS SƏHƏR YEMƏYİ
+  ID: cat-1-s-h-r-yem-yi-5-i-ngi-li-s-s-h-r-yem-yi-
+
+
+==================== TOYUQ YEMƏKLƏRİ ====================
+
+• FAXİTAS TOYUQ İLƏ
+  Price: $18.5
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: FAXİTAS TOYUQ İLƏ
+  ID: cat-11-toyuq-yem-kl-ri--2-faxi-tas-toyuq-i-l-
+
+• KİYEV SAYAĞI KOTLET
+  Price: $18.0
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: KİYEV SAYAĞI KOTLET
+  ID: cat-11-toyuq-yem-kl-ri--4-ki-yev-saya-i-kotlet
+
+• LİMON SOUSLU TOYUQ
+  Price: $19.0
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: LİMON SOUSLU TOYUQ
+  ID: cat-11-toyuq-yem-kl-ri--6-li-mon-souslu-toyuq
+
+• QAYMAQLI PENDİRLİ TOYUQ
+  Price: $20.5
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: QAYMAQLI PENDİRLİ TOYUQ
+  ID: cat-11-toyuq-yem-kl-ri--1-qaymaqli-pendi-rli--toyuq
+
+• THAI CHICKEN
+  Price: $18.0
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: THAI CHICKEN
+  ID: cat-11-toyuq-yem-kl-ri--5-thai-chicken
+
+• TOYUQ İZQARA
+  Price: $18.0
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: TOYUQ İZQARA
+  ID: cat-11-toyuq-yem-kl-ri--3-toyuq-i-zqara
+
+
+==================== İSTİ QƏLYANALTILAR ====================
+
+• ASSORTİ QƏLYANALTI
+  Price: $19.0
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: ASSORTİ QƏLYANALTI
+  ID: cat-10-i-sti--q-lyanaltilar-4-assorti--q-lyanalti
+
+• KREVETLƏR KLYARDA
+  Price: $19.5
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: KREVETLƏR KLYARDA
+  ID: cat-10-i-sti--q-lyanaltilar-5-krevetl-r-klyarda
+
+• PENDİR ÇUBUQLARI
+  Price: $14.0
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: PENDİR ÇUBUQLARI
+  ID: cat-10-i-sti--q-lyanaltilar-1-pendi-r--ubuqlari
+
+• QIZARDILMIŞ SOĞAN HALQALARI
+  Price: $15.0
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: QIZARDILMIŞ SOĞAN HALQALARI
+  ID: cat-10-i-sti--q-lyanaltilar-2-qizardilmi--so-an-halqalari
+
+• TOYUQ NAGGETSLƏRİ
+  Price: $14.0
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: TOYUQ NAGGETSLƏRİ
+  ID: cat-10-i-sti--q-lyanaltilar-3-toyuq-naggetsl-ri-
+
+
+==================== ŞORBALAR ====================
+
+• BUYABES DƏNİZ MƏHSULLARI ŞORBASI
+  Price: $18.0
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: BUYABES DƏNİZ MƏHSULLARI ŞORBASI
+  ID: cat-5--orbalar-6-buyabes-d-ni-z-m-hsullari--orbasi
+
+• DÜŞBƏRƏ
+  Price: $8.5
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: DÜŞBƏRƏ
+  ID: cat-5--orbalar-5-d--b-r-
+
+• GÖBƏLƏK ŞORBASI
+  Price: $6.9
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: GÖBƏLƏK ŞORBASI
+  ID: cat-5--orbalar-4-g-b-l-k--orbasi
+
+• MƏRCİ ŞORBASI
+  Price: $6.9
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: MƏRCİ ŞORBASI
+  ID: cat-5--orbalar-3-m-rci---orbasi
+
+• TOMAT ŞORBASI
+  Price: $7.5
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: TOMAT ŞORBASI
+  ID: cat-5--orbalar-2-tomat--orbasi
+
+• TOYUQ ŞORBASI
+  Price: $6.9
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: TOYUQ ŞORBASI
+  ID: cat-5--orbalar-1-toyuq--orbasi
+
+
+==================== ƏT YEMƏKLƏRİ ====================
+
+• CIZ-BIZ
+  Price: $19.0
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: CIZ-BIZ
+  ID: cat-13--t-yem-kl-ri--3-ciz-biz
+
+• FAXİTAS CAN ƏTİ İLƏ
+  Description: (200qr) Can əti, bib ...
+  Price: $28.0
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: FAXİTAS CAN ƏTİ İLƏ
+  ID: cat-13--t-yem-kl-ri--2-faxi-tas-can--ti--i-l-
+
+• LAZANYA
+  Price: $19.0
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: LAZANYA
+  ID: cat-13--t-yem-kl-ri--9-lazanya
+
+• NAR QOVURMA QUZU ƏTİ İLƏ
+  Description: (220qr) Quzu əti, so ...
+  Price: $24.0
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: NAR QOVURMA QUZU ƏTİ İLƏ
+  ID: cat-13--t-yem-kl-ri--4-nar-qovurma-quzu--ti--i-l-
+
+• QAYMAQLI CAN ƏTİ
+  Price: $33.0
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: QAYMAQLI CAN ƏTİ
+  ID: cat-13--t-yem-kl-ri--10-qaymaqli-can--ti-
+
+• QUZU BARBEKYU
+  Description: (240qr) Quzu əti, gö ...
+  Price: $27.0
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: QUZU BARBEKYU
+  ID: cat-13--t-yem-kl-ri--5-quzu-barbekyu
+
+• QUZU TƏNDİR PLOV İLƏ
+  Description: (600qr) Quzu əti, dü ...
+  Price: $48.0
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: QUZU TƏNDİR PLOV İLƏ
+  ID: cat-13--t-yem-kl-ri--6-quzu-t-ndi-r-plov-i-l-
+
+• QUZU ƏTİ İLƏ KASAROLA
+  Description: (200qr) Quzu əti, ka ...
+  Price: $23.0
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: QUZU ƏTİ İLƏ KASAROLA
+  ID: cat-13--t-yem-kl-ri--1-quzu--ti--i-l--kasarola
+
+• RIB-EYE STEAK
+  Description: (400qr) Can əti, , s ...
+  Price: $55.0
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: RIB-EYE STEAK
+  ID: cat-13--t-yem-kl-ri--7-rib-eye-steak
+
+• YARPAQ DOLMA
+  Description: (220qr) Mal əti, quz ...
+  Price: $21.0
+  Available: Yes
+  Popular: No
+  Preparation Time: 15 minutes
+  English Name: YARPAQ DOLMA
+  ID: cat-13--t-yem-kl-ri--8-yarpaq-dolma
+

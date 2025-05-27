@@ -1,0 +1,37 @@
+# Core dependencies - Essentials only
+flask==2.3.3
+flask-cors==4.0.0
+requests==2.31.0
+python-dotenv==1.0.0
+fastapi==0.104.0
+uvicorn==0.23.2
+websockets==11.0.3
+
+# Database
+sqlalchemy==2.0.23
+# Using pure Python alternatives to avoid compilation issues
+# psycopg2 is replaced with psycopg-binary
+psycopg2-binary==2.9.9
+firebase-admin==6.2.0  
+
+# Language processing - Simplified
+langid==1.1.6
+googletrans==4.0.0-rc1
+babel==2.12.1
+pycountry==23.12.11
+
+# Data processing - Using alternatives that don't require compilation
+# Instead of pandas & numpy:
+polars==0.19.19  # Pure Rust alternative to pandas
+pyarrow==14.0.1  # For data handling, works with polars
+
+# Image processing - Pure Python option
+pillow==10.0.1  # Usually builds without issues
+
+# Utilities
+python-dateutil==2.8.2
+pydantic==2.4.2
+pytz==2023.3
+
+# Testing - Minimal
+pytest==7.4.2

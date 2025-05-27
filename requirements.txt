@@ -1,0 +1,55 @@
+# ========== MEINN RESTAURANT AI ASSISTANT DEPENDENCIES ==========
+# This file contains all dependencies needed for the Meinn project.
+# The file is structured to allow different installation options
+# depending on your environment and needs.
+
+# ===== CORE DEPENDENCIES =====
+# Web framework and API essentials
+flask==2.3.3                 # Main web framework
+flask-cors==4.0.0            # Cross-origin resource sharing support
+requests==2.31.0             # HTTP client
+python-dotenv==1.0.0         # Environment variable management
+fastapi==0.104.0             # API framework for modern endpoints
+uvicorn==0.23.2              # ASGI server for FastAPI
+websockets==11.0.3           # For real-time communication features
+
+# ===== DATABASE =====
+# Database integration and management (SQLite built-in to Python)
+sqlalchemy==2.0.23           # ORM for database operations
+psycopg2-binary==2.9.9       # PostgreSQL adapter (binary version to avoid compilation)
+firebase-admin==6.2.0        # Firebase integration for cloud data
+
+# ===== LANGUAGE PROCESSING =====
+# Translation and language identification
+langid==1.1.6                # Language identification
+googletrans==4.0.0-rc1       # Translation services
+babel==2.12.1                # Internationalization utilities
+pycountry==23.12.11          # Country/language data
+
+# ===== DATA PROCESSING =====
+# Select ONE of the following options:
+
+# Option 1: Standard installation (may require compiler)
+# pandas==2.1.0              # Data manipulation and analysis
+# numpy==1.26.0              # Numerical operations
+
+# Option 2: Binary wheels (preferred, avoids compilation)
+pandas==2.1.0 --only-binary=pandas    # Data manipulation (binary install)
+numpy==1.26.0 --only-binary=numpy     # Numerical operations (binary install)
+
+# Option 3: Alternative without compilation
+# polars==0.19.19            # Alternative to pandas (Rust-based, no compilation)
+# pyarrow==14.0.1            # For data handling with polars
+
+# ===== IMAGE PROCESSING =====
+pillow==10.0.1               # Image handling for menu items
+
+# ===== UTILITIES =====
+python-dateutil==2.8.2       # Date utilities
+pydantic==2.4.2              # Data validation
+pytz==2023.3                 # Timezone support for restaurant hours
+
+# ===== TESTING =====
+# Testing dependencies (not required for production)
+pytest==7.4.2                # Testing framework
+pytest-cov==4.1.0            # Test coverage
