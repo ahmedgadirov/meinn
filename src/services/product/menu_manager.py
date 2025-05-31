@@ -28,6 +28,36 @@ class MenuManager:
         self.db_path = os.path.join(project_root, "menu_data.db")
         logger.info("Menu Manager initialized with multilingual support")
         logger.info(f"Database path: {self.db_path}")
+        
+        # Check if multilingual columns exist
+        self._multilingual_support = self._check_multilingual_support()
+    
+    def _check_multilingual_support(self):
+        """Check if the database has multilingual columns"""
+        try:
+            conn = sqlite3.connect(self.db_path)
+            cursor = conn.cursor()
+            
+            # Check if multilingual columns exist in categories table
+            cursor.execute("PRAGMA table_info(categories)")
+            columns = [column[1] for column in cursor.fetchall()]
+            
+            conn.close()
+            
+            has_multilingual = 'name_en' in columns
+            logger.info(f"Multilingual support detected: {has_multilingual}")
+            return has_multilingual
+            
+        except Exception as e:
+            logger.error(f"Error checking multilingual support: {str(e)}")
+            return False
+    
+    def _build_multilingual_category_columns(self):
+        """Build category column selection based on multilingual support"""
+        if self._multilingual_support:
+            return "c.name_en as cat_name_en, c.name_az as cat_name_az, c.name_ru as cat_name_ru, c.name_tr as cat_name_tr, c.name_ar as cat_name_ar, c.name_hi as cat_name_hi, c.name_fr as cat_name_fr, c.name_it as cat_name_it"
+        else:
+            return "NULL as cat_name_en, NULL as cat_name_az, NULL as cat_name_ru, NULL as cat_name_tr, NULL as cat_name_ar, NULL as cat_name_hi, NULL as cat_name_fr, NULL as cat_name_it"
     
     def _get_translation_columns(self, language='en'):
         """
@@ -105,11 +135,10 @@ class MenuManager:
             conn.row_factory = sqlite3.Row
             cursor = conn.cursor()
             
-            query = """
+            multilingual_cols = self._build_multilingual_category_columns()
+            query = f"""
                 SELECT m.*, c.name as category_name,
-                       c.name_en as cat_name_en, c.name_az as cat_name_az, c.name_ru as cat_name_ru,
-                       c.name_tr as cat_name_tr, c.name_ar as cat_name_ar, c.name_hi as cat_name_hi,
-                       c.name_fr as cat_name_fr, c.name_it as cat_name_it,
+                       {multilingual_cols},
                        d.allergens, d.ingredients, d.nutrition
                 FROM menu_items m
                 JOIN categories c ON m.category_id = c.id
@@ -186,11 +215,10 @@ class MenuManager:
             conn.row_factory = sqlite3.Row
             cursor = conn.cursor()
             
-            query = """
+            multilingual_cols = self._build_multilingual_category_columns()
+            query = f"""
                 SELECT m.*, c.name as category_name,
-                       c.name_en as cat_name_en, c.name_az as cat_name_az, c.name_ru as cat_name_ru,
-                       c.name_tr as cat_name_tr, c.name_ar as cat_name_ar, c.name_hi as cat_name_hi,
-                       c.name_fr as cat_name_fr, c.name_it as cat_name_it,
+                       {multilingual_cols},
                        d.allergens, d.ingredients, d.nutrition
                 FROM menu_items m
                 JOIN categories c ON m.category_id = c.id
@@ -378,26 +406,28 @@ class MenuManager:
             # Search in both default and translated columns
             search_term = f"%{query}%"
             
+            multilingual_cols = self._build_multilingual_category_columns()
+            
+            # Build search conditions based on multilingual support
+            if self._multilingual_support:
+                search_conditions = f"m.name LIKE ? OR m.description LIKE ? OR m.{name_col} LIKE ? OR m.{desc_col} LIKE ? OR c.name LIKE ?"
+                search_params = (search_term, search_term, search_term, search_term, search_term)
+            else:
+                search_conditions = "m.name LIKE ? OR m.description LIKE ? OR c.name LIKE ?"
+                search_params = (search_term, search_term, search_term)
+            
             query_sql = f"""
                 SELECT m.*, c.name as category_name,
-                       c.name_en as cat_name_en, c.name_az as cat_name_az, c.name_ru as cat_name_ru,
-                       c.name_tr as cat_name_tr, c.name_ar as cat_name_ar, c.name_hi as cat_name_hi,
-                       c.name_fr as cat_name_fr, c.name_it as cat_name_it,
+                       {multilingual_cols},
                        d.allergens, d.ingredients, d.nutrition
                 FROM menu_items m
                 JOIN categories c ON m.category_id = c.id
                 JOIN item_details d ON m.id = d.item_id
-                WHERE m.available = 1 AND (
-                    m.name LIKE ? OR
-                    m.description LIKE ? OR
-                    m.{name_col} LIKE ? OR
-                    m.{desc_col} LIKE ? OR
-                    c.name LIKE ?
-                )
+                WHERE m.available = 1 AND ({search_conditions})
                 ORDER BY m.popular DESC, m.name ASC
             """
             
-            cursor.execute(query_sql, (search_term, search_term, search_term, search_term, search_term))
+            cursor.execute(query_sql, search_params)
             rows = cursor.fetchall()
             result = []
             
