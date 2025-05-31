@@ -30,13 +30,11 @@ def create_app():
                 template_folder=template_folder_path)
     
     # Import routes after creating the app
-    from src.api.routes.chat_routes import chat_bp
     from src.api.routes.menu_routes import menu_bp
     from src.api.routes.order_routes import order_bp
     from src.api.routes.analytics_routes import analytics_bp
     
     # Register blueprints
-    app.register_blueprint(chat_bp)
     app.register_blueprint(menu_bp)
     app.register_blueprint(order_bp)
     app.register_blueprint(analytics_bp)
@@ -46,11 +44,6 @@ def create_app():
     def home():
         return render_template('index.html')
     
-    # Legacy chatbot route
-    @app.route('/chatbot')
-    def chatbot():
-        # Use the absolute path to serve files from project root
-        return send_from_directory(os.path.abspath(os.path.join(os.path.dirname(__file__), "../..")), 'chatbot.html')
     
     # Admin route
     @app.route('/admin')

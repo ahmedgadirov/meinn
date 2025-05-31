@@ -12,7 +12,6 @@ sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "../.
 
 from flask_cors import CORS
 from src.api.app import create_app
-from src.services.chat.conversation_learner import ConversationLearner
 from src.services.translation.translation_agent import TranslationAgent
 from src.services.product.menu_manager import MenuManager
 
@@ -30,11 +29,6 @@ logger = logging.getLogger("meinn_ai")
 def initialize_services():
     """Initialize all required services"""
     try:
-        # Initialize conversation learner
-        conversation_learner = ConversationLearner()
-        conversation_learner._init_database()
-        logger.info("Conversation learner initialized")
-
         # Initialize translation agent
         translator = TranslationAgent()
         translator._init_database()
