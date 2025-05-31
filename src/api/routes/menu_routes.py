@@ -27,6 +27,22 @@ def get_menu_items():
         from src.services.product.menu_manager import MenuManager
         menu_manager = MenuManager()
         
+        # Helper function to extract multilingual data from item
+        def extract_translations(item):
+            """Extract multilingual data from database item"""
+            translations = {}
+            supported_languages = ['az', 'en', 'ru', 'tr', 'ar', 'hi', 'fr', 'it']
+            
+            for lang in supported_languages:
+                name_key = f'name_{lang}'
+                desc_key = f'description_{lang}'
+                translations[lang] = {
+                    'name': item.get(name_key, item.get('name', '')),
+                    'description': item.get(desc_key, item.get('description', ''))
+                }
+            
+            return translations
+        
         try:
             # Get items from the database with language support
             if search:
@@ -46,7 +62,14 @@ def get_menu_items():
             # Convert to the desired format for the API response
             sample_menu_items = []
             for item in menu_items_db:
+                # Debug: log the raw item data
+                logger.info(f"Raw item data keys: {list(item.keys()) if hasattr(item, 'keys') else 'Not a dict'}")
+                logger.info(f"Sample raw item: {dict(item) if hasattr(item, 'keys') else item}")
+                
                 if 'category_name' in item:  # If using database format
+                    translations = extract_translations(item)
+                    logger.info(f"Extracted translations for {item['name']}: {translations}")
+                    
                     sample_menu_items.append({
                         "id": item["id"],
                         "name": item["name"],
@@ -58,7 +81,8 @@ def get_menu_items():
                         "available": item["available"],
                         "popular": item["popular"],
                         "allergens": item["allergens"],
-                        "nutrition": item["nutrition"]
+                        "nutrition": item["nutrition"],
+                        "translations": translations  # Add structured multilingual data
                     })
                 else:  # If using the sample data format
                     sample_menu_items.append({
@@ -72,7 +96,8 @@ def get_menu_items():
                         "available": item["available"],
                         "popular": item["popular"],
                         "allergens": item.get("allergens", []),
-                        "nutrition": item.get("nutrition", {})
+                        "nutrition": item.get("nutrition", {}),
+                        "translations": extract_translations(item)
                     })
                     
         except Exception as e:
@@ -169,6 +194,22 @@ def get_menu_categories():
         from src.services.product.menu_manager import MenuManager
         menu_manager = MenuManager()
         
+        # Helper function to extract multilingual data from category
+        def extract_category_translations(category):
+            """Extract multilingual data from database category"""
+            translations = {}
+            supported_languages = ['az', 'en', 'ru', 'tr', 'ar', 'hi', 'fr', 'it']
+            
+            for lang in supported_languages:
+                name_key = f'name_{lang}'
+                desc_key = f'description_{lang}'
+                translations[lang] = {
+                    'name': category.get(name_key, category.get('name', '')),
+                    'description': category.get(desc_key, category.get('description', ''))
+                }
+            
+            return translations
+        
         try:
             # Get categories from MenuManager
             categories_data = menu_manager.get_categories(language=language)
@@ -180,7 +221,8 @@ def get_menu_categories():
                     "id": category["id"],
                     "name": category["name"],
                     "description": category.get("description", ""),
-                    "image_url": category.get("image_url", "/static/images/categories/placeholder.jpg")
+                    "image_url": category.get("image_url", "/static/images/categories/placeholder.jpg"),
+                    "translations": extract_category_translations(category)  # Add structured multilingual data
                 })
                 
         except Exception as e:
