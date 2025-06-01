@@ -53,8 +53,13 @@ if __name__ == '__main__':
     CORS(app, resources={r"/*": {"origins": "*"}})
     
     # Configure server
-    port = int(os.environ.get("PORT", 5002))
+    port = int(os.environ.get("PORT", 5050))  # Default to 5050 for production
     debug = os.environ.get("FLASK_DEBUG", "False").lower() == "true"
+    
+    # Log server configuration
+    logger.info(f"Starting server on port: {port}")
+    logger.info(f"Debug mode: {debug}")
+    logger.info(f"Environment: {'production' if port == 5050 else 'development'}")
     
     restaurant_name = os.environ.get("RESTAURANT_NAME", "Pizza Inn")
     logger.info(f"Initializing Meinn AI for {restaurant_name}")

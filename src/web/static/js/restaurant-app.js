@@ -1,6 +1,8 @@
 // Restaurant App - Main Application Logic
 // Handles initialization, loading, search, language switching, and core functionality
 
+import Config from './config.js';
+
 class RestaurantApp {
   constructor() {
     this.isLoading = false;
@@ -320,10 +322,13 @@ class RestaurantApp {
   // Fetch categories from API
   async fetchCategories() {
     try {
-      const response = await fetch(`/api/menu/categories?language=${this.currentLanguage}`);
+      Config.log('Fetching categories', { language: this.currentLanguage });
+      const url = Config.buildApiUrl('menuCategories', { language: this.currentLanguage });
+      const response = await Config.fetchWithRetry(url);
       const data = await response.json();
       
       if (data.success) {
+        Config.log('Categories fetched successfully', { count: data.categories?.length || 0 });
         return data.categories || [];
       } else {
         console.warn('Failed to fetch categories:', data.error);
@@ -331,6 +336,7 @@ class RestaurantApp {
       }
     } catch (error) {
       console.error('Error fetching categories:', error);
+      Config.log('Categories fetch failed, using fallback', { error: error.message });
       return this.getFallbackCategories();
     }
   }
@@ -338,14 +344,17 @@ class RestaurantApp {
   // Fetch menu items from API
   async fetchMenuItems(category = null) {
     try {
-      let url = `/api/menu/items?language=${this.currentLanguage}`;
+      Config.log('Fetching menu items', { language: this.currentLanguage, category });
+      const params = { language: this.currentLanguage };
       if (category) {
-        url += `&category=${category}`;
+        params.category = category;
       }
-      const response = await fetch(url);
+      const url = Config.buildApiUrl('menuItems', params);
+      const response = await Config.fetchWithRetry(url);
       const data = await response.json();
       
       if (data.success) {
+        Config.log('Menu items fetched successfully', { count: data.items?.length || 0 });
         return data.items || [];
       } else {
         console.warn('Failed to fetch menu items:', data.error);
@@ -353,6 +362,7 @@ class RestaurantApp {
       }
     } catch (error) {
       console.error('Error fetching menu items:', error);
+      Config.log('Menu items fetch failed, using fallback', { error: error.message });
       return this.getFallbackMenuItems();
     }
   }

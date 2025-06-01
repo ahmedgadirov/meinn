@@ -21,8 +21,19 @@ logger = logging.getLogger("meinn_ai.app")
 def create_app():
     """Create and configure the Flask application"""
     # Set the correct static folder and template folder paths
-    static_folder_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../src/web/static"))
-    template_folder_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../src/web/templates"))
+    # Get the project root directory
+    project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), "../.."))
+    
+    # Set the correct static folder and template folder paths
+    static_folder_path = os.path.join(project_root, "src", "web", "static")
+    template_folder_path = os.path.join(project_root, "src", "web", "templates")
+    
+    # Log the paths for debugging
+    logger.info(f"Project root: {project_root}")
+    logger.info(f"Static folder path: {static_folder_path}")
+    logger.info(f"Template folder path: {template_folder_path}")
+    logger.info(f"Static folder exists: {os.path.exists(static_folder_path)}")
+    logger.info(f"Template folder exists: {os.path.exists(template_folder_path)}")
     
     app = Flask(__name__, 
                 static_folder=static_folder_path,
