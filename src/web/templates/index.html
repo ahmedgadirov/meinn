@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="/static/css/restaurant-theme.css">
     <link rel="stylesheet" href="/static/css/menu-modern.css">
     <link rel="stylesheet" href="/static/css/mobile-optimized.css">
+    <link rel="stylesheet" href="/static/css/chatbot-cart-fixes.css">
     
     <!-- Prevent flash of unstyled content -->
     <style>
@@ -105,23 +106,102 @@
             </div>
         </header>
 
-        <!-- Hero Section -->
-        <section class="hero">
-            <div class="hero-content">
-                <h2 class="hero-title">Taste the Authentic</h2>
-                <p class="hero-subtitle">Fresh ingredients, traditional recipes, delivered to your door</p>
-                <button class="hero-cta" onclick="document.getElementById('menu-section').scrollIntoView({behavior: 'smooth'})">
-                    Explore Menu
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M7 13l3 3 7-7"/>
+        <!-- Hero Slider Section -->
+        <section class="hero-slider" id="hero-slider">
+            <div class="slider-container">
+                <div class="slider-track" id="slider-track">
+                    <!-- Default slides will be loaded here, or from admin -->
+                    <div class="slide active" data-slide="0">
+                        <div class="slide-background" style="background-image: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-tertiary) 100%);">
+                            <div class="slide-content">
+                                <div class="slide-text">
+                                    <h2 class="slide-title">Taste the Authentic</h2>
+                                    <p class="slide-subtitle">Fresh ingredients, traditional recipes, delivered to your door</p>
+                                    <button class="slide-cta" onclick="document.getElementById('menu-section').scrollIntoView({behavior: 'smooth'})">
+                                        Explore Menu
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M7 13l3 3 7-7"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="slide-image">
+                                    <div class="slide-image-placeholder">
+                                        <svg width="100" height="100" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+                                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="slide" data-slide="1">
+                        <div class="slide-background" style="background-image: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);">
+                            <div class="slide-content">
+                                <div class="slide-text">
+                                    <h2 class="slide-title" style="color: var(--text-white);">Fast Delivery</h2>
+                                    <p class="slide-subtitle" style="color: rgba(255,255,255,0.9);">Hot, fresh food delivered to your doorstep in 30 minutes or less</p>
+                                    <button class="slide-cta" onclick="document.getElementById('menu-section').scrollIntoView({behavior: 'smooth'})">
+                                        Order Now
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M5 12h14m-7-7l7 7-7 7"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="slide-image">
+                                    <div class="slide-image-placeholder">
+                                        <svg width="100" height="100" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+                                            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="slide" data-slide="2">
+                        <div class="slide-background" style="background-image: linear-gradient(135deg, var(--accent-color) 0%, var(--warning-color) 100%);">
+                            <div class="slide-content">
+                                <div class="slide-text">
+                                    <h2 class="slide-title" style="color: var(--text-white);">Special Offers</h2>
+                                    <p class="slide-subtitle" style="color: rgba(255,255,255,0.9);">Check out our daily specials and limited-time offers</p>
+                                    <button class="slide-cta" onclick="document.getElementById('menu-section').scrollIntoView({behavior: 'smooth'})">
+                                        View Offers
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="slide-image">
+                                    <div class="slide-image-placeholder">
+                                        <svg width="100" height="100" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+                                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Slider Controls -->
+                <button class="slider-prev" id="slider-prev" aria-label="Previous slide">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M15 18l-6-6 6-6"/>
                     </svg>
                 </button>
-            </div>
-            <div class="hero-image">
-                <div class="hero-image-placeholder">
-                    <svg width="100" height="100" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
-                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                
+                <button class="slider-next" id="slider-next" aria-label="Next slide">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 18l6-6-6-6"/>
                     </svg>
+                </button>
+                
+                <!-- Slider Indicators -->
+                <div class="slider-indicators" id="slider-indicators">
+                    <button class="indicator active" data-slide="0" aria-label="Go to slide 1"></button>
+                    <button class="indicator" data-slide="1" aria-label="Go to slide 2"></button>
+                    <button class="indicator" data-slide="2" aria-label="Go to slide 3"></button>
                 </div>
             </div>
         </section>
@@ -129,10 +209,10 @@
         <!-- Menu Categories -->
         <section class="categories-section">
             <div class="section-header">
-                <h3 class="section-title">Browse Categories</h3>
+                <h3 class="section-title">Featured Category</h3>
             </div>
             <div class="categories-grid" id="categories-grid">
-                <!-- Categories will be loaded dynamically -->
+                <!-- Single featured category will be loaded dynamically -->
             </div>
         </section>
 
@@ -222,17 +302,17 @@
         
         <div class="cart-footer" id="cart-footer">
             <div class="cart-summary">
-                <div class="subtotal">
-                    <span>Subtotal:</span>
-                    <span id="cart-subtotal">₼0.00</span>
+                <div class="cart-summary-row subtotal">
+                    <span class="summary-label">Subtotal:</span>
+                    <span class="summary-value" id="cart-subtotal">₼0.00</span>
                 </div>
-                <div class="delivery-fee">
-                    <span>Delivery:</span>
-                    <span>Free</span>
+                <div class="cart-summary-row delivery-fee">
+                    <span class="summary-label">Delivery:</span>
+                    <span class="summary-value">Free</span>
                 </div>
-                <div class="total">
-                    <span>Total:</span>
-                    <span id="cart-total">₼0.00</span>
+                <div class="cart-summary-row total">
+                    <span class="summary-label">Total:</span>
+                    <span class="summary-value" id="cart-total">₼0.00</span>
                 </div>
             </div>
             
@@ -282,41 +362,18 @@
         </div>
     </div>
 
-    <!-- Bottom Navigation (Mobile) -->
-    <nav class="bottom-nav">
-        <button class="nav-item active" data-section="menu">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M3 12h18M3 6h18M3 18h18"/>
+    <!-- AI Chatbot (Floating) -->
+    <div class="ai-chatbot-container">
+        <button class="ai-chatbot-btn" id="ai-chatbot-btn" aria-label="Open AI Chat Assistant">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                <circle cx="9" cy="10" r="1"/>
+                <circle cx="15" cy="10" r="1"/>
+                <path d="M9 14s1 1 3 1 3-1 3-1"/>
             </svg>
-            <span>Menu</span>
+            <div class="chatbot-pulse"></div>
         </button>
-        
-        <button class="nav-item" data-section="favorites">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
-            </svg>
-            <span>Favorites</span>
-        </button>
-        
-        <button class="nav-item" data-section="orders">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-                <polyline points="14,2 14,8 20,8"/>
-                <line x1="16" y1="13" x2="8" y2="13"/>
-                <line x1="16" y1="17" x2="8" y2="17"/>
-                <polyline points="10,9 9,9 8,9"/>
-            </svg>
-            <span>Orders</span>
-        </button>
-        
-        <button class="nav-item" data-section="profile">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
-                <circle cx="12" cy="7" r="4"/>
-            </svg>
-            <span>Profile</span>
-        </button>
-    </nav>
+    </div>
 
     <!-- Toast Notifications -->
     <div class="toast-container" id="toast-container"></div>
@@ -327,6 +384,7 @@
     <script src="/static/js/restaurant-app.js" type="module"></script>
     <script src="/static/js/menu-enhanced.js" type="module"></script>
     <script src="/static/js/cart-modern.js" type="module"></script>
+    <script src="/static/js/slider.js" type="module"></script>
     
     <script>
         // Show body once loaded

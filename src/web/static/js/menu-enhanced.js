@@ -63,28 +63,30 @@ class MenuManager {
     this.filteredItems = [...items];
   }
 
-  // Render categories grid
+  // Render categories grid - Only show one featured category
   renderCategories() {
     const categoriesGrid = document.getElementById('categories-grid');
-    if (!categoriesGrid || !this.categories.length) return;
+    if (!categoriesGrid) return;
 
-    // Add "All Items" category
-    const allCategory = {
+    // Show only the first category (or default to first available category)
+    const primaryCategory = this.categories.length > 0 ? this.categories[0] : {
       id: 'all',
       name: 'All Items',
       description: 'Browse everything',
       count: this.menuItems.length
     };
 
-    const categoriesToRender = [allCategory, ...this.categories];
+    // Only render one featured category
+    const categoriesToRender = [primaryCategory];
 
     categoriesGrid.innerHTML = categoriesToRender.map(category => `
-      <div class="category-card" data-category="${category.id}">
+      <div class="category-card featured-category" data-category="${category.id}">
         <div class="category-icon">
           ${this.getCategoryIcon(category.id)}
         </div>
         <h4 class="category-name">${category.name}</h4>
         <p class="category-count">${this.getCategoryCount(category.id)} items</p>
+        <p class="category-description">Featured Category</p>
       </div>
     `).join('');
 
