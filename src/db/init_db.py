@@ -52,17 +52,33 @@ def init_menu_db():
         conn = sqlite3.connect(db_path)
         cursor = conn.cursor()
         
-        # Create categories table
+        # Create categories table with multilingual columns
         cursor.execute('''
         CREATE TABLE IF NOT EXISTS categories (
             id TEXT PRIMARY KEY,
             name TEXT NOT NULL,
             description TEXT,
-            image_url TEXT
+            image_url TEXT,
+            name_az TEXT,
+            name_en TEXT,
+            name_ru TEXT,
+            name_tr TEXT,
+            name_ar TEXT,
+            name_hi TEXT,
+            name_fr TEXT,
+            name_it TEXT,
+            description_az TEXT,
+            description_en TEXT,
+            description_ru TEXT,
+            description_tr TEXT,
+            description_ar TEXT,
+            description_hi TEXT,
+            description_fr TEXT,
+            description_it TEXT
         )
         ''')
         
-        # Create menu items table
+        # Create menu items table with multilingual columns
         cursor.execute('''
         CREATE TABLE IF NOT EXISTS menu_items (
             id TEXT PRIMARY KEY,
@@ -76,6 +92,22 @@ def init_menu_db():
             preparation_time INTEGER DEFAULT 15,
             created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
             updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+            name_az TEXT,
+            name_en TEXT,
+            name_ru TEXT,
+            name_tr TEXT,
+            name_ar TEXT,
+            name_hi TEXT,
+            name_fr TEXT,
+            name_it TEXT,
+            description_az TEXT,
+            description_en TEXT,
+            description_ru TEXT,
+            description_tr TEXT,
+            description_ar TEXT,
+            description_hi TEXT,
+            description_fr TEXT,
+            description_it TEXT,
             FOREIGN KEY (category_id) REFERENCES categories (id)
         )
         ''')
