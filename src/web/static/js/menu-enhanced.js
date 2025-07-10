@@ -161,36 +161,38 @@ class MenuManager {
     this.attachMenuItemListeners();
   }
 
-  // Render single menu item
+  // Render single menu item - Image-Free Modern Design
   renderMenuItem(item) {
-    const imageUrl = this.getImageUrl(item);
     const price = this.formatPrice(item.price);
     const badges = this.getItemBadges(item);
+    const categoryClass = this.getCategoryClass(item);
+    const categoryIcon = this.getCategoryIcon(item.category_id || 'all');
 
     return `
-      <div class="menu-item" data-id="${item.id}">
-        <img src="${imageUrl}" 
-             alt="${item.name}" 
-             class="menu-item-image"
-             loading="lazy"
-             onerror="this.src='/static/images/placeholder.jpg'">
-        
+      <div class="menu-item" data-id="${item.id}" data-category="${item.category_id || 'all'}" ${categoryClass}>
         <div class="menu-item-content">
           ${this.currentView === 'list' ? '<div class="menu-item-info">' : ''}
           
           <div class="menu-item-header">
-            <h4 class="menu-item-name">${item.name}</h4>
+            <div class="menu-item-title-section">
+              <span class="menu-item-category-icon">${categoryIcon}</span>
+              <h4 class="menu-item-name">${item.name}</h4>
+            </div>
             ${badges.length ? `<div class="menu-item-badges">${badges.join('')}</div>` : ''}
           </div>
           
-          <p class="menu-item-description">${item.description || ''}</p>
+          <p class="menu-item-description">${item.description || 'Delicious and carefully prepared with the finest ingredients.'}</p>
           
           ${item.nutrition ? this.renderNutritionInfo(item.nutrition) : ''}
+          ${this.renderItemFeatures(item)}
           
           ${this.currentView === 'list' ? '</div>' : ''}
           
           <div class="menu-item-footer">
-            <span class="menu-item-price">${price}</span>
+            <div class="menu-item-price-section">
+              <span class="menu-item-price">${price}</span>
+              ${item.originalPrice ? `<span class="menu-item-original-price">${this.formatPrice(item.originalPrice)}</span>` : ''}
+            </div>
             <button class="add-to-cart-btn" 
                     data-id="${item.id}"
                     ${!item.available ? 'disabled' : ''}
@@ -419,15 +421,21 @@ class MenuManager {
     document.body.style.overflow = '';
   }
 
-  // Render item modal content
+  // Render item modal content - Image-Free Design
   renderItemModal(item) {
-    const imageUrl = this.getImageUrl(item);
     const price = this.formatPrice(item.price);
     const badges = this.getItemBadges(item);
+    const categoryIcon = this.getCategoryIcon(item.category_id || 'all');
 
     return `
-      <div class="item-modal-image">
-        <img src="${imageUrl}" alt="${item.name}" onerror="this.src='/static/images/placeholder.jpg'">
+      <div class="item-modal-hero">
+        <div class="modal-category-banner" data-category="${item.category_id || 'all'}">
+          <div class="modal-category-icon">${categoryIcon}</div>
+          <div class="modal-category-info">
+            <span class="modal-category-label">Category</span>
+            <span class="modal-category-name">${item.category_name || 'Menu Item'}</span>
+          </div>
+        </div>
       </div>
       
       <div class="item-modal-info">
@@ -436,8 +444,9 @@ class MenuManager {
           ${badges.length ? `<div class="item-modal-badges">${badges.join('')}</div>` : ''}
         </div>
         
-        <p class="item-modal-description">${item.description || 'No description available.'}</p>
+        <p class="item-modal-description">${item.description || 'Delicious and carefully prepared with the finest ingredients.'}</p>
         
+        ${this.renderItemFeatures(item)}
         ${item.allergens ? this.renderAllergens(item.allergens) : ''}
         ${item.nutrition ? this.renderDetailedNutrition(item.nutrition) : ''}
         
@@ -627,6 +636,42 @@ class MenuManager {
     };
     
     return icons[categoryId] || '🍽️';
+  }
+
+  getCategoryClass(item) {
+    return item.category_id ? `data-category="${item.category_id}"` : '';
+  }
+
+  renderItemFeatures(item) {
+    const features = [];
+    
+    if (item.preparation_time) {
+      features.push(`⏱️ ${item.preparation_time} min`);
+    }
+    
+    if (item.serves) {
+      features.push(`👥 Serves ${item.serves}`);
+    }
+    
+    if (item.vegetarian) {
+      features.push(`🌱 Vegetarian`);
+    }
+    
+    if (item.vegan) {
+      features.push(`🌿 Vegan`);
+    }
+    
+    if (item.gluten_free) {
+      features.push(`🌾 Gluten Free`);
+    }
+
+    if (features.length === 0) return '';
+
+    return `
+      <div class="menu-item-features">
+        ${features.map(feature => `<span class="feature-tag">${feature}</span>`).join('')}
+      </div>
+    `;
   }
 
   getCategoryCount(categoryId) {

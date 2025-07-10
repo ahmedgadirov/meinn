@@ -45,55 +45,125 @@
     font-size: var(--font-size-base);
   }
 
-  /* Hero Slider Mobile - Fluid Responsive */
+  /* Hero Slider Mobile - Responsive size */
+  .hero-section {
+    height: clamp(300px, 50vh, 500px);
+  }
+  
   .hero-slider {
-    height: clamp(250px, 40vh, 500px);
+    touch-action: pan-y pinch-zoom;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .slider-track {
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   }
   
   .slide-content {
-    padding: clamp(0.75rem, 3vw, 2rem) clamp(0.75rem, 2vw, 1.25rem);
-    gap: clamp(0.75rem, 3vw, 2rem);
-    flex-direction: column;
+    padding: clamp(1rem, 4vw, 2.5rem) clamp(0.75rem, 2.5vw, 1.5rem);
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .slide-text {
+    max-width: clamp(280px, 90vw, 500px);
     text-align: center;
   }
   
   .slide-title {
-    font-size: clamp(1.25rem, 4vw, 1.75rem);
-    margin-bottom: clamp(0.375rem, 1.5vw, 0.75rem);
+    font-size: clamp(1.25rem, 6vw, 2rem);
+    margin-bottom: clamp(0.5rem, 2vw, 1rem);
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+    line-height: 1.1;
   }
   
   .slide-subtitle {
-    font-size: clamp(0.75rem, 2vw, 1rem);
-    margin-bottom: clamp(0.75rem, 2.5vw, 1.5rem);
-    max-width: clamp(250px, 80vw, 400px);
+    font-size: clamp(0.75rem, 3vw, 1rem);
+    margin-bottom: clamp(1rem, 4vw, 1.5rem);
+    max-width: clamp(250px, 85vw, 400px);
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6);
+    line-height: 1.3;
   }
   
   .slide-cta {
-    padding: clamp(0.5rem, 1.5vw, 1rem) clamp(0.75rem, 2.5vw, 1.5rem);
-    font-size: clamp(0.75rem, 2vw, 1rem);
+    padding: clamp(0.75rem, 2.5vw, 1rem) clamp(1rem, 4vw, 1.5rem);
+    font-size: clamp(0.75rem, 2.5vw, 0.875rem);
+    box-shadow: 0 4px 15px rgba(44, 24, 16, 0.5);
+    letter-spacing: 0.3px;
   }
   
-  .slide-image-placeholder {
-    width: clamp(100px, 20vw, 150px);
-    height: clamp(100px, 20vw, 150px);
+  .slide-cta:hover {
+    transform: translateY(-2px);
   }
   
-  .slider-prev,
-  .slider-next {
-    width: clamp(35px, 5vw, 45px);
-    height: clamp(35px, 5vw, 45px);
+.slide-image-bg {
+  object-position: center center;
+  object-fit: cover;
+}
+
+/* Show full slider image on mobile (no cropping) */
+@media (max-width: 600px) {
+  .slide-image-bg {
+    object-fit: contain !important;
+    width: 100%;
+    height: 40vw !important;
+    max-height: 260px;
+    background: #000;
+  }
+}
+  
+  /* Enhanced mobile overlay for better text readability */
+  .slide-overlay {
+    opacity: 0.85;
   }
   
-  .slider-prev {
-    left: clamp(0.25rem, 1.5vw, 0.75rem);
+  .slide-overlay-primary {
+    background: linear-gradient(135deg, 
+      rgba(44, 24, 16, 0.85) 0%, 
+      rgba(44, 24, 16, 0.7) 50%, 
+      rgba(212, 165, 116, 0.5) 100%);
   }
   
-  .slider-next {
-    right: clamp(0.25rem, 1.5vw, 0.75rem);
+  .slide-overlay-secondary {
+    background: linear-gradient(135deg, 
+      rgba(44, 24, 16, 0.9) 0%, 
+      rgba(212, 165, 116, 0.6) 50%, 
+      rgba(255, 107, 53, 0.4) 100%);
+  }
+  
+  .slide-overlay-accent {
+    background: linear-gradient(135deg, 
+      rgba(255, 107, 53, 0.8) 0%, 
+      rgba(44, 24, 16, 0.7) 50%, 
+      rgba(212, 165, 116, 0.5) 100%);
+  }
+  
+  /* Slider controls mobile specific */
+  .slider-controls {
+    padding: 0 var(--spacing-sm);
+  }
+  
+  .slider-nav {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(8px);
+  }
+  
+  .slider-nav svg {
+    width: 16px;
+    height: 16px;
   }
   
   .slider-indicators {
-    bottom: clamp(0.5rem, 2vw, 1rem);
+    bottom: var(--spacing-md);
+    gap: var(--spacing-xs);
+  }
+  
+  .indicator {
+    width: 8px;
+    height: 8px;
+    border-width: 1px;
   }
 
   /* Section Spacing */

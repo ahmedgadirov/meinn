@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Inn - Slider Demo</title>
+    
+    <!-- Preload critical fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* CSS Variables */
+        :root {
+          --primary-color: #2c1810;
+          --primary-light: #4a2c1a;
+          --secondary-color: #d4a574;
+          --accent-color: #ff6b35;
+          --text-white: #ffffff;
+          --text-primary: #2c1810;
+          --text-secondary: #6c5d53;
+          --bg-primary: #fefefe;
+          --card-bg: #ffffff;
+          --border-light: #f4f0eb;
+          --shadow-medium: 0 4px 16px rgba(44, 24, 16, 0.08);
+          --shadow-large: 0 8px 32px rgba(44, 24, 16, 0.12);
+          --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+          --font-display: 'Playfair Display', serif;
+          --font-weight-bold: 700;
+          --font-weight-semibold: 600;
+          --radius-xl: 16px;
+          --spacing-sm: 0.5rem;
+          --spacing-lg: 1.5rem;
+          --spacing-xl: 2rem;
+          --container-max-width: 1200px;
+          --transition-normal: 0.25s ease;
+        }
+
+        * {
+          box-sizing: border-box;
+          margin: 0;
+          padding: 0;
+        }
+
+        body {
+          font-family: var(--font-primary);
+          background-color: var(--bg-primary);
+          color: var(--text-primary);
+          line-height: 1.5;
+        }
+
+        /* Hero Slider Section */
+        .hero-slider {
+          position: relative;
+          width: 100%;
+          height: clamp(350px, 60vh, 700px);
+          overflow: hidden;
+          background-color: #f8f6f3;
+          margin-bottom: var(--spacing-xl);
+        }
+
+        .slider-container {
+          position: relative;
+          width: 100%;
+          height: 100%;
+        }
+
+        .slider-track {
+          display: flex;
+          width: 300%;
+          height: 100%;
+          transition: transform 0.5s ease-in-out;
+          will-change: transform;
+        }
+
+        .slide {
+          width: 33.333%;
+          height: 100%;
+          position: relative;
+          flex-shrink: 0;
+          opacity: 0.7;
+          transition: opacity 0.5s ease-in-out;
+        }
+
+        .slide.active {
+          opacity: 1;
+        }
+
+        .slide-background {
+          position: relative;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          overflow: hidden;
+        }
+
+        .slide-image-bg {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center;
+          z-index: 1;
+          transition: transform 0.3s ease;
+        }
+
+        .slide:hover .slide-image-bg {
+          transform: scale(1.05);
+        }
+
+        .slide-overlay {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          z-index: 2;
+          transition: opacity 0.3s ease;
+        }
+
+        .slide-overlay-primary {
+          background: linear-gradient(135deg, 
+            rgba(44, 24, 16, 0.7) 0%, 
+            rgba(44, 24, 16, 0.4) 50%, 
+            rgba(212, 165, 116, 0.3) 100%);
+        }
+
+        .slide-overlay-secondary {
+          background: linear-gradient(135deg, 
+            rgba(44, 24, 16, 0.8) 0%, 
+            rgba(212, 165, 116, 0.5) 50%, 
+            rgba(255, 107, 53, 0.3) 100%);
+        }
+
+        .slide-overlay-accent {
+          background: linear-gradient(135deg, 
+            rgba(255, 107, 53, 0.7) 0%, 
+            rgba(44, 24, 16, 0.6) 50%, 
+            rgba(212, 165, 116, 0.4) 100%);
+        }
+
+        .slide-content {
+          position: relative;
+          max-width: var(--container-max-width);
+          margin: 0 auto;
+          padding: clamp(1.5rem, 5vw, 4rem) clamp(1rem, 3vw, 2rem);
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          width: 100%;
+          height: 100%;
+          z-index: 3;
+        }
+
+        .slide-text {
+          max-width: clamp(300px, 50vw, 600px);
+          z-index: 4;
+        }
+
+        .slide-title {
+          font-family: var(--font-display);
+          font-size: clamp(1.75rem, 6vw, 3rem);
+          font-weight: var(--font-weight-bold);
+          color: var(--text-white);
+          margin-bottom: clamp(0.75rem, 2.5vw, 1.5rem);
+          line-height: 1.1;
+          text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .slide-subtitle {
+          font-size: clamp(1rem, 3vw, 1.25rem);
+          color: rgba(255, 255, 255, 0.95);
+          margin-bottom: clamp(1.5rem, 4vw, 2.5rem);
+          line-height: 1.4;
+          text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+          max-width: clamp(280px, 45vw, 500px);
+        }
+
+        .slide-cta {
+          background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-light) 100%);
+          color: var(--text-white);
+          padding: clamp(0.875rem, 2.5vw, 1.25rem) clamp(1.5rem, 4vw, 2rem);
+          border-radius: var(--radius-xl);
+          font-size: clamp(0.875rem, 2.5vw, 1.125rem);
+          font-weight: var(--font-weight-semibold);
+          display: inline-flex;
+          align-items: center;
+          gap: var(--spacing-sm);
+          transition: all 0.3s ease;
+          box-shadow: 0 4px 15px rgba(44, 24, 16, 0.3);
+          border: 2px solid transparent;
+          cursor: pointer;
+          text-transform: uppercase;
+          letter-spacing: 0.5px;
+          text-decoration: none;
+        }
+
+        .slide-cta:hover {
+          background: linear-gradient(135deg, var(--secondary-color) 0%, var(--accent-color) 100%);
+          transform: translateY(-3px);
+          box-shadow: 0 8px 25px rgba(44, 24, 16, 0.4);
+          border-color: rgba(255, 255, 255, 0.2);
+        }
+
+        /* Slider Controls */
+        .slider-prev,
+        .slider-next {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          background-color: rgba(255, 255, 255, 0.9);
+          border: none;
+          border-radius: 50%;
+          width: 50px;
+          height: 50px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+          transition: var(--transition-normal);
+          z-index: 10;
+          box-shadow: var(--shadow-medium);
+        }
+
+        .slider-prev {
+          left: var(--spacing-lg);
+        }
+
+        .slider-next {
+          right: var(--spacing-lg);
+        }
+
+        .slider-prev:hover,
+        .slider-next:hover {
+          background-color: var(--primary-color);
+          color: var(--text-white);
+          transform: translateY(-50%) scale(1.1);
+        }
+
+        /* Slider Indicators */
+        .slider-indicators {
+          position: absolute;
+          bottom: var(--spacing-lg);
+          left: 50%;
+          transform: translateX(-50%);
+          display: flex;
+          gap: var(--spacing-sm);
+          z-index: 10;
+        }
+
+        .indicator {
+          width: 12px;
+          height: 12px;
+          border-radius: 50%;
+          background-color: rgba(255, 255, 255, 0.5);
+          border: none;
+          cursor: pointer;
+          transition: var(--transition-normal);
+        }
+
+        .indicator.active {
+          background-color: var(--primary-color);
+          transform: scale(1.2);
+        }
+
+        .indicator:hover {
+          background-color: var(--primary-color);
+        }
+
+        /* Demo Info */
+        .demo-info {
+          max-width: var(--container-max-width);
+          margin: 0 auto;
+          padding: var(--spacing-xl);
+          text-align: center;
+        }
+
+        .demo-title {
+          font-family: var(--font-display);
+          font-size: 2rem;
+          color: var(--primary-color);
+          margin-bottom: var(--spacing-lg);
+        }
+
+        .demo-description {
+          font-size: 1.125rem;
+          color: var(--text-secondary);
+          margin-bottom: var(--spacing-xl);
+          max-width: 600px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+        .features-list {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+          gap: var(--spacing-lg);
+          margin-top: var(--spacing-xl);
+        }
+
+        .feature-item {
+          background: var(--card-bg);
+          padding: var(--spacing-lg);
+          border-radius: var(--radius-xl);
+          box-shadow: var(--shadow-medium);
+          border: 1px solid var(--border-light);
+        }
+
+        .feature-title {
+          font-weight: var(--font-weight-semibold);
+          color: var(--primary-color);
+          margin-bottom: var(--spacing-sm);
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+          .hero-slider {
+            height: clamp(280px, 45vh, 550px);
+          }
+          
+          .slide-content {
+            padding: clamp(1rem, 4vw, 2.5rem) clamp(0.75rem, 2.5vw, 1.5rem);
+            justify-content: center;
+            text-align: center;
+          }
+          
+          .slide-text {
+            max-width: clamp(280px, 85vw, 500px);
+            text-align: center;
+          }
+          
+          .slide-title {
+            font-size: clamp(1.5rem, 5vw, 2.25rem);
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+          }
+          
+          .slide-subtitle {
+            font-size: clamp(0.875rem, 2.5vw, 1.125rem);
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+          }
+          
+          .slider-prev,
+          .slider-next {
+            width: clamp(38px, 5.5vw, 48px);
+            height: clamp(38px, 5.5vw, 48px);
+          }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Slider Section -->
+    <section class="hero-slider" id="hero-slider">
+        <div class="slider-container">
+            <div class="slider-track" id="slider-track">
+                <!-- Slide 1: Authentic Taste -->
+                <div class="slide active" data-slide="0">
+                    <div class="slide-background">
+                        <img src="src/web/static/images/slider.jpg" alt="Pizza Inn Delicious Food" class="slide-image-bg">
+                        <div class="slide-overlay slide-overlay-primary"></div>
+                        <div class="slide-content">
+                            <div class="slide-text">
+                                <h2 class="slide-title">Taste the Authentic</h2>
+                                <p class="slide-subtitle">Fresh ingredients, traditional recipes, delivered to your door</p>
+                                <a href="#" class="slide-cta">
+                                    Explore Menu
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M7 13l3 3 7-7"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Slide 2: Fast Delivery -->
+                <div class="slide" data-slide="1">
+                    <div class="slide-background">
+                        <img src="src/web/static/images/slider.jpg" alt="Fast Delivery Pizza Inn" class="slide-image-bg">
+                        <div class="slide-overlay slide-overlay-secondary"></div>
+                        <div class="slide-content">
+                            <div class="slide-text">
+                                <h2 class="slide-title">Fast Delivery</h2>
+                                <p class="slide-subtitle">Hot, fresh food delivered to your doorstep in 30 minutes or less</p>
+                                <a href="#" class="slide-cta">
+                                    Order Now
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M5 12h14m-7-7l7 7-7 7"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Slide 3: Special Offers -->
+                <div class="slide" data-slide="2">
+                    <div class="slide-background">
+                        <img src="src/web/static/images/slider.jpg" alt="Special Offers Pizza Inn" class="slide-image-bg">
+                        <div class="slide-overlay slide-overlay-accent"></div>
+                        <div class="slide-content">
+                            <div class="slide-text">
+                                <h2 class="slide-title">Special Offers</h2>
+                                <p class="slide-subtitle">Check out our daily specials and limited-time offers</p>
+                                <a href="#" class="slide-cta">
+                                    View Offers
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Slider Controls -->
+            <button class="slider-prev" id="slider-prev" aria-label="Previous slide">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M15 18l-6-6 6-6"/>
+                </svg>
+            </button>
+            
+            <button class="slider-next" id="slider-next" aria-label="Next slide">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 18l6-6-6-6"/>
+                </svg>
+            </button>
+            
+            <!-- Slider Indicators -->
+            <div class="slider-indicators" id="slider-indicators">
+                <button class="indicator active" data-slide="0" aria-label="Go to slide 1"></button>
+                <button class="indicator" data-slide="1" aria-label="Go to slide 2"></button>
+                <button class="indicator" data-slide="2" aria-label="Go to slide 3"></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Info -->
+    <div class="demo-info">
+        <h1 class="demo-title">Pizza Inn Slider Redesign</h1>
+        <p class="demo-description">
+            The slider has been completely redesigned to use your provided image with enhanced mobile responsiveness and modern design patterns.
+        </p>
+        
+        <div class="features-list">
+            <div class="feature-item">
+                <h3 class="feature-title">🖼️ Real Image Background</h3>
+                <p>Replaced gradients with your actual slider.jpg image for authentic visual appeal</p>
+            </div>
+            <div class="feature-item">
+                <h3 class="feature-title">📱 Mobile Optimized</h3>
+                <p>Responsive design with optimized sizing and text readability on all devices</p>
+            </div>
+            <div class="feature-item">
+                <h3 class="feature-title">🎨 Dynamic Overlays</h3>
+                <p>Different color overlays for each slide to ensure text readability</p>
+            </div>
+            <div class="feature-item">
+                <h3 class="feature-title">⚡ Smooth Interactions</h3>
+                <p>Enhanced hover effects and smooth transitions for better user experience</p>
+            </div>
+            <div class="feature-item">
+                <h3 class="feature-title">🎯 Touch Friendly</h3>
+                <p>Optimized touch targets and swipe gestures for mobile users</p>
+            </div>
+            <div class="feature-item">
+                <h3 class="feature-title">🔧 Performance Focused</h3>
+                <p>Optimized image loading and efficient CSS for fast performance</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Hero Slider Functionality
+        class HeroSlider {
+            constructor() {
+                this.currentSlide = 0;
+                this.totalSlides = 0;
+                this.autoAdvanceInterval = null;
+                this.autoAdvanceDelay = 5000;
+                this.isPlaying = true;
+                this.init();
+            }
+
+            init() {
+                this.slider = document.getElementById('hero-slider');
+                this.track = document.getElementById('slider-track');
+                this.prevBtn = document.getElementById('slider-prev');
+                this.nextBtn = document.getElementById('slider-next');
+                this.indicators = document.getElementById('slider-indicators');
+                
+                if (!this.slider || !this.track) return;
+
+                this.slides = this.track.querySelectorAll('.slide');
+                this.totalSlides = this.slides.length;
+                
+                if (this.totalSlides === 0) return;
+                
+                this.initializeDimensions();
+                this.bindEvents();
+                this.updateSlidePosition();
+                this.updateIndicators();
+                this.startAutoAdvance();
+                
+                this.slider.addEventListener('mouseenter', () => this.pauseAutoAdvance());
+                this.slider.addEventListener('mouseleave', () => this.startAutoAdvance());
+                this.addTouchSupport();
+            }
+
+            bindEvents() {
+                if (this.prevBtn) {
+                    this.prevBtn.addEventListener('click', () => this.previousSlide());
+                }
+                
+                if (this.nextBtn) {
+                    this.nextBtn.addEventListener('click', () => this.nextSlide());
+                }
+                
+                if (this.indicators) {
+                    this.indicators.addEventListener('click', (e) => {
+                        if (e.target.classList.contains('indicator')) {
+                            const slideIndex = parseInt(e.target.dataset.slide);
+                            this.goToSlide(slideIndex);
+                        }
+                    });
+                }
+            }
+
+            updateSlidePosition() {
+                if (!this.track) return;
+                
+                const slideWidth = 100 / this.totalSlides;
+                const translateX = -(this.currentSlide * slideWidth);
+                this.track.style.transform = `translateX(${translateX}%)`;
+                
+                this.slides.forEach((slide, index) => {
+                    slide.classList.toggle('active', index === this.currentSlide);
+                });
+            }
+
+            updateIndicators() {
+                if (!this.indicators) return;
+                
+                const indicatorButtons = this.indicators.querySelectorAll('.indicator');
+                indicatorButtons.forEach((btn, index) => {
+                    btn.classList.toggle('active', index === this.currentSlide);
+                });
+            }
+
+            nextSlide() {
+                this.currentSlide = (this.currentSlide + 1) % this.totalSlides;
+                this.updateSlidePosition();
+                this.updateIndicators();
+                this.restartAutoAdvance();
+            }
+
+            previousSlide() {
+                this.currentSlide = (this.currentSlide - 1 + this.totalSlides) % this.totalSlides;
+                this.updateSlidePosition();
+                this.updateIndicators();
+                this.restartAutoAdvance();
+            }
+
+            goToSlide(index) {
+                if (index >= 0 && index < this.totalSlides) {
+                    this.currentSlide = index;
+                    this.updateSlidePosition();
+                    this.updateIndicators();
+                    this.restartAutoAdvance();
+                }
+            }
+
+            startAutoAdvance() {
+                if (this.isPlaying && this.totalSlides > 1) {
+                    this.autoAdvanceInterval = setInterval(() => {
+                        this.nextSlide();
+                    }, this.autoAdvanceDelay);
+                }
+            }
+
+            pauseAutoAdvance() {
+                if (this.autoAdvanceInterval) {
+                    clearInterval(this.autoAdvanceInterval);
+                    this.autoAdvanceInterval = null;
+                }
+            }
+
+            restartAutoAdvance() {
+                this.pauseAutoAdvance();
+                this.startAutoAdvance();
+            }
+
+            addTouchSupport() {
+                let startX = 0;
+                let endX = 0;
+                let isDragging = false;
+
+                this.slider.addEventListener('touchstart', (e) => {
+                    startX = e.touches[0].clientX;
+                    isDragging = true;
+                    this.pauseAutoAdvance();
+                }, { passive: true });
+
+                this.slider.addEventListener('touchmove', (e) => {
+                    if (!isDragging) return;
+                    endX = e.touches[0].clientX;
+                }, { passive: true });
+
+                this.slider.addEventListener('touchend', () => {
+                    if (!isDragging) return;
+                    isDragging = false;
+                    
+                    const deltaX = startX - endX;
+                    const minSwipeDistance = 50;
+
+                    if (Math.abs(deltaX) > minSwipeDistance) {
+                        if (deltaX > 0) {
+                            this.nextSlide();
+                        } else {
+                            this.previousSlide();
+                        }
+                    }
+                    
+                    this.startAutoAdvance();
+                }, { passive: true });
+            }
+
+            initializeDimensions() {
+                if (!this.track || !this.totalSlides) return;
+                
+                const trackWidth = this.totalSlides * 100;
+                this.track.style.width = `${trackWidth}%`;
+                
+                const slideWidth = 100 / this.totalSlides;
+                this.slides.forEach(slide => {
+                    slide.style.width = `${slideWidth}%`;
+                });
+            }
+        }
+
+        // Initialize slider when DOM is loaded
+        document.addEventListener('DOMContentLoaded', () => {
+            new HeroSlider();
+        });
+    </script>
+</body>
+</html>

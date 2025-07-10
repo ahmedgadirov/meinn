@@ -1,6 +1,4 @@
-#!/bin/sh
-'''exec' "/home/ahmd/Desktop/mein (Copy)/meinn-main/venv/bin/python3" "$0" "$@"
-' '''
+#!/home/ahmd/Desktop/meinn/venv/bin/python3
 # -*- coding: utf-8 -*-
 import re
 import sys

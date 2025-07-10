@@ -154,57 +154,116 @@
   gap: var(--spacing-md);
 }
 
-/* Menu Item Cards */
+/* Menu Item Cards - Image-Free Modern Design */
 .menu-item {
-  background-color: var(--card-bg);
-  border: 1px solid var(--border-light);
+  background: linear-gradient(135deg, var(--card-bg) 0%, rgba(255, 255, 255, 0.8) 100%);
+  border: 2px solid var(--border-light);
   border-radius: var(--radius-xl);
-  overflow: hidden;
   cursor: pointer;
-  transition: var(--transition-normal);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
   display: flex;
   flex-direction: column;
+  min-height: 200px;
+  overflow: hidden;
+}
+
+.menu-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color), var(--accent-color));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.menu-item:hover::before {
+  transform: scaleX(1);
 }
 
 .menu-item:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-large);
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(44, 24, 16, 0.15);
   border-color: var(--primary-color);
-}
-
-.menu-item-image {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  transition: var(--transition-normal);
-}
-
-.menu-item:hover .menu-item-image {
-  transform: scale(1.05);
+  background: linear-gradient(135deg, var(--card-bg) 0%, rgba(255, 255, 255, 0.95) 100%);
 }
 
 .menu-item-content {
-  padding: var(--spacing-lg);
+  padding: var(--spacing-xl);
   flex: 1;
   display: flex;
   flex-direction: column;
+  position: relative;
+}
+
+/* Category color indicators */
+.menu-item[data-category="pizza"] {
+  border-left: 6px solid #ff6b6b;
+}
+
+.menu-item[data-category="pasta"] {
+  border-left: 6px solid #4ecdc4;
+}
+
+.menu-item[data-category="salads"] {
+  border-left: 6px solid #45b7d1;
+}
+
+.menu-item[data-category="drinks"] {
+  border-left: 6px solid #96ceb4;
+}
+
+.menu-item[data-category="desserts"] {
+  border-left: 6px solid #ffeaa7;
+}
+
+.menu-item[data-category="burgers"] {
+  border-left: 6px solid #fd79a8;
+}
+
+.menu-item[data-category="sandwiches"] {
+  border-left: 6px solid #fdcb6e;
+}
+
+.menu-item[data-category="soups"] {
+  border-left: 6px solid #e17055;
 }
 
 .menu-item-header {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  margin-bottom: var(--spacing-sm);
+  margin-bottom: var(--spacing-md);
+}
+
+.menu-item-title-section {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  flex: 1;
+}
+
+.menu-item-category-icon {
+  font-size: var(--font-size-lg);
+  background: linear-gradient(45deg, var(--secondary-color), var(--accent-color));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 1px 2px rgba(0,0,0,0.1));
 }
 
 .menu-item-name {
-  font-size: var(--font-size-lg);
-  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
   color: var(--primary-color);
   margin: 0;
-  flex: 1;
   line-height: var(--line-height-tight);
+  text-transform: capitalize;
+  letter-spacing: -0.5px;
 }
 
 .menu-item-badges {
@@ -264,6 +323,26 @@
   gap: var(--spacing-xs);
 }
 
+.menu-item-features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-xs);
+  margin-bottom: var(--spacing-md);
+}
+
+.feature-tag {
+  padding: var(--spacing-xs) var(--spacing-sm);
+  background-color: var(--bg-secondary);
+  color: var(--text-secondary);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-light);
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
 .menu-item-footer {
   display: flex;
   align-items: center;
@@ -271,10 +350,23 @@
   margin-top: auto;
 }
 
+.menu-item-price-section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
+
 .menu-item-price {
   font-size: var(--font-size-xl);
   font-weight: var(--font-weight-bold);
   color: var(--primary-color);
+}
+
+.menu-item-original-price {
+  font-size: var(--font-size-sm);
+  color: var(--text-tertiary);
+  text-decoration: line-through;
+  font-weight: var(--font-weight-medium);
 }
 
 .add-to-cart-btn {
@@ -776,19 +868,83 @@
   padding: 0;
 }
 
-/* Item Modal Content Styles */
-.item-modal-image {
-  width: 100%;
-  height: 300px;
-  background-color: var(--bg-secondary);
-  overflow: hidden;
+/* Item Modal Content Styles - Image-Free Design */
+.item-modal-hero {
+  position: relative;
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  padding: var(--spacing-xl);
+  color: var(--text-white);
 }
 
-.item-modal-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
+.modal-category-banner {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-lg);
+}
+
+.modal-category-icon {
+  width: 80px;
+  height: 80px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.modal-category-info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
+
+.modal-category-label {
+  font-size: var(--font-size-sm);
+  opacity: 0.8;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: var(--font-weight-medium);
+}
+
+.modal-category-name {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+}
+
+/* Category-specific modal colors */
+.modal-category-banner[data-category="pizza"] {
+  background: linear-gradient(135deg, #ff6b6b, #ff8e8e);
+}
+
+.modal-category-banner[data-category="pasta"] {
+  background: linear-gradient(135deg, #4ecdc4, #6ee0d6);
+}
+
+.modal-category-banner[data-category="salads"] {
+  background: linear-gradient(135deg, #45b7d1, #69c5e0);
+}
+
+.modal-category-banner[data-category="drinks"] {
+  background: linear-gradient(135deg, #96ceb4, #a8d8c4);
+}
+
+.modal-category-banner[data-category="desserts"] {
+  background: linear-gradient(135deg, #ffeaa7, #ffecb3);
+}
+
+.modal-category-banner[data-category="burgers"] {
+  background: linear-gradient(135deg, #fd79a8, #ff92ba);
+}
+
+.modal-category-banner[data-category="sandwiches"] {
+  background: linear-gradient(135deg, #fdcb6e, #ffd889);
+}
+
+.modal-category-banner[data-category="soups"] {
+  background: linear-gradient(135deg, #e17055, #e88775);
 }
 
 .item-modal-info {
