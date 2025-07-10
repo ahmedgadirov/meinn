@@ -355,7 +355,8 @@ def print_summary():
 
 def main():
     """Main import function"""
-    csv_file_path = '/home/ahmd/Desktop/menu pizza inn/menu_items_export.csv'
+    import os
+csv_file_path = os.getenv('CSV_FILE_PATH', 'data/menu_items_export.csv')
     
     if not os.path.exists(csv_file_path):
         logger.error(f"CSV file not found: {csv_file_path}")
