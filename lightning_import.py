@@ -15,8 +15,22 @@ from pathlib import Path
 
 class LightningImporter:
     def __init__(self, csv_file='real_menu_data.csv', db_file='menu_data.db'):
-        self.csv_file = csv_file
-        self.db_file = db_file
+        # Always use absolute paths to ensure consistency with API
+        import os
+        current_dir = os.path.dirname(os.path.abspath(__file__))
+        
+        # Ensure CSV file path is absolute
+        if not os.path.isabs(csv_file):
+            self.csv_file = os.path.join(current_dir, csv_file)
+        else:
+            self.csv_file = csv_file
+            
+        # Ensure database path matches what MenuManager expects (project root)
+        if not os.path.isabs(db_file):
+            self.db_file = os.path.join(current_dir, db_file)
+        else:
+            self.db_file = db_file
+            
         self.conn = None
         self.stats = {
             'total_processed': 0,
