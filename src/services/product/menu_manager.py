@@ -138,11 +138,9 @@ class MenuManager:
             multilingual_cols = self._build_multilingual_category_columns()
             query = f"""
                 SELECT m.*, c.name as category_name,
-                       {multilingual_cols},
-                       d.allergens, d.ingredients, d.nutrition
+                       {multilingual_cols}
                 FROM menu_items m
                 JOIN categories c ON m.category_id = c.id
-                JOIN item_details d ON m.id = d.item_id
             """
             
             params = []
@@ -164,9 +162,10 @@ class MenuManager:
             result = []
             for row in rows:
                 item = dict(row)
-                item["allergens"] = json.loads(item["allergens"]) if item["allergens"] else []
-                item["ingredients"] = json.loads(item["ingredients"]) if item["ingredients"] else []
-                item["nutrition"] = json.loads(item["nutrition"]) if item["nutrition"] else {}
+                # Add default values for missing allergens, ingredients, nutrition fields
+                item["allergens"] = json.loads(item.get("allergens", "[]")) if item.get("allergens") else []
+                item["ingredients"] = json.loads(item.get("ingredients", "[]")) if item.get("ingredients") else []
+                item["nutrition"] = json.loads(item.get("nutrition", "{}")) if item.get("nutrition") else {}
                 item["available"] = bool(item["available"])
                 item["popular"] = bool(item["popular"])
                 
@@ -218,11 +217,9 @@ class MenuManager:
             multilingual_cols = self._build_multilingual_category_columns()
             query = f"""
                 SELECT m.*, c.name as category_name,
-                       {multilingual_cols},
-                       d.allergens, d.ingredients, d.nutrition
+                       {multilingual_cols}
                 FROM menu_items m
                 JOIN categories c ON m.category_id = c.id
-                JOIN item_details d ON m.id = d.item_id
                 WHERE m.id = ?
             """
             
@@ -418,11 +415,9 @@ class MenuManager:
             
             query_sql = f"""
                 SELECT m.*, c.name as category_name,
-                       {multilingual_cols},
-                       d.allergens, d.ingredients, d.nutrition
+                       {multilingual_cols}
                 FROM menu_items m
                 JOIN categories c ON m.category_id = c.id
-                JOIN item_details d ON m.id = d.item_id
                 WHERE m.available = 1 AND ({search_conditions})
                 ORDER BY m.popular DESC, m.name ASC
             """

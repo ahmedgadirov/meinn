@@ -34,10 +34,6 @@ class LightningImporter:
             self.db_file = db_file
 
         self.conn = None
-        print(f"[DEBUG] current_dir: {current_dir}")
-        print(f"[DEBUG] project_root: {project_root}")
-        print(f"[DEBUG] self.csv_file: {self.csv_file}")
-        print(f"[DEBUG] self.db_file: {self.db_file}")
         self.stats = {
             'total_processed': 0,
             'new_items': 0,
