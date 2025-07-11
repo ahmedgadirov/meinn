@@ -15,23 +15,29 @@ from pathlib import Path
 
 class LightningImporter:
     def __init__(self, csv_file='real_menu_data.csv', db_file='menu_data.db'):
-        # Always use absolute paths to ensure consistency with API
+        # Always use absolute paths to ensure consistency with API and backend
         import os
         current_dir = os.path.dirname(os.path.abspath(__file__))
-        
-        # Ensure CSV file path is absolute
+        # Set project root to the directory containing this script
+        project_root = current_dir
+
+        # Ensure CSV file path is absolute and in project root unless absolute path provided
         if not os.path.isabs(csv_file):
-            self.csv_file = os.path.join(current_dir, csv_file)
+            self.csv_file = os.path.join(project_root, csv_file)
         else:
             self.csv_file = csv_file
-            
+
         # Ensure database path matches what MenuManager expects (project root)
         if not os.path.isabs(db_file):
-            self.db_file = os.path.join(current_dir, db_file)
+            self.db_file = os.path.join(project_root, db_file)
         else:
             self.db_file = db_file
-            
+
         self.conn = None
+        print(f"[DEBUG] current_dir: {current_dir}")
+        print(f"[DEBUG] project_root: {project_root}")
+        print(f"[DEBUG] self.csv_file: {self.csv_file}")
+        print(f"[DEBUG] self.db_file: {self.db_file}")
         self.stats = {
             'total_processed': 0,
             'new_items': 0,
