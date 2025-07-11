@@ -142,6 +142,67 @@ rm -f "$TMP_REQUIREMENTS"
 echo "Initializing database..."
 python src/db/init_db.py
 
+# Load menu data if available
+echo "Loading menu data..."
+if [ -f "real_menu_data.csv" ]; then
+    echo "Found real_menu_data.csv - importing menu items..."
+    python import_real_menu_data.py
+    echo "Menu data loaded successfully!"
+else
+    echo "real_menu_data.csv not found - skipping menu import"
+fi
+
+# Ensure item_details table is populated (fixes JOIN query issue)
+echo "Checking item_details table consistency..."
+python3 -c "
+import sqlite3
+import json
+
+try:
+    conn = sqlite3.connect('menu_data.db')
+    cursor = conn.cursor()
+    
+    # Get counts
+    cursor.execute('SELECT COUNT(*) FROM menu_items')
+    items_count = cursor.fetchone()[0]
+    cursor.execute('SELECT COUNT(*) FROM item_details')
+    details_count = cursor.fetchone()[0]
+    
+    print(f'menu_items: {items_count}, item_details: {details_count}')
+    
+    if items_count > 0 and details_count < items_count:
+        print('Populating missing item_details records...')
+        
+        # Get all menu item IDs
+        cursor.execute('SELECT id FROM menu_items')
+        item_ids = [row[0] for row in cursor.fetchall()]
+        
+        # Insert default item_details for each menu item
+        default_allergens = json.dumps([])
+        default_ingredients = json.dumps([])
+        default_nutrition = json.dumps({'calories': 0, 'protein': 0, 'carbs': 0, 'fat': 0})
+        
+        for item_id in item_ids:
+            cursor.execute('''
+                INSERT OR IGNORE INTO item_details (item_id, allergens, ingredients, nutrition)
+                VALUES (?, ?, ?, ?)
+            ''', (item_id, default_allergens, default_ingredients, default_nutrition))
+        
+        conn.commit()
+        
+        # Verify final count
+        cursor.execute('SELECT COUNT(*) FROM item_details')
+        final_count = cursor.fetchone()[0]
+        print(f'✅ item_details now has {final_count} records')
+    else:
+        print('✅ item_details table is properly populated')
+    
+    conn.close()
+    
+except Exception as e:
+    print(f'Error checking item_details: {e}')
+"
+
 # Start the application
 echo "Starting Meinn AI..."
 export PORT=5050

@@ -27,7 +27,7 @@ logger = logging.getLogger("meinn_ai.schema_update_v2")
 def backup_database():
     """Create a backup of the current database"""
     try:
-        db_path = os.path.join(os.path.dirname(__file__), "../../menu_data.db")
+        db_path = os.path.join(os.path.dirname(__file__), "../../data/menu.db")
         backup_path = os.path.join(os.path.dirname(__file__), f"../../menu_data_backup_{datetime.now().strftime('%Y%m%d_%H%M%S')}.db")
         
         if os.path.exists(db_path):
@@ -44,7 +44,7 @@ def backup_database():
 
 def update_schema():
     """Update database schema to support sizes and hierarchical categories"""
-    db_path = os.path.join(os.path.dirname(__file__), "../../menu_data.db")
+    db_path = os.path.join(os.path.dirname(__file__), "../../data/menu.db")
     
     try:
         conn = sqlite3.connect(db_path)
@@ -127,7 +127,7 @@ def update_schema():
 
 def verify_schema():
     """Verify that the schema update was successful"""
-    db_path = os.path.join(os.path.dirname(__file__), "../../menu_data.db")
+    db_path = os.path.join(os.path.dirname(__file__), "../../data/menu.db")
     
     try:
         conn = sqlite3.connect(db_path)

@@ -75,7 +75,7 @@ def create_categories(conn, csv_file_path):
     categories = {}
     
     with open(csv_file_path, 'r', encoding='utf-8') as file:
-        reader = csv.DictReader(file)
+        reader = csv.DictReader(file, restkey='__extra')
         for row in reader:
             category_name = row['Category Name'].strip()
             if category_name and category_name not in categories:
@@ -138,12 +138,16 @@ def import_menu_items(conn, csv_file_path):
     # Step 1: Read all rows and group by (base name, category)
     groups = {}
     with open(csv_file_path, 'r', encoding='utf-8') as file:
+        # Create a reader that ignores extra columns
         reader = csv.DictReader(file)
+        # If any rows have extra columns, they will be ignored
+        reader.restkey = None  # Ignore extra values
+        reader.restval = None  # Ignore missing values
         for row in reader:
             try:
-                # Extract base name and category
-                name = row['Name'].strip()
-                category_id = row['Category Name'].strip()
+                # Extract base name and category - safely get values
+                name = row.get('Name', '').strip()
+                category_id = row.get('Category Name', '').strip()
                 if not name or not category_id:
                     skipped_count += 1
                     continue
@@ -356,7 +360,7 @@ def print_summary():
 def main():
     """Main import function"""
     import os
-csv_file_path = os.getenv('CSV_FILE_PATH', 'data/menu_items_export.csv')
+    csv_file_path = os.getenv('CSV_FILE_PATH', 'data/menu_items_export.csv')
     
     if not os.path.exists(csv_file_path):
         logger.error(f"CSV file not found: {csv_file_path}")

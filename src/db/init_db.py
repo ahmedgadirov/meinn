@@ -46,7 +46,7 @@ def init_database():
 
 def init_menu_db():
     """Initialize the menu database"""
-    db_path = os.path.join(os.path.dirname(__file__), "../../menu_data.db")
+    db_path = os.path.join(os.path.dirname(__file__), "../../data/menu.db")
     
     try:
         conn = sqlite3.connect(db_path)
